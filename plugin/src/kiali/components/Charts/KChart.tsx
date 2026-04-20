@@ -7,7 +7,12 @@ import {
   ButtonVariant,
   EmptyStateVariant
 } from '@patternfly/react-core';
-import { ChartArea, ChartBar, ChartScatter, ChartLine } from '@patternfly/react-charts';
+import {
+	ChartArea,
+	ChartBar,
+	ChartScatter,
+	ChartLine
+} from '@patternfly/react-charts/victory';
 import { CubesIcon, ErrorCircleOIcon } from '@patternfly/react-icons';
 
 import { ChartModel } from 'types/Dashboards';

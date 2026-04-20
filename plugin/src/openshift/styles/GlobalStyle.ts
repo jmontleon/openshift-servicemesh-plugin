@@ -14,7 +14,7 @@ export const globalStyle = kialiStyle({
   overflowY: 'auto',
   $nest: {
     '& .pf-v5-c-menu h1': {
-      fontSize: 'var(--pf-v5-global--FontSize--md)'
+      fontSize: "var(--pf-t--global--font--size--md)"
     }
   }
 });

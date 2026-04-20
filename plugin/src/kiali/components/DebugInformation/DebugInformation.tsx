@@ -5,15 +5,17 @@ import { serverConfig } from '../../config';
 import { ComputedServerConfig } from '../../config/ServerConfig';
 import { KialiAppState } from '../../store/Store';
 import {
-  Alert,
-  AlertActionCloseButton,
-  AlertVariant,
-  Button,
-  ButtonVariant,
-  Modal,
-  ModalVariant,
-  Tab
+	Alert,
+	AlertActionCloseButton,
+	AlertVariant,
+	Button,
+	ButtonVariant,
+	Tab
 } from '@patternfly/react-core';
+import {
+	Modal,
+	ModalVariant
+} from '@patternfly/react-core/deprecated';
 import { aceOptions, yamlDumpOptions } from '../../types/IstioConfigDetails';
 import AceEditor from 'react-ace';
 import { ParameterizedTabs } from '../Tab/Tabs';
