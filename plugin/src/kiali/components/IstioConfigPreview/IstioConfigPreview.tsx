@@ -3,6 +3,9 @@ import {
   Button,
   ButtonVariant,
   Modal,
+  ModalBody,
+  ModalFooter,
+  ModalHeader,
   Tab,
   TabProps,
   Tabs,
@@ -205,29 +208,12 @@ export class IstioConfigPreview extends React.Component<Props, State> {
     return (
       <Modal
         width={'75%'}
-        title={this.props.title}
         isOpen={this.state.modalOpen}
         onClose={this.props.onClose}
         onKeyDown={e => (this.props.onKeyPress ? this.props.onKeyPress(e) : {})}
-        actions={
-          this.props.actions
-            ? this.props.actions
-            : [
-                <Button
-                  key={this.props.opTarget}
-                  variant={this.props.opTarget === 'delete' ? 'danger' : 'primary'}
-                  isDisabled={this.props.disableAction}
-                  onClick={this.onConfirm}
-                  data-test={this.props.opTarget}
-                >
-                  {t(this.props.opTarget[0]?.toUpperCase() + this.props.opTarget?.substring(1))}
-                </Button>,
-                <Button key="cancel" variant={ButtonVariant.secondary} onClick={this.props.onClose}>
-                  {t('Cancel')}
-                </Button>
-              ]
-        }
       >
+        <ModalHeader title={this.props.title} />
+        <ModalBody>
         <Toolbar>
           <ToolbarGroup
             className={kialiStyle({
@@ -283,6 +269,26 @@ export class IstioConfigPreview extends React.Component<Props, State> {
             {t('User does not have enough permission for this action.')}
           </div>
         )}
+        </ModalBody>
+        <ModalFooter>
+          {this.props.actions
+            ? this.props.actions
+            : [
+                <Button
+                  key={this.props.opTarget}
+                  variant={this.props.opTarget === 'delete' ? 'danger' : 'primary'}
+                  isDisabled={this.props.disableAction}
+                  onClick={this.onConfirm}
+                  data-test={this.props.opTarget}
+                >
+                  {t(this.props.opTarget[0]?.toUpperCase() + this.props.opTarget?.substring(1))}
+                </Button>,
+                <Button key="cancel" variant={ButtonVariant.secondary} onClick={this.props.onClose}>
+                  {t('Cancel')}
+                </Button>
+              ]
+          }
+        </ModalFooter>
       </Modal>
     );
   }

@@ -6,8 +6,7 @@ import {
   ButtonVariant,
   EmptyState,
   EmptyStateBody,
-  EmptyStateVariant,
-  EmptyStateHeader
+  EmptyStateVariant
 } from '@patternfly/react-core';
 import { SortByDirection, IRow, IRowData, IAction, TableVariant, ISortBy, OnSort } from '@patternfly/react-table';
 import { compareNullable } from 'components/FilterList/FilterHelper';
@@ -65,16 +64,16 @@ interface SortableCompareTh<T> extends SortableTh {
 }
 
 const dangerErrorStyle = kialiStyle({
-  borderLeft: '3px solid var(--pf-v5-global--danger-color--100)'
+  borderLeft: '3px solid var(--pf-t--global--color--status--danger--default)'
 });
 
 const selectedErrorStyle = kialiStyle({
-  borderRight: '3px solid var(--pf-v5-global--info-color--100)',
-  borderLeft: '3px solid var(--pf-v5-global--danger-color--100)'
+  borderRight: '3px solid var(--pf-t--global--color--status--info--default)',
+  borderLeft: '3px solid var(--pf-t--global--color--status--danger--default)'
 });
 
 const selectedStyle = kialiStyle({
-  borderRight: '3px solid var(--pf-v5-global--info-color--100)'
+  borderRight: '3px solid var(--pf-t--global--color--status--info--default)'
 });
 
 const tableStyle = kialiStyle({
@@ -113,14 +112,14 @@ const getClassName = (
 ): string | undefined => {
   const highlight = operationName.toLowerCase().includes(item);
 
-  const blueColor = darkTheme ? 'var(--pf-v5-global--palette--blue-600)' : 'var(--pf-v5-global--palette--blue-50)';
+  const blueColor = darkTheme ? 'var(--pf-t--color--blue--80)' : 'var(--pf-t--color--blue--10)';
   const highlightStyle = kialiStyle({
     background: blueColor
   });
 
   const highlightErrorStyle = kialiStyle({
     background: blueColor,
-    borderLeft: '3px solid var(--pf-v5-global--danger-color--100)'
+    borderLeft: '3px solid var(--pf-t--global--color--status--danger--default)'
   });
   return isSpan
     ? isError
@@ -186,8 +185,7 @@ class SpanTableComponent extends React.Component<Props, State> {
       this.setState({ sortIndex: index, sortDirection: sortDirection });
 
     const noSpans: React.ReactNode = (
-      <EmptyState variant={EmptyStateVariant.full}>
-        <EmptyStateHeader titleText="No spans found" headingLevel="h5" />
+      <EmptyState variant={EmptyStateVariant.full} titleText="No spans found" headingLevel="h5">
         <EmptyStateBody>No spans match the current filters</EmptyStateBody>
       </EmptyState>
     );

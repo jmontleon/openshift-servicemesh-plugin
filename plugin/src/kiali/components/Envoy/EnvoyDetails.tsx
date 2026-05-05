@@ -7,7 +7,7 @@ import { Workload } from 'types/Workload';
 import { EnvoyProxyDump, Pod } from 'types/IstioObjects';
 import * as API from '../../services/Api';
 import * as AlertUtils from '../../utils/AlertUtils';
-import { Button, ButtonVariant, Card, CardBody, Tab, Tabs, Tooltip, TooltipPosition } from '@patternfly/react-core';
+import { Button, ButtonVariant, Card, CardBody, Tab, TabProps, Tabs, Tooltip, TooltipPosition } from '@patternfly/react-core';
 import { SummaryTableBuilder } from './tables/BaseTable';
 import { Namespace } from 'types/Namespace';
 import { kialiStyle } from 'styles/StyleUtils';
@@ -130,7 +130,7 @@ class EnvoyDetailsComponent extends React.Component<EnvoyDetailsProps, EnvoyDeta
     }
   }
 
-  envoyHandleTabClick = (_event: React.MouseEvent, tabIndex: string | number): void => {
+  envoyHandleTabClick = (_event: React.MouseEvent, tabIndex: TabProps['eventKey']): void => {
     const resourceIdx: number = +tabIndex;
     const targetResource: string = resources[resourceIdx];
 

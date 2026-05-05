@@ -34,11 +34,9 @@ const iconStyle = kialiStyle({
 });
 
 const ExternalLink = ({ href, name }: { href: string; name: string }): React.ReactElement => (
-  <NavItem isActive={false} key={name}>
-    <a className={externalLinkStyle} href={href} target="_blank" rel="noopener noreferrer">
-      {name} <KialiIcon.ExternalLink className={iconStyle} />
-    </a>
-  </NavItem>
+  <a className={externalLinkStyle} href={href} target="_blank" rel="noopener noreferrer">
+    {name} <KialiIcon.ExternalLink className={iconStyle} />
+  </a>
 );
 
 type MenuProps = {
@@ -120,7 +118,11 @@ export const Menu: React.FC<MenuProps> = (props: MenuProps) => {
         if (item.id === 'tracing') {
           if (baseTracingUrl) {
             const tracingUrlWithParams = buildTracingUrlWithParams(baseTracingUrl);
-            return <ExternalLink key={item.to} href={tracingUrlWithParams} name={t(title)} />;
+            return (
+              <NavItem isActive={false} key={item.to}>
+                <ExternalLink href={tracingUrlWithParams} name={t(title)} />
+              </NavItem>
+            );
           }
           return null;
         }
@@ -136,7 +138,7 @@ export const Menu: React.FC<MenuProps> = (props: MenuProps) => {
   };
 
   return (
-    <Nav aria-label="Nav" theme="dark">
+    <Nav aria-label="Nav">
       <NavList className={navListStyle}>{renderMenuItems()}</NavList>
     </Nav>
   );

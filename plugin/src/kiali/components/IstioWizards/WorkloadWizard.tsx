@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { WIZARD_TITLES, WorkloadWizardProps, WorkloadWizardState } from './WizardActions';
-import { Button, ButtonVariant, Modal } from '@patternfly/react-core';
+import { Button, ButtonVariant, Modal, ModalBody, ModalFooter, ModalHeader } from '@patternfly/react-core';
 import { t } from 'utils/I18nUtils';
 
 // NOTE: This class is not used but I will keep it in the repo as skeleton as we'll add again WorkloadWizards for other
@@ -45,11 +45,15 @@ export class WorkloadWizard extends React.Component<WorkloadWizardProps, Workloa
       <>
         <Modal
           width={'75%'}
-          title={this.props.type.length > 0 ? WIZARD_TITLES[this.props.type] : ''}
           aria-label="workload wizard"
           isOpen={this.state.showWizard}
           onClose={() => this.onClose(false)}
-          actions={[
+        >
+          <ModalHeader title={this.props.type.length > 0 ? WIZARD_TITLES[this.props.type] : ''} />
+          <ModalBody>
+            <>Workload Wizard Skeleton</>
+          </ModalBody>
+          <ModalFooter>
             <Button
               isDisabled={!this.isValid(this.state)}
               key="confirm"
@@ -57,13 +61,11 @@ export class WorkloadWizard extends React.Component<WorkloadWizardProps, Workloa
               onClick={this.onCreateUpdate}
             >
               {t('Create')}
-            </Button>,
+            </Button>
             <Button key="cancel" variant={ButtonVariant.secondary} onClick={() => this.onClose(false)}>
                 {t('Cancel')}
             </Button>
-          ]}
-        >
-          <>Workload Wizard Skeleton</>
+          </ModalFooter>
         </Modal>
       </>
     );

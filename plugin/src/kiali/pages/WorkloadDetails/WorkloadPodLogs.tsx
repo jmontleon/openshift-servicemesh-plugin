@@ -20,6 +20,9 @@ import {
   MenuToggle,
   MenuToggleElement,
   Modal,
+  ModalBody,
+  ModalFooter,
+  ModalHeader,
   Tab,
   TextInput,
   Toolbar,
@@ -863,7 +866,7 @@ export class WorkloadPodLogsComponent extends React.Component<WorkloadPodLogsPro
     });
 
     const dropdownGroupLabel = (
-      <h1 className="pf-v5-c-menu__group-title">
+      <h1 className="pf-v6-c-menu__group-title">
         Set Proxy Log Level
         <Tooltip
           position={TooltipPosition.right}
@@ -1054,14 +1057,45 @@ export class WorkloadPodLogsComponent extends React.Component<WorkloadPodLogsPro
         data-test="json-modal"
         className={modalStyle}
         disableFocusTrap={true}
-        title={t('JSON Log Entry')}
         isOpen={this.state.isJSONModalOpen}
         onClose={this.closeJSONModal}
-        actions={[
+      >
+        <ModalHeader title={t('JSON Log Entry')} />
+        <ModalBody>
+          {this.state.showCopyMessage && (
+            <Alert
+              style={{ marginBottom: '20px' }}
+              title={t('The JSON Log entry has been copied to your clipboard.')}
+              variant={AlertVariant.success}
+              isInline={true}
+              actionClose={
+                <AlertActionCloseButton onClose={() => this.setState({ showCopyMessage: !this.state.showCopyMessage })} />
+              }
+            />
+          )}
+          <p className={previewLogLineStyle}>{this.state.jsonModalContent}</p>
+          <div style={{ height: 'calc(100% - 120px)' }}>
+            <ParameterizedTabs
+              id="json-log-details-tabs"
+              className={classes(basicTabStyle, tabStyle)}
+              onSelect={tabValue => {
+                this.setState({ currentTab: tabValue });
+              }}
+              tabMap={tabIndex}
+              defaultTab={defaultTab}
+              activeTab={this.state.currentTab}
+              mountOnEnter={true}
+              unmountOnExit={true}
+            >
+              {this.renderTabs()}
+            </ParameterizedTabs>
+          </div>
+        </ModalBody>
+        <ModalFooter>
           <Button key="close" onClick={this.closeJSONModal}>
             {t('Close')}
-          </Button>,
-          this.state.jsonModalContent && (
+          </Button>
+          {this.state.jsonModalContent && (
             <CopyToClipboard
               key="copy"
               onCopy={() => this.setState({ showCopyMessage: !this.state.showCopyMessage })}
@@ -1069,40 +1103,11 @@ export class WorkloadPodLogsComponent extends React.Component<WorkloadPodLogsPro
             >
               <Button variant={ButtonVariant.secondary}>{t('Copy')}</Button>
             </CopyToClipboard>
-          ),
+          )}
           <Button key="download" variant={ButtonVariant.secondary} onClick={this.downloadFile}>
             {t('Download')}
           </Button>
-        ]}
-      >
-        {this.state.showCopyMessage && (
-          <Alert
-            style={{ marginBottom: '20px' }}
-            title={t('The JSON Log entry has been copied to your clipboard.')}
-            variant={AlertVariant.success}
-            isInline={true}
-            actionClose={
-              <AlertActionCloseButton onClose={() => this.setState({ showCopyMessage: !this.state.showCopyMessage })} />
-            }
-          />
-        )}
-        <p className={previewLogLineStyle}>{this.state.jsonModalContent}</p>
-        <div style={{ height: 'calc(100% - 120px)' }}>
-          <ParameterizedTabs
-            id="json-log-details-tabs"
-            className={classes(basicTabStyle, tabStyle)}
-            onSelect={tabValue => {
-              this.setState({ currentTab: tabValue });
-            }}
-            tabMap={tabIndex}
-            defaultTab={defaultTab}
-            activeTab={this.state.currentTab}
-            mountOnEnter={true}
-            unmountOnExit={true}
-          >
-            {this.renderTabs()}
-          </ParameterizedTabs>
-        </div>
+        </ModalFooter>
       </Modal>
     );
   };

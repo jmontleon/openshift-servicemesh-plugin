@@ -8,8 +8,8 @@ export const healthIndicatorStyle = kialiStyle({
       textAlign: 'left'
     },
 
-    '& .pf-v5-c-content ul': {
-      marginBottom: 'var(--pf-v5-c-content--ul--MarginTop)',
+    '& ul': {
+      marginBottom: '1rem',
       marginTop: 0,
       color: PFColors.Color100
     }

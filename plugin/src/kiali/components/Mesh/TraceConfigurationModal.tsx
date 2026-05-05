@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { TracingCheck, TracingInfo } from '../../types/TracingInfo';
-import { Button, Modal, ModalVariant, Tab, TabAction } from '@patternfly/react-core';
+import { Button, Modal, ModalBody, ModalFooter, ModalHeader, ModalVariant, Tab, TabAction } from '@patternfly/react-core';
 import { useKialiTranslation } from '../../utils/I18nUtils';
 import { ExternalServiceInfo, TempoUrlFormat } from '../../types/StatusState';
 import { isParentKiosk } from '../Kiosk/KioskActions';
@@ -164,13 +164,9 @@ export const TraceConfigurationModalComp: React.FC<TraceConfigurationModalProps>
       isOpen={props.isOpen}
       onClose={props.onClose}
       data-test="modal-configuration-tester"
-      title={t('Configuration Tester')}
-      actions={[
-        <Button key="close" onClick={props.onClose}>
-          {t('Close')}
-        </Button>
-      ]}
     >
+      <ModalHeader title={t('Configuration Tester')} />
+      <ModalBody>
       <ParameterizedTabs
         id="basic-tabs"
         onSelect={tabValue => {
@@ -184,6 +180,12 @@ export const TraceConfigurationModalComp: React.FC<TraceConfigurationModalProps>
       >
         {renderTabs()}
       </ParameterizedTabs>
+      </ModalBody>
+      <ModalFooter>
+        <Button key="close" onClick={props.onClose}>
+          {t('Close')}
+        </Button>
+      </ModalFooter>
     </Modal>
   );
 };

@@ -74,7 +74,6 @@ export const LanguageSwitchComponent: React.FC<LanguageSwitchProps> = ({ languag
           </MenuToggle>
         )}
         isOpen={isDropdownOpen}
-        popperProps={{ position: 'center' }}
         onOpenChange={(isOpen: boolean) => setIsDropdownOpen(isOpen)}
         onSelect={onDropdownSelect}
       >

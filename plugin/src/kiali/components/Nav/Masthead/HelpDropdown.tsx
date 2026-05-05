@@ -88,7 +88,7 @@ const HelpDropdownComponent: React.FC<HelpDropdownProps> = (props: HelpDropdownP
           </MenuToggle>
         )}
         isOpen={isDropdownOpen}
-        popperProps={{ position: 'right' }}
+        popperProps={{ placement: 'bottom-end' }}
         onOpenChange={(isOpen: boolean) => setIsDropdownOpen(isOpen)}
         onSelect={onDropdownSelect}
       >

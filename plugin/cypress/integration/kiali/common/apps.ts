@@ -49,7 +49,7 @@ Then('user sees trace details', () => {
 
 When('user selects a trace', () => {
   const tracingDotQuery =
-    '[style*="fill: var(--pf-v5-global--palette--blue-200)"][style*="stroke: var(--pf-v5-chart-scatter--data--stroke--Color, transparent)"]';
+    '[style*="fill: var(--pf-t--color--blue--30)"][style*="stroke: var(--pf-v6-chart-scatter--data--stroke--Color, transparent)"]';
 
   cy.getBySel('tracing-scatterplot').find(`path${tracingDotQuery}`).first().should('be.visible').click({ force: true });
 });

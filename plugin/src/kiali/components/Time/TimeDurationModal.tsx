@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Button, Form, FormGroup, Modal, ModalVariant, TooltipPosition } from '@patternfly/react-core';
+import { Button, Form, FormGroup, Modal, ModalBody, ModalFooter, ModalVariant, TooltipPosition } from '@patternfly/react-core';
 import { UserSettingsActions } from '../../actions/UserSettingsActions';
 import { HistoryManager, location, URLParam } from '../../app/History';
 import { useKialiDispatch, useKialiSelector } from '../../hooks/redux';
@@ -151,49 +151,49 @@ export const TimeDurationModal: React.FC<Props> = (props: Props) => {
       variant={ModalVariant.small}
       width={700}
       isOpen={props.isOpen}
-      showClose={false}
-      actions={[
+      position="top"
+    >
+      <ModalBody>
+        <Form isHorizontal={true}>
+          {props.customDuration ? (
+            <FormGroup label={t('Time range')} fieldId="drform-time-range">
+              <div style={{ display: 'flex' }}>
+                <TimeRangeComp timeRange={timeRange} setTimeRange={handleSetTimeRange} tooltip={t('Time range')} />
+              </div>
+            </FormGroup>
+          ) : (
+            <FormGroup label={t('Duration')} fieldId="drform-duration">
+              <DurationDropdownComponent
+                id={'drform-duration-dd'}
+                disabled={false}
+                duration={duration}
+                prefix={t('Last')}
+                setDuration={handleSetDuration}
+                tooltip={t('Traffic metrics per refresh')}
+                tooltipPosition={TooltipPosition.top}
+              />
+            </FormGroup>
+          )}
+
+          <FormGroup label={t('Refresh interval')} fieldId="drform-refresh">
+            <RefreshComponent
+              id="drform-metrics-refresh"
+              hideRefreshButton={true}
+              language={i18n.language}
+              refreshInterval={refreshInterval}
+              setRefreshInterval={handleSetRefreshInterval}
+            />
+          </FormGroup>
+        </Form>
+      </ModalBody>
+      <ModalFooter>
         <Button key="confirm" variant="primary" onClick={handleConfirm}>
           {t('Confirm')}
-        </Button>,
-
+        </Button>
         <Button key="cancel" variant="link" onClick={handleCancel}>
           {t('Cancel')}
         </Button>
-      ]}
-      position="top"
-    >
-      <Form isHorizontal={true}>
-        {props.customDuration ? (
-          <FormGroup label={t('Time range')} fieldId="drform-time-range">
-            <div style={{ display: 'flex' }}>
-              <TimeRangeComp timeRange={timeRange} setTimeRange={handleSetTimeRange} tooltip={t('Time range')} />
-            </div>
-          </FormGroup>
-        ) : (
-          <FormGroup label={t('Duration')} fieldId="drform-duration">
-            <DurationDropdownComponent
-              id={'drform-duration-dd'}
-              disabled={false}
-              duration={duration}
-              prefix={t('Last')}
-              setDuration={handleSetDuration}
-              tooltip={t('Traffic metrics per refresh')}
-              tooltipPosition={TooltipPosition.top}
-            />
-          </FormGroup>
-        )}
-
-        <FormGroup label={t('Refresh interval')} fieldId="drform-refresh">
-          <RefreshComponent
-            id="drform-metrics-refresh"
-            hideRefreshButton={true}
-            language={i18n.language}
-            refreshInterval={refreshInterval}
-            setRefreshInterval={handleSetRefreshInterval}
-          />
-        </FormGroup>
-      </Form>
+      </ModalFooter>
     </Modal>
   );
 };

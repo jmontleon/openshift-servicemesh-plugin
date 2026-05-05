@@ -10,6 +10,7 @@ import {
   MastheadMain,
   MastheadBrand,
   MastheadContent,
+  MastheadLogo,
   PageSection,
   PageSidebar,
   PageToggleButton,
@@ -100,8 +101,10 @@ export const NavigationComponent: React.FC<NavigationProps> = (props: Navigation
         </PageToggleButton>
       </MastheadToggle>
       <MastheadMain>
-        <MastheadBrand component={props => <Link {...props} to="#" />}>
-          <img src={kialiLogoDark} alt="Kiali Logo" />
+        <MastheadBrand>
+          <MastheadLogo component={props => <Link {...props} to="#" />}>
+            <img src={kialiLogoDark} alt="Kiali Logo" />
+          </MastheadLogo>
         </MastheadBrand>
       </MastheadMain>
       <MastheadContent style={{ height: MASTHEAD_HEIGHT }}>
@@ -125,7 +128,7 @@ export const NavigationComponent: React.FC<NavigationProps> = (props: Navigation
       onPageResize={(_, { mobileView, windowSize }) => onPageResize({ mobileView, windowSize })}
     >
       <MessageCenter drawerTitle="Message Center" />
-      <PageSection className={flexBoxColumnStyle} variant="light">
+      <PageSection className={flexBoxColumnStyle} variant="secondary">
         <RenderPage isGraph={isGraph()} />
       </PageSection>
     </Page>

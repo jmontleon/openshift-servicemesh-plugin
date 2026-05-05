@@ -15,8 +15,8 @@ import {
   MenuToggle,
   TextInputGroup,
   TextInputGroupMain,
-  ToolbarChipGroup,
-  ToolbarChip
+  ToolbarLabelGroup,
+  ToolbarLabel
 } from '@patternfly/react-core';
 import {
   ActiveFilter,
@@ -46,7 +46,7 @@ import { classes } from 'typestyle';
 
 const toolbarStyle = kialiStyle({
   padding: 0,
-  rowGap: 'var(--pf-v5-global--spacer--md)',
+  rowGap: 'var(--pf-t--global--spacer--300)',
   $nest: {
     '& > .pf-v5-c-toolbar__content': {
       paddingLeft: 0
@@ -55,7 +55,7 @@ const toolbarStyle = kialiStyle({
 });
 
 const bottomPadding = kialiStyle({
-  paddingBottom: 'var(--pf-v5-global--spacer--md)'
+  paddingBottom: 'var(--pf-t--global--spacer--300)'
 });
 
 const formSelectStyle = kialiStyle({
@@ -402,7 +402,7 @@ export class StatefulFiltersComponent extends React.Component<StatefulFiltersPro
     return this.state.activeFilters.filters.some(active => value === active.value && type.category === active.category);
   };
 
-  removeFilter = (category: string | ToolbarChipGroup, value: string | ToolbarChip): void => {
+  removeFilter = (category: string | ToolbarLabelGroup, value: string | ToolbarLabel): void => {
     const filterCategory = typeof category === 'string' ? category : category.key;
     const filterValue = typeof value === 'string' ? value : value.key;
 

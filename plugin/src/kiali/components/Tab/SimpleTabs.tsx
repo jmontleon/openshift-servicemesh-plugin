@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Tabs } from '@patternfly/react-core';
+import { Tabs, TabProps } from '@patternfly/react-core';
 
 // SimpleTabs is just a Tabs wrapper than encapsulates the activeTab state handling such
 // that parent components of Tabs don't have to re-render on a tab change.
@@ -18,7 +18,7 @@ type SimpleTabsProps = {
 export const SimpleTabs: React.FC<SimpleTabsProps> = (props: SimpleTabsProps) => {
   const [activeTab, setActiveTab] = React.useState<string | number>(props.defaultTab);
 
-  const handleTabSelect = (_event: React.MouseEvent, index: string | number): void => {
+  const handleTabSelect = (_event: React.MouseEvent, index: TabProps['eventKey']): void => {
     setActiveTab(index);
   };
 

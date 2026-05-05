@@ -4,7 +4,7 @@ export const globalStyle = kialiStyle({
   height: '100%',
   margin: 0,
   padding: 0,
-  fontFamily: 'var(--pf-v5-global--FontFamily--text)',
+  fontFamily: 'var(--pf-t--global--font--family--body)',
   fontSize: '14px',
   overflow: 'hidden',
   $nest: {
@@ -80,10 +80,10 @@ export const globalStyle = kialiStyle({
      * Light color for links in tooltips
      */
     '& .pf-v5-c-tooltip a': {
-      color: 'var(--pf-v5-global--link--Color--light)',
+      color: 'var(--pf-t--global--text--color--link--default--light)',
       $nest: {
         '&:hover': {
-          color: 'var(--pf-v5-global--link--Color--light--hover)'
+          color: 'var(--pf-t--global--text--color--link--default--light--hover)'
         }
       }
     },

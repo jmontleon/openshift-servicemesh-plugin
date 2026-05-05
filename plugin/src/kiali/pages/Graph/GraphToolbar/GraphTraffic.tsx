@@ -4,6 +4,7 @@ import {
   Tooltip,
   TooltipPosition,
   Dropdown,
+  DropdownItem,
   DropdownList,
   MenuToggleElement,
   MenuToggle
@@ -488,7 +489,9 @@ const GraphTrafficComponent: React.FC<GraphTrafficProps> = (props: GraphTrafficP
       isOpen={isOpen}
       onOpenChange={(isOpen: boolean) => onToggle(isOpen)}
     >
-      <DropdownList>{getPopoverContent()}</DropdownList>
+      <DropdownList>
+        <DropdownItem component="div">{getPopoverContent()}</DropdownItem>
+      </DropdownList>
     </Dropdown>
   );
 };

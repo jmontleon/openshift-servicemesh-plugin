@@ -3,7 +3,7 @@ import { Workload } from 'types/Workload';
 import { Pod, ZtunnelConfigDump } from 'types/IstioObjects';
 import * as API from '../../services/Api';
 import * as AlertUtils from '../../utils/AlertUtils';
-import { Card, CardBody, Tab, Tabs, TooltipPosition } from '@patternfly/react-core';
+import { Card, CardBody, Tab, TabProps, Tabs, TooltipPosition } from '@patternfly/react-core';
 import { activeTab } from '../../components/Tab/Tabs';
 import { location, router } from '../../app/History';
 import {
@@ -141,7 +141,7 @@ export const ZtunnelConfig: React.FC<ZtunnelConfigProps> = (props: ZtunnelConfig
     props.workload.cluster
   ]);
 
-  const ztunnelHandleTabClick = (_event: React.MouseEvent, tabIndex: string | number): void => {
+  const ztunnelHandleTabClick = (_event: React.MouseEvent, tabIndex: TabProps['eventKey']): void => {
     const resourceIdx: number = +tabIndex;
     const targetResource: string = resources[resourceIdx];
 

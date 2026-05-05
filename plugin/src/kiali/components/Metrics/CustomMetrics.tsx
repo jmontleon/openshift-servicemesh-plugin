@@ -7,8 +7,7 @@ import {
   Card,
   CardBody,
   EmptyState,
-  EmptyStateVariant,
-  EmptyStateHeader
+  EmptyStateVariant
 } from '@patternfly/react-core';
 import { kialiStyle } from 'styles/StyleUtils';
 import { router, HistoryManager, URLParam, location } from '../../app/History';
@@ -247,8 +246,7 @@ class CustomMetricsComponent extends React.Component<Props, MetricsState> {
   renderFetchMetrics = (title: string): React.ReactNode => {
     return (
       <div className={emptyStyle}>
-        <EmptyState variant={EmptyStateVariant.sm}>
-          <EmptyStateHeader titleText={<>{title}</>} headingLevel="h5" />
+        <EmptyState variant={EmptyStateVariant.sm} titleText={<>{title}</>} headingLevel="h5">
         </EmptyState>
       </div>
     );

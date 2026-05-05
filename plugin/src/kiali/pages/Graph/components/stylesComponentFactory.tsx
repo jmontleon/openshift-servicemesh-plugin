@@ -32,7 +32,7 @@ import { ServiceWizardActionsDropdownGroup } from 'components/IstioWizards/Servi
 import { WizardAction, WizardMode } from 'components/IstioWizards/WizardActions';
 import { ServiceDetailsInfo } from 'types/ServiceInfo';
 import { kialiStyle } from 'styles/StyleUtils';
-import { DropdownGroup, DropdownItem } from '@patternfly/react-core';
+import { DropdownGroup, DropdownItem, DropdownList } from '@patternfly/react-core';
 import { getGVKTypeString } from '../../../utils/IstioConfigUtils';
 import { gvkType } from '../../../types/IstioConfigList';
 
@@ -99,7 +99,7 @@ const nodeContextMenu = (node: GraphElement, kiosk: string): Promise<React.React
   });
 
   if (menuOptions.length > 0) {
-    items.push(<DropdownGroup key={`group_show`} label={'Show'} children={menuOptions} />);
+    items.push(<DropdownGroup key={`group_show`} label={'Show'}><DropdownList>{menuOptions}</DropdownList></DropdownGroup>);
   }
 
   if (nodeData.nodeType !== NodeType.SERVICE) {
