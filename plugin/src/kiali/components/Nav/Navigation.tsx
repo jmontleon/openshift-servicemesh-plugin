@@ -123,7 +123,7 @@ export const NavigationComponent: React.FC<NavigationProps> = (props: Navigation
 
   return (
     <Page
-      header={masthead}
+      masthead={masthead}
       sidebar={Sidebar}
       onPageResize={(_, { mobileView, windowSize }) => onPageResize({ mobileView, windowSize })}
     >

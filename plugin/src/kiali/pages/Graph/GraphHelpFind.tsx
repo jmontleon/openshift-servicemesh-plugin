@@ -1,6 +1,6 @@
 import * as React from 'react';
 import ReactResizeDetector from 'react-resize-detector';
-import { Tab, Tabs, TabProps, Popover, PopoverPosition } from '@patternfly/react-core';
+import { Tab, Popover, PopoverPosition } from '@patternfly/react-core';
 import { ThProps, IRow } from '@patternfly/react-table';
 import { kialiStyle } from 'styles/StyleUtils';
 import { SimpleTabs } from 'components/Tab/SimpleTabs';

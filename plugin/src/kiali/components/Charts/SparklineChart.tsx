@@ -9,7 +9,7 @@ import {
   ChartLabel,
   ChartLegend,
   ChartThreshold
-} from '@patternfly/react-charts/victory';
+} from '@patternfly/react-charts';
 
 import { VCLines, VCDataPoint, RichDataPoint } from 'types/VictoryChartInfo';
 import { CustomTooltip } from './CustomTooltip';

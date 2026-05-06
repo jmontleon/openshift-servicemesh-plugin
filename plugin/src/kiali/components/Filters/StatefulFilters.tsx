@@ -643,13 +643,13 @@ export class StatefulFiltersComponent extends React.Component<StatefulFiltersPro
               {this.state.filterTypes.map((ft, i) => (
                 <ToolbarFilter
                   key={`toolbar_filter-${ft.category}`}
-                  chips={activeFilters.filters
+                  labels={activeFilters.filters
                     .filter(af => af.category === ft.category)
                     .map(af => ({
                       key: af.value,
                       node: t(af.value)
                     }))}
-                  deleteChip={this.removeFilter}
+                  deleteLabel={this.removeFilter}
                   categoryName={{ key: ft.category, name: t(ft.category) }}
                 >
                   {i === 0 && (

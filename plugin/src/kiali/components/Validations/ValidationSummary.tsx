@@ -83,9 +83,9 @@ export const ValidationSummary: React.FC<ValidationSummaryProps> = (props: Valid
         </div>
 
         {props.reconciledCondition?.status && (
-          <Text style={{ textAlign: 'left', textEmphasis: 'strong' }} component={ContentVariants.p}>
+          <Content style={{ textAlign: 'left', textEmphasis: 'strong' }} component={ContentVariants.p}>
             The object is reconciled
-          </Text>
+          </Content>
         )}
       </>
     );
@@ -104,9 +104,9 @@ export const ValidationSummary: React.FC<ValidationSummaryProps> = (props: Valid
     // Tooltip Content for service validation
     tooltipContent = (
       <>
-        <Text style={{ textAlign: 'left', textEmphasis: 'strong' }} component={ContentVariants.p}>
+        <Content style={{ textAlign: 'left', textEmphasis: 'strong' }} component={ContentVariants.p}>
           Service validation result
-        </Text>
+        </Content>
 
         <div className={tooltipListStyle}>
           {severitySummary().map(cat => (

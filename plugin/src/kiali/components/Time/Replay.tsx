@@ -487,7 +487,7 @@ class ReplayComponent extends React.PureComponent<ReplayProps, ReplayState> {
           key={`speed-${replaySpeed.text}`}
           className={speedStyle}
           variant={ButtonVariant.plain}
-          isActive={isActive}
+          isClicked={isActive}
           onClick={() => this.setReplaySpeed(replaySpeed.speed)}
         >
           <Content className={isActive ? speedActiveStyle : undefined}>{replaySpeed.text}</Content>

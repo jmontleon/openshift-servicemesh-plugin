@@ -10,7 +10,7 @@ import {
   ChartLegend,
   ChartLine,
   createContainer
-} from '@patternfly/react-charts/victory';
+} from '@patternfly/react-charts';
 import { VictoryPortal } from 'victory-core';
 import { VictoryBoxPlot } from 'victory-box-plot';
 import { format as d3Format } from 'd3-format';

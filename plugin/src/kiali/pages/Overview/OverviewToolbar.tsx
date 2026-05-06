@@ -260,7 +260,7 @@ class OverviewToolbarComponent extends React.Component<Props, State> {
           <Button
             onClick={() => this.props.setDisplayMode(OverviewDisplayMode.EXPAND)}
             variant={ButtonVariant.plain}
-            isActive={this.props.displayMode === OverviewDisplayMode.EXPAND}
+            isClicked={this.props.displayMode === OverviewDisplayMode.EXPAND}
             style={{ padding: '0 0.25rem 0 1rem' }}
             data-test={`overview-type-${OverviewDisplayMode[OverviewDisplayMode.EXPAND]}`}
           >
@@ -272,7 +272,7 @@ class OverviewToolbarComponent extends React.Component<Props, State> {
           <Button
             onClick={() => this.props.setDisplayMode(OverviewDisplayMode.COMPACT)}
             variant={ButtonVariant.plain}
-            isActive={this.props.displayMode === OverviewDisplayMode.COMPACT}
+            isClicked={this.props.displayMode === OverviewDisplayMode.COMPACT}
             style={{ padding: '0 0.25rem 0 0.25rem' }}
             data-test={`overview-type-${OverviewDisplayMode[OverviewDisplayMode.COMPACT]}`}
           >
@@ -284,7 +284,7 @@ class OverviewToolbarComponent extends React.Component<Props, State> {
           <Button
             onClick={() => this.props.setDisplayMode(OverviewDisplayMode.LIST)}
             variant={ButtonVariant.plain}
-            isActive={this.props.displayMode === OverviewDisplayMode.LIST}
+            isClicked={this.props.displayMode === OverviewDisplayMode.LIST}
             style={{ padding: '0 0.25rem 0 0.25rem' }}
             data-test={`overview-type-${OverviewDisplayMode[OverviewDisplayMode.LIST]}`}
           >
