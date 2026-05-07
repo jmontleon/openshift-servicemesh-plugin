@@ -1,4 +1,4 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
 
 exports[`ThemeSwitch renders dark theme 1`] = `
 <Tooltip
@@ -11,21 +11,21 @@ exports[`ThemeSwitch renders dark theme 1`] = `
 >
   <div>
     <Button
-      className="kiali_f1gb5m5k kiali_fj999mp"
+      className="kiali_frdz84v kiali_fj999mp"
       onClick={[Function]}
       variant="secondary"
     >
       <Sun
-        className="kiali_fb78s7m"
+        className="kiali_f19fl5hx"
       />
     </Button>
     <Button
-      className="kiali_f1gb5m5k kiali_fxx0nx6"
+      className="kiali_frdz84v kiali_fxx0nx6"
       onClick={[Function]}
       variant="primary"
     >
       <Moon
-        className="kiali_fb78s7m"
+        className="kiali_f19fl5hx"
       />
     </Button>
   </div>
@@ -43,21 +43,21 @@ exports[`ThemeSwitch renders light theme 1`] = `
 >
   <div>
     <Button
-      className="kiali_f1gb5m5k kiali_fj999mp"
+      className="kiali_frdz84v kiali_fj999mp"
       onClick={[Function]}
       variant="primary"
     >
       <Sun
-        className="kiali_fb78s7m"
+        className="kiali_f19fl5hx"
       />
     </Button>
     <Button
-      className="kiali_f1gb5m5k kiali_fxx0nx6"
+      className="kiali_frdz84v kiali_fxx0nx6"
       onClick={[Function]}
       variant="secondary"
     >
       <Moon
-        className="kiali_fb78s7m"
+        className="kiali_f19fl5hx"
       />
     </Button>
   </div>

@@ -1,4 +1,4 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
 
 exports[`#Badge render correctly with data should render badge 1`] = `
 <Label

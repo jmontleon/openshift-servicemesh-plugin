@@ -1,4 +1,4 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
 
 exports[`IstioComponentStatus renders error icon when core component is not found 1`] = `
 <Fragment>
@@ -9,13 +9,13 @@ exports[`IstioComponentStatus renders error icon when core component is not foun
   >
     <SplitItem
       style={
-        Object {
+        {
           "paddingLeft": "0.5rem",
         }
       }
     >
       <Icon
-        className="kiali_fi2mdky kiali_f1h37jb8"
+        className="kiali_fi2mdky kiali_f104c4bh"
       >
         <ExclamationCircleIcon />
       </Icon>
@@ -41,13 +41,13 @@ exports[`IstioComponentStatus renders error icon when core component is not runn
   >
     <SplitItem
       style={
-        Object {
+        {
           "paddingLeft": "0.5rem",
         }
       }
     >
       <Icon
-        className="kiali_fi2mdky kiali_f1h37jb8"
+        className="kiali_fi2mdky kiali_f104c4bh"
       >
         <ExclamationCircleIcon />
       </Icon>
@@ -73,13 +73,13 @@ exports[`IstioComponentStatus renders minus icon when addon component is not rea
   >
     <SplitItem
       style={
-        Object {
+        {
           "paddingLeft": "0.5rem",
         }
       }
     >
       <Icon
-        className="kiali_fi2mdky kiali_f1elceoh"
+        className="kiali_fi2mdky kiali_f1823p0o"
       >
         <MinusCircleIcon />
       </Icon>
@@ -105,13 +105,13 @@ exports[`IstioComponentStatus renders minus icon when core component is not read
   >
     <SplitItem
       style={
-        Object {
+        {
           "paddingLeft": "0.5rem",
         }
       }
     >
       <Icon
-        className="kiali_fi2mdky kiali_f1elceoh"
+        className="kiali_fi2mdky kiali_f1823p0o"
       >
         <MinusCircleIcon />
       </Icon>
@@ -137,13 +137,13 @@ exports[`IstioComponentStatus renders success icon when core component is runnin
   >
     <SplitItem
       style={
-        Object {
+        {
           "paddingLeft": "0.5rem",
         }
       }
     >
       <Icon
-        className="kiali_fi2mdky kiali_f1r5cf3w"
+        className="kiali_fi2mdky kiali_f1jms4md"
       >
         <CheckCircleIcon />
       </Icon>
@@ -169,13 +169,13 @@ exports[`IstioComponentStatus renders success icon when core component is runnin
   >
     <SplitItem
       style={
-        Object {
+        {
           "paddingLeft": "0.5rem",
         }
       }
     >
       <Icon
-        className="kiali_fi2mdky kiali_f1r5cf3w"
+        className="kiali_fi2mdky kiali_f1jms4md"
       >
         <CheckCircleIcon />
       </Icon>
@@ -201,13 +201,13 @@ exports[`IstioComponentStatus renders warning icon when core component is not fo
   >
     <SplitItem
       style={
-        Object {
+        {
           "paddingLeft": "0.5rem",
         }
       }
     >
       <Icon
-        className="kiali_fi2mdky kiali_frkkrth"
+        className="kiali_fi2mdky kiali_f16kwi98"
       >
         <ExclamationTriangleIcon />
       </Icon>
@@ -233,13 +233,13 @@ exports[`IstioComponentStatus renders warning icon when core component is not ru
   >
     <SplitItem
       style={
-        Object {
+        {
           "paddingLeft": "0.5rem",
         }
       }
     >
       <Icon
-        className="kiali_fi2mdky kiali_frkkrth"
+        className="kiali_fi2mdky kiali_f16kwi98"
       >
         <ExclamationTriangleIcon />
       </Icon>

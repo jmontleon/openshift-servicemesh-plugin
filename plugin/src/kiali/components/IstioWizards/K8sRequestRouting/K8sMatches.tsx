@@ -21,7 +21,7 @@ export class K8sMatches extends React.Component<Props> {
   render() {
     const matches: any[] = this.props.matches.map((match, index) => (
       <span key={match + '-' + index} data-test={match} className={remove}>
-        <Label variant="outline" onClose={() => this.props.onRemoveMatch(match)} isOverflowChip={true}>
+        <Label variant="outline" onClose={() => this.props.onRemoveMatch(match)}>
           {match}
         </Label>{' '}
       </span>

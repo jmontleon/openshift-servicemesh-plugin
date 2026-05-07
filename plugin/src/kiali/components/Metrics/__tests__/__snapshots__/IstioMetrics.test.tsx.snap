@@ -1,10 +1,10 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
 
 exports[`Inbound Metrics for a workload renders initial layout 1`] = `
 <ContextProvider
   value={
-    Object {
-      "store": Object {
+    {
+      "store": {
         "dispatch": [Function],
         "getState": [Function],
         "replaceReducer": [Function],
@@ -13,12 +13,12 @@ exports[`Inbound Metrics for a workload renders initial layout 1`] = `
       },
       "subscription": Subscription {
         "handleChangeWrapper": [Function],
-        "listeners": Object {
+        "listeners": {
           "notify": [Function],
         },
         "onStateChange": [Function],
         "parentSub": undefined,
-        "store": Object {
+        "store": {
           "dispatch": [Function],
           "getState": [Function],
           "replaceReducer": [Function],
@@ -46,8 +46,8 @@ exports[`Inbound Metrics for a workload renders initial layout 1`] = `
 exports[`Metrics for a service renders initial layout 1`] = `
 <ContextProvider
   value={
-    Object {
-      "store": Object {
+    {
+      "store": {
         "dispatch": [Function],
         "getState": [Function],
         "replaceReducer": [Function],
@@ -56,12 +56,12 @@ exports[`Metrics for a service renders initial layout 1`] = `
       },
       "subscription": Subscription {
         "handleChangeWrapper": [Function],
-        "listeners": Object {
+        "listeners": {
           "notify": [Function],
         },
         "onStateChange": [Function],
         "parentSub": undefined,
-        "store": Object {
+        "store": {
           "dispatch": [Function],
           "getState": [Function],
           "replaceReducer": [Function],

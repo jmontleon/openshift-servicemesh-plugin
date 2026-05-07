@@ -1,4 +1,4 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
 
 exports[`Language switch renders correctly 1`] = `
 <Tooltip
@@ -16,7 +16,7 @@ exports[`Language switch renders correctly 1`] = `
     onOpenChange={[Function]}
     onSelect={[Function]}
     popperProps={
-      Object {
+      {
         "position": "center",
       }
     }

@@ -482,7 +482,7 @@ class ReplayComponent extends React.PureComponent<ReplayProps, ReplayState> {
 
     return (
       <>
-        <Button icon={<Text className={isActive ? speedActiveStyle : undefined}>{replaySpeed.text}</Text>}
+        <Button icon={<Content className={isActive ? speedActiveStyle : undefined}>{replaySpeed.text}</Content>}
           data-test={`speed-${replaySpeed.text}`}
           key={`speed-${replaySpeed.text}`}
           className={speedStyle}

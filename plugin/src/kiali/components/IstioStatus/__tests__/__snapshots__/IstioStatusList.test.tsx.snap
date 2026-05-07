@@ -1,4 +1,4 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
 
 exports[`lists all the components grouped 1`] = `
 <List
@@ -8,7 +8,7 @@ exports[`lists all the components grouped 1`] = `
 >
   <IstioComponentStatus
     componentStatus={
-      Object {
+      {
         "cluster": "Kubernetes",
         "isCore": true,
         "name": "istiod",
@@ -19,7 +19,7 @@ exports[`lists all the components grouped 1`] = `
   />
   <IstioComponentStatus
     componentStatus={
-      Object {
+      {
         "cluster": "Kubernetes",
         "isCore": true,
         "name": "istio-egressgateway",
@@ -30,7 +30,7 @@ exports[`lists all the components grouped 1`] = `
   />
   <IstioComponentStatus
     componentStatus={
-      Object {
+      {
         "cluster": "Kubernetes",
         "isCore": false,
         "name": "grafana",
@@ -41,7 +41,7 @@ exports[`lists all the components grouped 1`] = `
   />
   <IstioComponentStatus
     componentStatus={
-      Object {
+      {
         "cluster": "Kubernetes",
         "isCore": false,
         "name": "prometheus",

@@ -21,7 +21,7 @@ export class K8sFilters extends React.Component<Props> {
   render() {
     const filters: any[] = this.props.filters.map((filter, index) => (
       <span key={filter + '-' + index} data-test={filter} className={remove}>
-        <Label variant="outline" onClose={() => this.props.onRemoveFilter(filter)} isOverflowChip={true}>
+        <Label variant="outline" onClose={() => this.props.onRemoveFilter(filter)}>
           {filter}
         </Label>{' '}
       </span>

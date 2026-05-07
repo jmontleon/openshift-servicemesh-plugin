@@ -1,22 +1,22 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
 
 exports[`ProxyStatusList when status is synced match the snapshot 1`] = `""`;
 
 exports[`ProxyStatusList when there are components without value match the snapshot 1`] = `
 <Stack>
   <StackItem
-    className="kiali_f1hhefje"
+    className="kiali_f1fwkap4"
   >
     Istio Proxy Status
   </StackItem>
   <StackItem
-    className="kiali_fbpk5b0"
+    className="kiali_fn15wf2"
     key="proxy-status-0"
   >
     CDS: -
   </StackItem>
   <StackItem
-    className="kiali_fbpk5b0"
+    className="kiali_fn15wf2"
     key="proxy-status-3"
   >
     RDS: -
@@ -27,18 +27,18 @@ exports[`ProxyStatusList when there are components without value match the snaps
 exports[`ProxyStatusList when there are unsyced components match the snapshot 1`] = `
 <Stack>
   <StackItem
-    className="kiali_f1hhefje"
+    className="kiali_f1fwkap4"
   >
     Istio Proxy Status
   </StackItem>
   <StackItem
-    className="kiali_fbpk5b0"
+    className="kiali_fn15wf2"
     key="proxy-status-0"
   >
     CDS: NOT_SENT
   </StackItem>
   <StackItem
-    className="kiali_fbpk5b0"
+    className="kiali_fn15wf2"
     key="proxy-status-3"
   >
     RDS: STALE

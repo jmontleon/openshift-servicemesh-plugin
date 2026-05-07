@@ -1,4 +1,4 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
 
 exports[`HealthDetails renders deployments failure 1`] = `
 <Fragment>
@@ -8,7 +8,7 @@ exports[`HealthDetails renders deployments failure 1`] = `
     Traffic Status (Last {{duration}}) {"duration":"1m"} 
     <ul
       style={
-        Object {
+        {
           "listStyleType": "none",
         }
       }
@@ -18,13 +18,13 @@ exports[`HealthDetails renders deployments failure 1`] = `
       >
         <span
           style={
-            Object {
+            {
               "marginRight": "0.5rem",
             }
           }
         >
           <Icon
-            className="icon-failure kiali_f1h37jb8"
+            className="icon-failure kiali_f104c4bh"
           >
             <ExclamationCircleIcon />
           </Icon>

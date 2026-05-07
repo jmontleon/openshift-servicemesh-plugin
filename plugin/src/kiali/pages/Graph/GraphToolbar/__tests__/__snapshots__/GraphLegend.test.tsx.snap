@@ -1,12 +1,12 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
 
 exports[`GraphLegend test should render correctly 1`] = `
 <div
-  className="kiali_f7z00y3"
+  className="kiali_fvmk7bl"
   data-test="graph-legend"
 >
   <div
-    className="kiali_fhl98cw"
+    className="kiali_fjtfyr4"
   >
     <span>
       Legend
@@ -15,12 +15,11 @@ exports[`GraphLegend test should render correctly 1`] = `
       content="Close Legend"
     >
       <Button
+        icon={<Close />}
         id="legend_close"
         onClick={[MockFunction]}
         variant="plain"
-      >
-        <Close />
-      </Button>
+      />
     </Tooltip>
   </div>
   <div

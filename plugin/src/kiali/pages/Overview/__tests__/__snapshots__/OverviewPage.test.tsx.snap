@@ -1,4 +1,4 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
 
 exports[`Overview page renders initial layout 1`] = `
 <Fragment>
@@ -10,18 +10,18 @@ exports[`Overview page renders initial layout 1`] = `
     setDisplayMode={[Function]}
     sort={[Function]}
     statefulFilterRef={
-      Object {
+      {
         "current": null,
       }
     }
   />
   <EmptyOverview
-    filteredNamespaces={Array []}
+    filteredNamespaces={[]}
     loaded={false}
     refreshInterval={10000}
   >
     <RenderComponentScroll
-      className="kiali_f10gijvm"
+      className="kiali_fa2tcyg"
     >
       <Grid />
     </RenderComponentScroll>

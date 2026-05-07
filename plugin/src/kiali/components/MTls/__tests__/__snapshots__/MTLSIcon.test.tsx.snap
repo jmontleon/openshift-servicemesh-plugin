@@ -1,9 +1,9 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
 
 exports[`when Icon is LOCK_FULL MTLSIcon renders properly 1`] = `
 <Provider
   store={
-    Object {
+    {
       "dispatch": [Function],
       "getState": [Function],
       "replaceReducer": [Function],
@@ -32,7 +32,7 @@ exports[`when Icon is LOCK_FULL MTLSIcon renders properly 1`] = `
         entryDelay={300}
         exitDelay={300}
         flipBehavior={
-          Array [
+          [
             "top",
             "right",
             "bottom",
@@ -59,11 +59,11 @@ exports[`when Icon is LOCK_FULL MTLSIcon renders properly 1`] = `
           <div
             aria-label="mTLS status"
             aria-live="off"
-            className="pf-v5-c-tooltip"
+            className="pf-v6-c-tooltip"
             id="pf-tooltip-2"
             role="tooltip"
             style={
-              Object {
+              {
                 "maxWidth": null,
               }
             }
@@ -77,12 +77,12 @@ exports[`when Icon is LOCK_FULL MTLSIcon renders properly 1`] = `
           </div>
         }
         popperRef={
-          Object {
+          {
             "current": null,
           }
         }
         positionModifiers={
-          Object {
+          {
             "bottom": "pf-m-bottom",
             "bottom-end": "pf-m-bottom-right",
             "bottom-start": "pf-m-bottom-left",
@@ -108,7 +108,7 @@ exports[`when Icon is LOCK_FULL MTLSIcon renders properly 1`] = `
       >
         <div
           style={
-            Object {
+            {
               "display": "contents",
             }
           }

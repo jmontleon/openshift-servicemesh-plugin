@@ -1,8 +1,6 @@
 import * as React from 'react';
 import {
-	ChartProps
-} from '@patternfly/react-charts';
-import {
+	ChartProps,
 	Chart,
 	ChartVoronoiContainer,
 	ChartAxis,

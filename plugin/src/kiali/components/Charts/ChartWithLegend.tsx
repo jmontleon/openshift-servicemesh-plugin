@@ -1,9 +1,7 @@
 import * as React from 'react';
 import {
 	ChartProps,
-	ChartTooltipProps
-} from '@patternfly/react-charts';
-import {
+	ChartTooltipProps,
 	ChartAxis,
 	Chart,
 	ChartGroup,

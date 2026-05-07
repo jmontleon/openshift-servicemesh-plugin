@@ -2,9 +2,7 @@ import * as React from 'react';
 import { connect } from 'react-redux';
 import { pluralize } from '@patternfly/react-core';
 import {
-	ChartLabelProps
-} from '@patternfly/react-charts';
-import {
+	ChartLabelProps,
 	ChartCursorFlyout
 } from '@patternfly/react-charts/victory';
 import { kialiStyle } from 'styles/StyleUtils';
