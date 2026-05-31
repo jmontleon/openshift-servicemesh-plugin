@@ -122,7 +122,7 @@ export const ValidationSummary: React.FC<ValidationSummaryProps> = (props: Valid
     );
 
   return (
-    <Tooltip aria-label="Validations list" position={TooltipPosition.auto} enableFlip={true} content={tooltipContent}>
+    <Tooltip aria-label="Validations list" position={TooltipPosition.auto} enableFlip={true} content={tooltipContent} appendTo="inline">
       {tooltipBase}
     </Tooltip>
   );

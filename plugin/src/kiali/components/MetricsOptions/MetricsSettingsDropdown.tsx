@@ -217,6 +217,7 @@ export class MetricsSettingsDropdown extends React.Component<Props, State> {
         )}
         isOpen={this.state.isOpen}
         onOpenChange={(isOpen: boolean) => this.onToggle(isOpen)}
+        popperProps={{ appendTo: 'inline' }}
       >
         <DropdownList>
           {hasLabels && this.renderBulkSelector()}
@@ -352,6 +353,7 @@ export class MetricsSettingsDropdown extends React.Component<Props, State> {
         <Tooltip
           key="tooltip_histograms"
           position={TooltipPosition.right}
+          appendTo="inline"
           content={
             <div style={{ textAlign: 'left' }}>
               <div>

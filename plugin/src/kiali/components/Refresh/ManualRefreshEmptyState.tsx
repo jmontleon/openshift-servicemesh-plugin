@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { EmptyState, EmptyStateBody, EmptyStateVariant } from '@patternfly/react-core';
+import { EmptyState, EmptyStateBody } from '@patternfly/react-core';
 import { SyncAltIcon } from '@patternfly/react-icons';
 import { classes } from 'typestyle';
 import { kialiStyle } from 'styles/StyleUtils';
@@ -24,7 +24,7 @@ export const ManualRefreshEmptyState: React.FC<ManualRefreshEmptyStateProps> = (
       icon={SyncAltIcon}
       titleText={t('Manual refresh required')}
       data-test="manual-refresh"
-      variant={EmptyStateVariant.lg}
+      variant="lg"
     >
       <EmptyStateBody>
         {t(

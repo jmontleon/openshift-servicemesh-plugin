@@ -187,7 +187,7 @@ class UserDropdownComponent extends React.Component<UserProps, UserState> {
             )}
             isOpen={isDropdownOpen}
             onSelect={this.onDropdownSelect}
-            popperProps={{ position: 'right' }}
+            popperProps={{ position: 'right', appendTo: 'inline' }}
             onOpenChange={(isOpen: boolean) => this.onDropdownToggle(isOpen)}
           >
             {isMultiCluster && loggedInClusters.length > 0 && (

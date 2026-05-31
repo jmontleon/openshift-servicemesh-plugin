@@ -5,6 +5,7 @@ import {
   Select,
   SelectList,
   SelectOption,
+  SelectOptionProps,
   Tooltip,
   TooltipPosition
 } from '@patternfly/react-core';
@@ -36,7 +37,7 @@ type ToolbarDropdownProps = {
 export const ToolbarDropdown: React.FC<ToolbarDropdownProps> = (props: ToolbarDropdownProps) => {
   const [isOpen, setIsOpen] = React.useState<boolean>(false);
 
-  const onKeyChanged = (_event?: React.MouseEvent<Element, MouseEvent>, selection?: string | number): void => {
+  const onKeyChanged = (_event?: React.MouseEvent<Element, MouseEvent>, selection?: SelectOptionProps['value']): void => {
     if (selection) {
       props.handleSelect(String(selection));
     }

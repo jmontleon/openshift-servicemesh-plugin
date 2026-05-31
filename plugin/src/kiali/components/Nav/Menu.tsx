@@ -1,7 +1,7 @@
 import * as React from 'react';
 import _ from 'lodash';
 import { Link, useLocation, useNavigate, matchPath } from 'react-router-dom-v5-compat';
-import { Divider, Nav, NavList, NavItem } from '@patternfly/react-core';
+import { Nav, NavList, NavItem, NavItemSeparator } from '@patternfly/react-core';
 import { navMenuItems } from '../../routes';
 import { kialiStyle } from 'styles/StyleUtils';
 import { ExternalServiceInfo } from '../../types/StatusState';
@@ -137,7 +137,7 @@ export const Menu: React.FC<MenuProps> = (props: MenuProps) => {
       })
       .flatMap(item => {
         if (item.separator) {
-          return [renderNavItem(item), <Divider key={`${item.id}-divider`} />];
+          return [renderNavItem(item), <NavItemSeparator key={`${item.id}-divider`} />];
         }
         return renderNavItem(item);
       });

@@ -169,6 +169,7 @@ export class Slider extends React.Component<SliderProps, SliderState> {
 
     const LockIcon = (
       <Tooltip
+        appendTo="inline"
         position={TooltipPosition.top}
         content={<>{this.props.locked ? 'Unlock' : 'Lock'} Weight for this Workload</>}
       >
@@ -184,6 +185,7 @@ export class Slider extends React.Component<SliderProps, SliderState> {
 
     const MirrorIcon = (
       <Tooltip
+        appendTo="inline"
         position={TooltipPosition.top}
         content={
           <>{this.props.mirrored ? 'Cancel mirroring traffic to this workload' : 'Mirror traffic to this workload'}</>

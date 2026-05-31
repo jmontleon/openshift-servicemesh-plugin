@@ -14,7 +14,7 @@ const errorSectionStyle = kialiStyle({
 export const ErrorSection: React.FC<MessageProps> = (props: MessageProps) => {
   return (
     <div>
-      <EmptyState  headingLevel="h5"   titleText={<>{props.error.title}</>} id="empty-page-error" variant={EmptyStateVariant.lg} className={errorSectionStyle}>
+      <EmptyState  headingLevel="h5"   titleText={<>{props.error.title}</>} id="empty-page-error" variant={EmptyStateVariant.lg} headerClassName={errorSectionStyle}>
         <EmptyStateBody>{props.error.description}</EmptyStateBody>
       </EmptyState>
     </div>

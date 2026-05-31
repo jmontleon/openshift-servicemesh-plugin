@@ -262,6 +262,7 @@ export class PeerAuthenticationForm extends React.Component<Props, PeerAuthentic
             />,
 
             <Select
+              popperProps={{ appendTo: 'inline' }}
               isOpen={this.state.isPortMtlsSelectOpen}
               selected={this.state.addNewPortMtls.mtls}
               onSelect={(_event, value) => {
@@ -353,6 +354,7 @@ export class PeerAuthenticationForm extends React.Component<Props, PeerAuthentic
 
         <FormGroup label="Mutual TLS Mode" fieldId="mutualTls">
           <Select
+            popperProps={{ appendTo: 'inline' }}
             id="mutualTls"
             selected={this.state.mtls}
             onSelect={(_event, value) => {

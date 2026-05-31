@@ -31,10 +31,8 @@ const TLSInfoComponent: React.FC<Props> = (props: Props) => {
             </div>
           }
         >
-          <Label isCompact color="blue" data-test={'label-TLS'}>
-            <div style={{ display: '-webkit-box' }}>
-              {props.version} <LockIcon></LockIcon>
-            </div>
+          <Label isCompact color="blue" data-test={'label-TLS'} icon={<LockIcon />}>
+            {props.version}
           </Label>
         </Tooltip>
       </div>

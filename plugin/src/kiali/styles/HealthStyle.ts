@@ -5,11 +5,6 @@ export const healthIndicatorStyle = kialiStyle({
     '& .pf-v6-c-tooltip__content': {
       borderWidth: '1px',
       textAlign: 'left'
-    },
-
-    '& .pf-v6-c-content ul': {
-      marginBottom: 'var(--pf-t--global--spacer--md)',
-      marginTop: 0
     }
   }
 });

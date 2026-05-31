@@ -58,7 +58,7 @@ export const GraphFindOptions: React.FC<GraphFindOptionsProps> = (props: GraphFi
       )}
       isOpen={isOpen}
       onOpenChange={(isOpen: boolean) => onToggle(isOpen)}
-      popperProps={{ position: 'right' }}
+      popperProps={{ placement: 'bottom-end', appendTo: 'inline' }}
     >
       <DropdownList>{options}</DropdownList>
     </Dropdown>

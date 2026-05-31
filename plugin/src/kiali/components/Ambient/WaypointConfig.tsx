@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { IRow, ThProps } from '@patternfly/react-table';
 import { Workload } from 'types/Workload';
-import { Card, CardBody, Grid, GridItem, Tab, Tabs, Title, TitleSizes } from '@patternfly/react-core';
+import { Card, CardBody, Grid, GridItem, Tab, TabProps, Tabs, Title, TitleSizes } from '@patternfly/react-core';
 import { activeTab } from '../../components/Tab/Tabs';
 import { RenderComponentScroll } from 'components/Nav/Page';
 import { location, router } from '../../app/History';
@@ -104,7 +104,7 @@ export const WaypointConfig: React.FC<WaypointConfigProps> = (props: WaypointCon
     }
   }, [resource, activeKey, defaultTab]);
 
-  const waypointHandleTabClick = (_event: React.MouseEvent, tabIndex: string | number): void => {
+  const waypointHandleTabClick = (_event: React.MouseEvent, tabIndex: TabProps['eventKey']): void => {
     const resourceIdx: number = +tabIndex;
     const targetResource: string = resources[resourceIdx];
 

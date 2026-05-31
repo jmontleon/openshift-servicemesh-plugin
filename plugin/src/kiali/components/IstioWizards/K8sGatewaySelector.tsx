@@ -205,6 +205,7 @@ export class K8sGatewaySelector extends React.Component<Props, K8sGatewaySelecto
                       )
                     }
                     shouldFocusToggleOnSelect
+                    popperProps={{ appendTo: 'inline' }}
                   >
                     <SelectList>
                       {this.props.k8sGateways.map(k8sGateway => (
@@ -233,6 +234,7 @@ export class K8sGatewaySelector extends React.Component<Props, K8sGatewaySelecto
                       }}
                       toggle={toggleRef => this.toggleMenu(toggleRef, this.state.gatewayClass)}
                       shouldFocusToggleOnSelect
+                      popperProps={{ appendTo: 'inline' }}
                     >
                       <SelectList>
                         {serverConfig.gatewayAPIClasses.map((option, index) => (

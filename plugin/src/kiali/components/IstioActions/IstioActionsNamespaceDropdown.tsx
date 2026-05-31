@@ -6,7 +6,6 @@ import {
   Dropdown,
   DropdownGroup,
   DropdownItem,
-  DropdownList,
   MenuToggle,
   MenuToggleElement
 } from '@patternfly/react-core';
@@ -105,9 +104,9 @@ export const IstioActionsNamespaceDropdown: React.FC = () => {
       isOpen={dropdownOpen}
       onOpenChange={(isOpen: boolean) => onToggle(isOpen)}
       onSelect={onSelect}
-      popperProps={{ position: 'right' }}
+      popperProps={{ placement: 'bottom-end' }}
     >
-      <DropdownList>{dropdownItems}</DropdownList>
+      {dropdownItems}
     </Dropdown>
   );
 };

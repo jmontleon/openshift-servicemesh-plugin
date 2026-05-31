@@ -407,7 +407,7 @@ export class ChartWithLegend<T extends RichDataPoint, O extends LineInfo> extend
         </Chart>
 
         {showMoreLegend && chartHeight > MIN_HEIGHT_YAXIS && (
-          <Tooltip position={TooltipPosition.left} content={<div style={{ textAlign: 'left' }}>Show full legend</div>}>
+          <Tooltip appendTo="inline" position={TooltipPosition.left} content={<div style={{ textAlign: 'left' }}>Show full legend</div>}>
             <Button
               variant={ButtonVariant.link}
               className={moreLegendStyle}
@@ -444,6 +444,7 @@ export class ChartWithLegend<T extends RichDataPoint, O extends LineInfo> extend
     ) : (
       <div>
         <Tooltip
+          appendTo="inline"
           position={TooltipPosition.right}
           content={<div style={{ textAlign: 'left' }}>Increase height of the chart</div>}
         >

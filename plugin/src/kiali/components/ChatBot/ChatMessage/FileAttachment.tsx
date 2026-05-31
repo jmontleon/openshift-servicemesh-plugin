@@ -1,8 +1,7 @@
 import React from 'react';
 import AceEditor from 'react-ace';
 import { ChatbotDisplayMode, FileDetailsLabel } from '@patternfly/chatbot';
-import { Button, Stack, StackItem } from '@patternfly/react-core';
-import { Modal, ModalVariant } from '@patternfly/react-core/deprecated';
+import { Button, Modal, ModalBody, ModalFooter, ModalHeader, ModalVariant, Stack, StackItem } from '@patternfly/react-core';
 import { Action, AlertMessage } from 'types/Chatbot';
 import { Theme } from 'types/Common';
 import { useKialiTheme } from 'utils/ThemeUtils';
@@ -140,37 +139,37 @@ export const FileAttachment: React.FC<FileAttachmentProps> = ({
     <div key={fileName}>
       <FileDetailsLabel fileName={fileName} onClick={toggle} />
       <Modal
-        title={action.title || fileName}
         variant={ModalVariant.large}
         isOpen={isModalOpen}
         onClose={toggle}
-        actions={
-          [
-            canApply ? (
-              <Button key="apply" variant="primary" onClick={onApply}>
-                {applyLabel}
-              </Button>
-            ) : null,
-            <Button key="close" variant="link" onClick={toggle}>
-              Close
-            </Button>
-          ].filter(Boolean) as any
-        }
       >
-        <Stack hasGutter>
-          <StackItem>
-            <AceEditor
-              mode="yaml"
-              theme={isDarkTheme ? 'twilight' : 'eclipse'}
-              width="100%"
-              height="350px"
-              value={yamlText}
-              onChange={(v: string) => setYamlText(v)}
-              wrapEnabled={true}
-              setOptions={{ useWorker: false, tabSize: 2 }}
-            />
-          </StackItem>
-        </Stack>
+        <ModalHeader title={action.title || fileName} />
+        <ModalBody>
+          <Stack hasGutter>
+            <StackItem>
+              <AceEditor
+                mode="yaml"
+                theme={isDarkTheme ? 'twilight' : 'eclipse'}
+                width="100%"
+                height="350px"
+                value={yamlText}
+                onChange={(v: string) => setYamlText(v)}
+                wrapEnabled={true}
+                setOptions={{ useWorker: false, tabSize: 2 }}
+              />
+            </StackItem>
+          </Stack>
+        </ModalBody>
+        <ModalFooter>
+          {canApply && (
+            <Button key="apply" variant="primary" onClick={onApply}>
+              {applyLabel}
+            </Button>
+          )}
+          <Button key="close" variant="link" onClick={toggle}>
+            Close
+          </Button>
+        </ModalFooter>
       </Modal>
     </div>
   );

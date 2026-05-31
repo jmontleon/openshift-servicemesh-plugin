@@ -7,7 +7,6 @@ import {
   EmptyStateBody,
   EmptyStateVariant,
   TooltipPosition,
-  
 } from '@patternfly/react-core';
 import { WorkloadWeight } from '../TrafficShifting';
 import { Abort, Delay, HTTPRetry } from '../../../types/IstioObjects';
@@ -115,7 +114,7 @@ export const Rules: React.FC<RulesProps> = (props: RulesProps) => {
   const matchAll: number = matchAllIndex(props.rules);
 
   const noRules: React.ReactNode = (
-    <EmptyState  headingLevel="h5"   titleText={t('No Route Rules defined')} variant={EmptyStateVariant.full}>
+    <EmptyState headingLevel="h5" titleText={t('No Route Rules defined')} variant={EmptyStateVariant.full}>
       <EmptyStateBody className={noRulesStyle}>{t('A Request Routing scenario needs at least a Route Rule')}</EmptyStateBody>
     </EmptyState>
   );

@@ -395,6 +395,7 @@ export class ServiceEntryForm extends React.Component<Props, ServiceEntryFormSta
             </MenuToggle>
           )}
           aria-label="Protocol Select"
+          popperProps={{ appendTo: 'inline' }}
         >
           <SelectList>
             {protocols.map((option, index) => (
@@ -470,6 +471,7 @@ export class ServiceEntryForm extends React.Component<Props, ServiceEntryFormSta
               </MenuToggle>
             )}
             aria-label="Location Select"
+            popperProps={{ appendTo: 'inline' }}
           >
             <SelectList>
               {location.map((option, index) => (
@@ -518,6 +520,7 @@ export class ServiceEntryForm extends React.Component<Props, ServiceEntryFormSta
               </MenuToggle>
             )}
             aria-label="Resolution Select"
+            popperProps={{ appendTo: 'inline' }}
           >
             <SelectList>
               {resolution.map((option, index) => (

@@ -240,6 +240,7 @@ export class JwtRuleBuilder extends React.Component<Props, State> {
           key: 'jwtFieldKeyNew',
           cells: [
             <Select
+              popperProps={{ appendTo: 'inline' }}
               isOpen={this.state.isJwtFieldSelectOpen}
               selected={this.state.newJwtField}
               onSelect={(_event, value) => {

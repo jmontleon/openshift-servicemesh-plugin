@@ -146,7 +146,7 @@ export const WorkloadConfigValidation: React.FC<WorkloadConfigValidationProps> =
         style: { color: color }
       })}
       <span style={{ marginLeft: '0.5rem' }}>{detailed ? headerSummary : configIssuesText}</span>
-      <Tooltip content={tooltipContent} position={TooltipPosition.top}>
+      <Tooltip content={tooltipContent} position={TooltipPosition.top} appendTo="inline">
         {iconComponent}
       </Tooltip>
     </span>

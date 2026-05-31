@@ -58,9 +58,7 @@ export const LabelFilters: React.FC<LabelFiltersProps> = (props: LabelFiltersPro
           </>
         }
       >
-        <Button variant={ButtonVariant.link} className={infoIconStyle} isInline>
-          <KialiIcon.Help />
-        </Button>
+        <Button variant={ButtonVariant.link} className={infoIconStyle} isInline icon={<KialiIcon.Help />} />
       </Popover>
     </>
   );

@@ -141,7 +141,7 @@ export const ZtunnelConfig: React.FC<ZtunnelConfigProps> = (props: ZtunnelConfig
     props.workload.cluster
   ]);
 
-  const ztunnelHandleTabClick = (_event: React.MouseEvent, tabIndex: string | number): void => {
+  const ztunnelHandleTabClick = (_event: React.MouseEvent<HTMLElement, MouseEvent>, tabIndex: number | string): void => {
     const resourceIdx: number = +tabIndex;
     const targetResource: string = resources[resourceIdx];
 

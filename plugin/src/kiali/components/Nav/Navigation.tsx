@@ -106,7 +106,7 @@ export const NavigationComponent: React.FC<NavigationProps> = (props: Navigation
         <MastheadToggle>
           <PageToggleButton
             aria-label={t('Kiali navigation')}
-            isHamburgerButton
+            hamburgerVariant="collapse"
             isSidebarOpen={isNavOpen}
             onSidebarToggle={isMobileView ? onNavToggleMobile : onNavToggleDesktop}
             variant={ButtonVariant.plain}

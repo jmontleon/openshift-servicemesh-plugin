@@ -1,6 +1,6 @@
 import * as React from 'react';
 import ReactResizeDetector from 'react-resize-detector';
-import { Tab, Popover, PopoverPosition } from '@patternfly/react-core';
+import { Tab, TabTitleText, Popover, PopoverPosition } from '@patternfly/react-core';
 import { ThProps, IRow } from '@patternfly/react-table';
 import { kialiStyle } from 'styles/StyleUtils';
 import { SimpleTabs } from 'components/Tab/SimpleTabs';
@@ -241,23 +241,23 @@ export const GraphHelpFind: React.FC<GraphHelpFindProps> = (props: GraphHelpFind
             <textarea className={`${prefaceStyle}`} readOnly={true} value={preface} />
 
             <SimpleTabs id="graph_find_help_tabs" defaultTab={0} style={{ width: contentWidth }}>
-              <Tab style={tabFont} eventKey={0} title="Examples">
+              <Tab style={tabFont} eventKey={0} title={<TabTitleText>Examples</TabTitleText>}>
                 {exampleTable}
               </Tab>
 
-              <Tab style={tabFont} eventKey={1} title="Nodes">
+              <Tab style={tabFont} eventKey={1} title={<TabTitleText>Nodes</TabTitleText>}>
                 {nodeTable}
               </Tab>
 
-              <Tab style={tabFont} eventKey={2} title="Edges">
+              <Tab style={tabFont} eventKey={2} title={<TabTitleText>Edges</TabTitleText>}>
                 {edgeTable}
               </Tab>
 
-              <Tab style={tabFont} eventKey={3} title="Operators">
+              <Tab style={tabFont} eventKey={3} title={<TabTitleText>Operators</TabTitleText>}>
                 {operatorTable}
               </Tab>
 
-              <Tab style={tabFont} eventKey={4} title="Usage Notes">
+              <Tab style={tabFont} eventKey={4} title={<TabTitleText>Usage Notes</TabTitleText>}>
                 {noteTable}
               </Tab>
             </SimpleTabs>

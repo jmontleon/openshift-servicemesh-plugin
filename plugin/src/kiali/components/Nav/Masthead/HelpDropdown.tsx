@@ -83,12 +83,11 @@ const HelpDropdownComponent: React.FC<HelpDropdownProps> = (props: HelpDropdownP
             aria-label={t('Help')}
             variant="plain"
             isExpanded={isDropdownOpen}
-          >
-            <QuestionCircleIcon />
-          </MenuToggle>
+            icon={<QuestionCircleIcon />}
+          />
         )}
         isOpen={isDropdownOpen}
-        popperProps={{ position: 'right' }}
+        popperProps={{ appendTo: 'inline' }}
         onOpenChange={(isOpen: boolean) => setIsDropdownOpen(isOpen)}
         onSelect={onDropdownSelect}
       >

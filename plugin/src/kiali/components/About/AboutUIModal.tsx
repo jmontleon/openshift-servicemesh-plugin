@@ -80,8 +80,7 @@ export const AboutUIModal: React.FC<AboutUIModalProps> = (props: AboutUIModalPro
   const renderProjectLink = (): React.ReactNode => {
     if (config?.about?.project) {
       return (
-        <Button component="a" href={config.about.project.url} variant={ButtonVariant.link} target="_blank" isInline>
-          <KialiIcon.Github className={iconStyle} />
+        <Button component="a" href={config.about.project.url} variant={ButtonVariant.link} target="_blank" isInline icon={<KialiIcon.Github className={iconStyle} />}>
           {config.about.project.linkText}
         </Button>
       );
@@ -100,8 +99,8 @@ export const AboutUIModal: React.FC<AboutUIModalProps> = (props: AboutUIModalPro
           variant={ButtonVariant.link}
           target="_blank"
           isInline
+          icon={<KialiIcon.Website className={iconStyle} />}
         >
-          <KialiIcon.Website className={iconStyle} />
           {config.about.website.linkText}
         </Button>
       );

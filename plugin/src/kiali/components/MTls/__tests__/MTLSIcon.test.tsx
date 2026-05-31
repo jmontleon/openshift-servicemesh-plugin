@@ -17,14 +17,14 @@ const mockIcon = (icon: string): ReturnType<typeof mount> => {
       />
     </Provider>
   );
-  return mount(component);
+  return mount(component, { attachTo: document.body.appendChild(document.createElement('div')) });
 };
 
 describe('when Icon is LOCK_FULL', () => {
   it('MTLSIcon renders properly', () => {
-    const mount = mockIcon(MTLSIconTypes.LOCK_FULL);
+    const wrapper = mockIcon(MTLSIconTypes.LOCK_FULL);
 
-    const tooltip = mount.find(Tooltip);
+    const tooltip = wrapper.find(Tooltip);
     expect(tooltip.exists()).toBeTruthy();
     expect(tooltip.props().position).toEqual('right');
     expect(tooltip.props().content).toEqual('Overlay Test');
@@ -32,14 +32,18 @@ describe('when Icon is LOCK_FULL', () => {
     const svg = tooltip.find('svg');
     expect(svg.exists()).toBeTruthy();
     expect(svg.props().className).toEqual('className');
+
+    wrapper.detach();
   });
 });
 
 describe('when Icon is LOCK_HOLLOW', () => {
   it('MTLSIcon renders properly', () => {
-    const mount = mockIcon(MTLSIconTypes.LOCK_HOLLOW);
-    const svg = mount.find('svg');
+    const wrapper = mockIcon(MTLSIconTypes.LOCK_HOLLOW);
+    const svg = wrapper.find('svg');
     expect(svg.exists()).toBeTruthy();
     expect(svg.props().className).toEqual('className');
+
+    wrapper.detach();
   });
 });

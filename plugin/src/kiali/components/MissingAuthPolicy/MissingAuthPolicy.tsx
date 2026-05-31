@@ -37,6 +37,7 @@ export const MissingAuthPolicy: React.FC<MissingAuthPolicyProps> = ({
             key="tooltip_missing_auth_policy"
             position={TooltipPosition.top}
             content={<div style={{ textAlign: 'left' }}>{textTooltip}</div>}
+            appendTo="inline"
           >
             <KialiIcon.Info className={infoStyle} />
           </Tooltip>
@@ -50,7 +51,7 @@ export const MissingAuthPolicy: React.FC<MissingAuthPolicyProps> = ({
   }
 
   return tooltip ? (
-    <Tooltip content={<div style={{ textAlign: 'left' }}>{textTooltip}</div>} position={TooltipPosition.right}>
+    <Tooltip content={<div style={{ textAlign: 'left' }}>{textTooltip}</div>} position={TooltipPosition.right} appendTo="inline">
       {iconComponent}
     </Tooltip>
   ) : (

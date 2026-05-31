@@ -126,14 +126,14 @@ const NotificationCenterComponent: React.FC<NotificationCenterProps> = (props: N
   };
 
   const notificationDrawerActions = (
-    <>
+    <DropdownList>
       <DropdownItem key="markAllRead" onClick={() => markAllRead()}>
         {t('Mark all read')}
       </DropdownItem>
       <DropdownItem key="clearAll" onClick={() => clearAll()}>
         {t('Clear all')}
       </DropdownItem>
-    </>
+    </DropdownList>
   );
 
   const getGroupTitle = (group: NotificationGroup): React.ReactNode => {
@@ -220,7 +220,7 @@ const NotificationCenterComponent: React.FC<NotificationCenterProps> = (props: N
           isOpen={isActionsMenuOpen['nc-actions'] || false}
           id="nc-actions"
           onOpenChange={(isOpen: boolean) => !isOpen && closeActionsMenu()}
-          popperProps={{ position: 'right' }}
+          popperProps={{ placement: 'bottom-end' }}
           toggle={(toggleRef: React.RefObject<any>) => (
             <MenuToggle
               ref={toggleRef}
@@ -233,7 +233,7 @@ const NotificationCenterComponent: React.FC<NotificationCenterProps> = (props: N
             />
           )}
         >
-          <DropdownList>{notificationDrawerActions} </DropdownList>
+          {notificationDrawerActions}
         </Dropdown>
       </NotificationDrawerHeader>
       <NotificationDrawerBody>

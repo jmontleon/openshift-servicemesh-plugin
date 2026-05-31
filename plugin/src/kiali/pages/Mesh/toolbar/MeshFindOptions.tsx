@@ -58,7 +58,7 @@ export const MeshFindOptions: React.FC<MeshFindOptionsProps> = (props: MeshFindO
       )}
       isOpen={isOpen}
       onOpenChange={(isOpen: boolean) => onToggle(isOpen)}
-      popperProps={{ position: 'right' }}
+      popperProps={{ placement: 'bottom-end', appendTo: 'inline' }}
     >
       <DropdownList>{options}</DropdownList>
     </Dropdown>

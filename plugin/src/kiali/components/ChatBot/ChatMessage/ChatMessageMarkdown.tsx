@@ -97,9 +97,8 @@ const CodeBlockMessage: React.FC<
         variant="plain"
         className="pf-chatbot__button--copy"
         onClick={event => handleCopy(event, content)}
-      >
-        {copied ? <CheckIcon /> : <CopyIcon />}
-      </Button>
+        icon={copied ? <CheckIcon /> : <CopyIcon />}
+      />
       <Tooltip id={tooltipIdRef.current} content="Copy" position="top" triggerRef={buttonRef} />
     </CodeBlockAction>
   );

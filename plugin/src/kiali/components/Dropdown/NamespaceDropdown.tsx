@@ -185,7 +185,7 @@ class NamespaceDropdownComponent extends React.PureComponent<NamespaceDropdownPr
             onChange={(_event, value: string) => this.onFilterChange(value)}
           />
           {hasFilter && (
-            <Tooltip key="ot_clear_namespace_filter" position="top" content="Clear Filter by Name">
+            <Tooltip key="ot_clear_namespace_filter" position="top" content="Clear Filter by Name" appendTo="inline">
               <Button className={closeButtonStyle} onClick={this.clearFilter} isInline>
                 <KialiIcon.Close />
               </Button>
@@ -254,6 +254,7 @@ class NamespaceDropdownComponent extends React.PureComponent<NamespaceDropdownPr
           )}
           isOpen={this.state.isOpen}
           onOpenChange={(isOpen: boolean) => this.onToggle(isOpen)}
+          popperProps={{ appendTo: 'inline' }}
         >
           <DropdownList data-test="namespace-dropdown-list">
             {this.getHeader()}

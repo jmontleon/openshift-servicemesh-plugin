@@ -238,6 +238,7 @@ export class ClusterTable implements SummaryTable {
   tooltip = (): React.ReactNode => {
     return (
       <Tooltip
+        appendTo="inline"
         content={
           <div className={kialiStyle({ textAlign: 'left' })}>
             Group of logically similar upstream hosts that Envoy connects to. (All the hosts that envoy manage traffic)

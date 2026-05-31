@@ -391,8 +391,8 @@ export class TrafficShifting extends React.Component<Props, State> {
             className={mirroringSectionStyle}
             isExpanded={this.state.mirroringSectionExpanded}
             toggleText={mirroringSectionTitle}
-            onToggle={() => {
-              this.setState({ mirroringSectionExpanded: !this.state.mirroringSectionExpanded });
+            onToggle={(_event, isExpanded) => {
+              this.setState({ mirroringSectionExpanded: isExpanded });
             }}
           >
             {mirroredWorkload ? (

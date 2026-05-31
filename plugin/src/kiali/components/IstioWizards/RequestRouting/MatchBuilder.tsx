@@ -94,12 +94,14 @@ export const MatchBuilder: React.FC<MatchBuilderProps> = (props: MatchBuilderPro
       </InputGroupItem>
 
       {props.category === HEADERS && (
-        <TextInput
-          id="header-name-id"
-          value={props.headerName}
-          onChange={(_, value) => props.onHeaderNameChange(value)}
-          placeholder="Header name..."
-        />
+        <InputGroupItem>
+          <TextInput
+            id="header-name-id"
+            value={props.headerName}
+            onChange={(_, value) => props.onHeaderNameChange(value)}
+            placeholder="Header name..."
+          />
+        </InputGroupItem>
       )}
 
       <InputGroupItem>
@@ -137,12 +139,14 @@ export const MatchBuilder: React.FC<MatchBuilderProps> = (props: MatchBuilderPro
       </InputGroupItem>
 
       {props.operator !== PRESENCE && (
-        <TextInput
-          id="match-value-id"
-          value={props.matchValue}
-          onChange={(_, value) => props.onMatchValueChange(value)}
-          placeholder={placeholderText[props.category]}
-        />
+        <InputGroupItem>
+          <TextInput
+            id="match-value-id"
+            value={props.matchValue}
+            onChange={(_, value) => props.onMatchValueChange(value)}
+            placeholder={placeholderText[props.category]}
+          />
+        </InputGroupItem>
       )}
 
       <InputGroupItem>

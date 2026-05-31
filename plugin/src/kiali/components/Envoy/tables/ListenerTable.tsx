@@ -184,6 +184,7 @@ export class ListenerTable implements SummaryTable {
   tooltip = (): React.ReactNode => {
     return (
       <Tooltip
+        appendTo="inline"
         content={
           <div className={kialiStyle({ textAlign: 'left' })}>
             Network location that can be connected to by downstream clients (Incomming to envoy). List of

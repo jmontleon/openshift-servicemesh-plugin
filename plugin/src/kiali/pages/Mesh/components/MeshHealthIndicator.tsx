@@ -78,6 +78,7 @@ const MeshHealthIndicatorComponent: React.FC<Props> = (props: Props) => {
       position={TooltipPosition.auto}
       content={tooltipContent}
       className={healthIndicatorStyle}
+      appendTo="inline"
     >
       <div style={{ display: 'inline-block', marginRight: '0.375rem' }}>
         <Link to={`/${props.targetPage}?namespaces=${props.namespace}`} onClick={() => linkAction()}>

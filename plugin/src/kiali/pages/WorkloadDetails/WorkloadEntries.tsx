@@ -51,7 +51,7 @@ export const WorkloadEntries: React.FC<WorkloadEntriesProps> = (props: WorkloadE
   const columns: ThProps[] = [{ title: 'Name' }];
 
   const noEntries: React.ReactNode = (
-    <EmptyState variant={EmptyStateVariant.sm} className={emptyStyle}>
+    <EmptyState variant={EmptyStateVariant.sm} className={emptyStyle} titleText="">
       <EmptyStateBody className={emptyStyle}>No Workload Entries in Workload {props.workload}</EmptyStateBody>
     </EmptyState>
   );

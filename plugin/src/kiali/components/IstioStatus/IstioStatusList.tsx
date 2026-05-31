@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { List } from '@patternfly/react-core';
+import { List, ListItem } from '@patternfly/react-core';
 import { ComponentStatus, Status } from '../../types/IstioStatus';
 import { IstioComponentStatus } from './IstioComponentStatus';
 import { kialiStyle } from 'styles/StyleUtils';
@@ -41,7 +41,11 @@ export const IstioStatusList: React.FC<Props> = (props: Props) => {
       return (
         <React.Fragment key={`status-${group}`}>
           {groups[group]().map((status: ComponentStatus) => {
-            return <IstioComponentStatus key={`status-${group}-${status.name}`} componentStatus={status} />;
+            return (
+              <ListItem key={`status-${group}-${status.name}`}>
+                <IstioComponentStatus componentStatus={status} />
+              </ListItem>
+            );
           })}
         </React.Fragment>
       );

@@ -1,11 +1,12 @@
 import * as React from 'react';
 import {
 	Button,
-	ButtonVariant
+	ButtonVariant,
+	Modal,
+	ModalBody,
+	ModalFooter,
+	ModalHeader
 } from '@patternfly/react-core';
-import {
-	Modal
-} from '@patternfly/react-core/deprecated';
 import { AuthStrategy } from '../../types/Auth';
 import { LoginSession } from '../../store/Store';
 import { authenticationConfig } from '../../config/AuthenticationConfig';
@@ -65,17 +66,19 @@ export const SessionTimeout: React.FC<SessionTimeoutProps> = (props: SessionTime
       data-test="session-timeout-modal"
       isOpen={props.show}
       onClose={defaultAction}
-      actions={buttons}
-      title="Session Timeout"
       width="40%"
     >
-      <span>
-        <KialiIcon.Warning size="xl" color={PFColors.Warning} />
-      </span>
+      <ModalHeader title="Session Timeout" />
+      <ModalBody>
+        <span>
+          <KialiIcon.Warning size="xl" color={PFColors.Warning} />
+        </span>
 
-      <span style={{ float: 'right', width: '80%' }} className={sessionTimeoutStyle}>
-        {textForAuthStrategy(authenticationConfig.strategy)}
-      </span>
+        <span style={{ float: 'right', width: '80%' }} className={sessionTimeoutStyle}>
+          {textForAuthStrategy(authenticationConfig.strategy)}
+        </span>
+      </ModalBody>
+      <ModalFooter>{buttons}</ModalFooter>
     </Modal>
   );
 };

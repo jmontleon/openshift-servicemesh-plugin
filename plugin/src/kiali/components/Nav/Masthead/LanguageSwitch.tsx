@@ -47,6 +47,7 @@ export const LanguageSwitchComponent: React.FC<LanguageSwitchProps> = ({ languag
       selected={language}
       onSelect={(_event, value) => onSelect(value as Language)}
       onOpenChange={setIsOpen}
+      popperProps={{ appendTo: 'inline' }}
       toggle={(toggleRef: React.Ref<MenuToggleElement>) => (
         <MenuToggle
           ref={toggleRef}

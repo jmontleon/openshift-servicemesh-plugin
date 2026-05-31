@@ -45,8 +45,7 @@ export const ConfigButtonsTargetPanel: React.FC<ConfigButtonsTargetPanelProps> =
             onTooltipHidden={() => setCopied(false)}
           >
             <CopyToClipboard text={copyText}>
-              <Button variant={ButtonVariant.link} aria-label={t('Copy')} isInline onClick={() => setCopied(true)}>
-                <KialiIcon.Copy />
+              <Button variant={ButtonVariant.link} aria-label={t('Copy')} isInline onClick={() => setCopied(true)} icon={<KialiIcon.Copy />}>
                 <span className={iconStyle}>{t('Copy')}</span>
               </Button>
             </CopyToClipboard>
@@ -59,8 +58,8 @@ export const ConfigButtonsTargetPanel: React.FC<ConfigButtonsTargetPanelProps> =
               aria-label={t('Download')}
               className={downloadButtonStyle}
               onClick={() => download(copyText, `configuration_${targetName}.yaml`)}
+              icon={<KialiIcon.Download />}
             >
-              <KialiIcon.Download />
               <span className={iconStyle}>{t('Download')}</span>
             </Button>
           </Tooltip>

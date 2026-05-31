@@ -31,9 +31,7 @@ export const RefreshButton: React.FC<RefreshButtonProps> = (props: RefreshButton
         aria-label="Action"
         variant={ButtonVariant.stateful}
         state="unread"
-      >
-        
-      </Button>
+      />
     </Tooltip>
   );
 };

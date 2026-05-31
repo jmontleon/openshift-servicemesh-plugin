@@ -4,7 +4,6 @@ import {
   Bullseye,
   DropdownGroup,
   DropdownItem,
-  DropdownList,
   FormSelect,
   FormSelectOption,
   FormSelectOptionGroup,
@@ -131,7 +130,6 @@ export const ChatBotHeader: React.FC<ChatBotHeaderProps> = ({
         </Tooltip>
         <ChatbotHeaderOptionsDropdown onSelect={onSelectDisplayMode}>
           <DropdownGroup label="Display Mode">
-            <DropdownList>
               <DropdownItem
                 value={ChatbotDisplayMode.default}
                 key="switchDisplayOverlay"
@@ -159,7 +157,6 @@ export const ChatBotHeader: React.FC<ChatBotHeaderProps> = ({
               <DropdownItem key="scloseChat" icon={<TimesIcon aria-hidden />} onClick={onCloseChat}>
                 <span>Close Chat</span>
               </DropdownItem>
-            </DropdownList>
           </DropdownGroup>
         </ChatbotHeaderOptionsDropdown>
       </ChatbotHeaderActions>

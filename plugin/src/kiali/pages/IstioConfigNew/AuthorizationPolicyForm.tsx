@@ -148,6 +148,7 @@ export const AuthorizationPolicyForm: React.FC<Props> = (props: Props) => {
             onAuthorizationChange({ policy: value as string });
           }}
           onOpenChange={setIsPolicySelectOpen}
+          popperProps={{ appendTo: 'inline' }}
           toggle={(toggleRef: React.Ref<MenuToggleElement>) => (
             <MenuToggle
               id="rules-form-toggle"
@@ -222,6 +223,7 @@ export const AuthorizationPolicyForm: React.FC<Props> = (props: Props) => {
               onAuthorizationChange({ action: value as string });
             }}
             onOpenChange={setIsActionSelectOpen}
+            popperProps={{ appendTo: 'inline' }}
             toggle={(toggleRef: React.Ref<MenuToggleElement>) => (
               <MenuToggle
                 id="action-form-toggle"

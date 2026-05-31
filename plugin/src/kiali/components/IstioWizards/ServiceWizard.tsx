@@ -745,7 +745,7 @@ export class ServiceWizard extends React.Component<ServiceWizardProps, ServiceWi
     return state.valid.mainWizard && state.valid.k8sRouteHosts && state.valid.gateway;
   };
 
-  advancedHandleTabClick = (_event: React.MouseEvent, tabIndex: string | number): void => {
+  advancedHandleTabClick = (_event: React.MouseEvent<HTMLElement, MouseEvent>, tabIndex: string | number): void => {
     this.setState({
       advancedTabKey: tabIndex as number
     });
@@ -1014,9 +1014,9 @@ export class ServiceWizard extends React.Component<ServiceWizardProps, ServiceWi
               toggleText={`${this.state.showAdvanced ? t('Hide') : t('Show')} ${t('advanced options')}`}
               contentId={`${this.state.showAdvanced ? 'hide' : 'show'}_advanced_options`}
               toggleId="advanced-options-expandable"
-              onToggle={() => {
+              onToggle={(_event, isExpanded) => {
                 this.setState({
-                  showAdvanced: !this.state.showAdvanced
+                  showAdvanced: isExpanded
                 });
               }}
             >
@@ -1091,9 +1091,9 @@ export class ServiceWizard extends React.Component<ServiceWizardProps, ServiceWi
               isExpanded={this.state.showAdvanced}
               toggleText={`${this.state.showAdvanced ? t('Hide') : t('Show')} ${t('advanced options')}`}
               contentId={`${this.state.showAdvanced ? 'hide' : 'show'}_advanced_options`}
-              onToggle={() => {
+              onToggle={(_event, isExpanded) => {
                 this.setState({
-                  showAdvanced: !this.state.showAdvanced
+                  showAdvanced: isExpanded
                 });
               }}
             >

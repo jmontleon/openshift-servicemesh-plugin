@@ -1,6 +1,7 @@
 import {
   Checkbox,
   Dropdown,
+  DropdownItem,
   DropdownList,
   MenuToggleElement,
   MenuToggle,
@@ -218,7 +219,7 @@ const MeshSettingsComponent: React.FC<MeshSettingsProps> = (props: MeshSettingsP
       isOpen={isOpen}
       onOpenChange={(isOpen: boolean) => setIsOpen(isOpen)}
     >
-      <DropdownList>{getMenuOptions()}</DropdownList>
+      <DropdownList><DropdownItem>{getMenuOptions()}</DropdownItem></DropdownList>
     </Dropdown>
   );
 };

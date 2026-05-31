@@ -97,13 +97,6 @@ export const globalStyle = kialiStyle({
           textDecoration: 'none'
         }
       }
-    },
-
-    /**
-     * Remove color override for content in Cluster badge tooltip
-     */
-    '& .pf-v6-c-content, & .pf-v6-c-content > h4': {
-      color: 'unset'
     }
   }
 });

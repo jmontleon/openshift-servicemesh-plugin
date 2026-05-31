@@ -57,8 +57,8 @@ const TimeDurationComp: React.FC<TimeControlsProps> = (props: TimeControlsProps)
             variant={ButtonVariant.link}
             style={{ marginRight: '0.5rem' }}
             onClick={onToggleReplay}
+            icon={<KialiIcon.History />}
           >
-            <KialiIcon.History />
             <span style={{ marginLeft: '0.5rem' }}>{t('Replay')}</span>
           </Button>
         </Tooltip>
@@ -84,9 +84,9 @@ const TimeDurationComp: React.FC<TimeControlsProps> = (props: TimeControlsProps)
           className={closeReplayStyle}
           onClick={onToggleReplay}
           isInline
+          icon={<KialiIcon.Close />}
         >
           <span>
-            <KialiIcon.Close />
             <span style={{ marginLeft: '0.25rem' }}>{t('Close Replay')}</span>
           </span>
         </Button>

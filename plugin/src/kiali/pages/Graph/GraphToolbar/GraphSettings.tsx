@@ -357,6 +357,7 @@ class GraphSettingsComponent extends React.PureComponent<GraphSettingsProps, Gra
         )}
         isOpen={this.state.isOpen}
         onOpenChange={(isOpen: boolean) => this.onToggle(isOpen)}
+        popperProps={{ appendTo: 'inline' }}
       >
         <DropdownList>{this.getMenuOptions()}</DropdownList>
       </Dropdown>
@@ -426,6 +427,7 @@ class GraphSettingsComponent extends React.PureComponent<GraphSettingsProps, Gra
           }}
         >
           <Popover
+            appendTo="inline"
             position={PopoverPosition.right}
             triggerAction="click"
             headerContent={popoverTitle ?? t('Help')}

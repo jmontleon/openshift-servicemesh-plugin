@@ -248,6 +248,7 @@ export class GatewaySelector extends React.Component<Props, GatewaySelectorState
                   }}
                   toggle={this.toggle}
                   shouldFocusToggleOnSelect
+                  popperProps={{ appendTo: 'inline' }}
                 >
                   <SelectList>
                     {this.props.gateways.map(gw => (

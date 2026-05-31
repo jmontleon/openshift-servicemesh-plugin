@@ -48,7 +48,7 @@ export const PodStatus: React.FC<PodStatusProps> = (props: PodStatusProps) => {
     );
 
     return (
-      <Tooltip aria-label="Pod Status" position={TooltipPosition.auto} enableFlip={true} content={tooltipContent}>
+      <Tooltip aria-label="Pod Status" position={TooltipPosition.auto} enableFlip={true} content={tooltipContent} appendTo="inline">
         <span test-data="proxy-status">{createIcon(severityIcon())}</span>
       </Tooltip>
     );

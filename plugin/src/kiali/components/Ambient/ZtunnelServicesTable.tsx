@@ -2,7 +2,7 @@ import * as React from 'react';
 import { IRow, ISortBy, OnSort, SortByDirection, TableVariant } from '@patternfly/react-table';
 import { ZtunnelEndpoint, ZtunnelService } from '../../types/IstioObjects';
 import { SimpleTable } from '../Table/SimpleTable';
-import { EmptyState, EmptyStateBody, EmptyStateVariant } from '@patternfly/react-core';
+import { EmptyState, EmptyStateVariant } from '@patternfly/react-core';
 import { kialiStyle } from '../../styles/StyleUtils';
 import { t } from 'i18next';
 import { SortableCompareTh, stickyThead, yoverflow } from './ZtunnelConfig';
@@ -93,11 +93,7 @@ export const ZtunnelServicesTable: React.FC<ZtunnelServicesProps> = (props: Ztun
   };
 
   const noServicesConfig: React.ReactNode = (
-    <EmptyState variant={EmptyStateVariant.sm} className={emtpytStyle}>
-      <EmptyStateBody className={emtpytStyle} data-test="istio-config-empty">
-        {t('No Ztunnel services found')}
-      </EmptyStateBody>
-    </EmptyState>
+    <EmptyState variant={EmptyStateVariant.sm} className={emtpytStyle} titleText={t('No Ztunnel services found')} data-test="istio-config-empty" />
   );
 
   return (

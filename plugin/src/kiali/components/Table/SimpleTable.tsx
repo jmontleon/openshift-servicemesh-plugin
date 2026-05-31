@@ -141,8 +141,9 @@ export const SimpleTable: React.FC<SimpleTableProps> = (props: SimpleTableProps)
               sort={getSortParams(column, index)}
               info={column.info}
               className={column.className}
+              additionalContent={'headerContent' in column ? column.headerContent : undefined}
             >
-              {'headerContent' in column ? column.headerContent ?? column.title : column.title}
+              {column.title}
             </Th>
           ))}
         </Tr>

@@ -86,7 +86,7 @@ export class MetricsReporter extends React.Component<Props> {
           options={MetricsReporter.ReporterOptions}
         />
 
-        <Tooltip content={<div style={{ textAlign: 'left' }}>{this.reportTooltip}</div>} position={TooltipPosition.top}>
+        <Tooltip appendTo="inline" content={<div style={{ textAlign: 'left' }}>{this.reportTooltip}</div>} position={TooltipPosition.top}>
           <KialiIcon.Info className={classes(infoStyle, metricsReporterInfoStyle)} />
         </Tooltip>
       </span>

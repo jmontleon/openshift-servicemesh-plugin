@@ -17,13 +17,17 @@ export const ValidationStack: React.FC<ValidationStackProps> = (props: Validatio
   const validationList = (): React.ReactNode[] => {
     return (props.checks ?? []).map((check, index) => {
       return (
-        <StackItem key={`validation-check-item-${index}`} className={colorStyle}>
-          <Validation
-            key={`validation-check-${index}`}
-            severity={check.severity}
-            message={`${check.code ? `${check.code} ` : ''}${check.message}`}
-          />
-        </StackItem>
+        <StackItem
+          key={`validation-check-item-${index}`}
+          className={colorStyle}
+          component={
+            <Validation
+              key={`validation-check-${index}`}
+              severity={check.severity}
+              message={`${check.code ? `${check.code} ` : ''}${check.message}`}
+            />
+          }
+        />
       );
     });
   };
@@ -34,7 +38,7 @@ export const ValidationStack: React.FC<ValidationStackProps> = (props: Validatio
   if (!isValid) {
     return (
       <Stack>
-        <StackItem className={titleStyle}>Istio validations</StackItem>
+        <StackItem className={titleStyle} component={"Istio validations"} />
         {validationList()}
       </Stack>
     );

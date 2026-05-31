@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { IRow, ISortBy, OnSort, SortByDirection, TableVariant } from '@patternfly/react-table';
 import { ZtunnelWorkload } from '../../types/IstioObjects';
-import { EmptyState, EmptyStateBody, EmptyStateVariant } from '@patternfly/react-core';
+import { EmptyState, EmptyStateVariant } from '@patternfly/react-core';
 import { emtpytStyle } from './ZtunnelServicesTable';
 import { SimpleTable } from '../Table/SimpleTable';
 import { t } from 'i18next';
@@ -80,11 +80,7 @@ export const ZtunnelWorkloadsTable: React.FC<ZtunnelWorkloadsProps> = (props: Zt
     : [];
 
   const noWorkloadsConfig: React.ReactNode = (
-    <EmptyState variant={EmptyStateVariant.sm} className={emtpytStyle}>
-      <EmptyStateBody className={emtpytStyle} data-test="istio-config-empty">
-        {t('No Ztunnel workloads found')}
-      </EmptyStateBody>
-    </EmptyState>
+    <EmptyState variant={EmptyStateVariant.sm} className={emtpytStyle} titleText={t('No Ztunnel workloads found')} data-test="istio-config-empty" />
   );
 
   return (

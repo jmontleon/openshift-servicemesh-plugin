@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Dropdown, DropdownList, MenuToggle, MenuToggleElement, TooltipPosition } from '@patternfly/react-core';
+import { Dropdown, MenuToggle, MenuToggleElement, TooltipPosition } from '@patternfly/react-core';
 import { WorkloadOverview } from '../../types/ServiceInfo';
 import {
   DestinationRule,
@@ -209,22 +209,19 @@ export const ServiceWizardDropdown: React.FC<Props> = (props: Props) => {
       isOpen={isActionsOpen}
       onOpenChange={(isOpen: boolean) => onActionsToggle(isOpen)}
       onSelect={onActionsSelect}
-      popperProps={{ position: 'right' }}
     >
-      <DropdownList>
-        <ServiceWizardActionsDropdownGroup
-          key="service_wizard_actions_dropdown_group"
-          isDisabled={isDeleting || props.readOnly}
-          virtualServices={props.virtualServices}
-          destinationRules={props.destinationRules}
-          k8sHTTPRoutes={props.k8sHTTPRoutes ?? []}
-          k8sGRPCRoutes={props.k8sGRPCRoutes ?? []}
-          annotations={props.annotations}
-          istioPermissions={props.istioPermissions}
-          onAction={onAction}
-          onDelete={onAction}
-        />
-      </DropdownList>
+      <ServiceWizardActionsDropdownGroup
+        key="service_wizard_actions_dropdown_group"
+        isDisabled={isDeleting || props.readOnly}
+        virtualServices={props.virtualServices}
+        destinationRules={props.destinationRules}
+        k8sHTTPRoutes={props.k8sHTTPRoutes ?? []}
+        k8sGRPCRoutes={props.k8sGRPCRoutes ?? []}
+        annotations={props.annotations}
+        istioPermissions={props.istioPermissions}
+        onAction={onAction}
+        onDelete={onAction}
+      />
     </Dropdown>
   );
   return (

@@ -2,12 +2,12 @@ import * as React from 'react';
 import {
 	Button,
 	ButtonVariant,
+	Modal,
+	ModalBody,
+	ModalHeader,
 	Split,
 	SplitItem
 } from '@patternfly/react-core';
-import {
-	Modal
-} from '@patternfly/react-core/deprecated';
 import { kialiStyle } from 'styles/StyleUtils';
 import { AccessLog } from 'types/IstioObjects';
 import { PFColors } from 'components/Pf/PfColors';
@@ -848,23 +848,27 @@ export const AccessLogModal: React.FC<AccessLogModalProps> = (props: AccessLogMo
     <Modal
       className={modalStyle}
       disableFocusTrap={true}
-      title={
-        props.isZtunnel
-          ? 'ztunnel Access Log Entry'
-          : props.isWaypoint
-          ? 'Waypoint Access log Entry'
-          : 'Envoy Access Log Entry'
-      }
       isOpen={true}
       onClose={props.onClose}
     >
-      <div style={{ height: '85%' }}>
-        <div className={prefaceStyle}>{props.accessLogMessage} </div>
-        <Split style={{ height: '100%' }}>
-          <SplitItem className={classes(splitStyle, contentStyle)}>{accessLogContent(props.accessLog)}</SplitItem>
-          <SplitItem className={classes(splitStyle, descriptionStyle)}>{description}</SplitItem>
-        </Split>
-      </div>
+      <ModalHeader
+        title={
+          props.isZtunnel
+            ? 'ztunnel Access Log Entry'
+            : props.isWaypoint
+            ? 'Waypoint Access log Entry'
+            : 'Envoy Access Log Entry'
+        }
+      />
+      <ModalBody>
+        <div style={{ height: '85%' }}>
+          <div className={prefaceStyle}>{props.accessLogMessage} </div>
+          <Split style={{ height: '100%' }}>
+            <SplitItem className={classes(splitStyle, contentStyle)}>{accessLogContent(props.accessLog)}</SplitItem>
+            <SplitItem className={classes(splitStyle, descriptionStyle)}>{description}</SplitItem>
+          </Split>
+        </div>
+      </ModalBody>
     </Modal>
   );
 };

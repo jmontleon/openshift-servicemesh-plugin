@@ -6,6 +6,11 @@ exports[`Language switch renders correctly 1`] = `
   isOpen={false}
   onOpenChange={[Function]}
   onSelect={[Function]}
+  popperProps={
+    {
+      "appendTo": "inline",
+    }
+  }
   selected="en"
   toggle={[Function]}
 >

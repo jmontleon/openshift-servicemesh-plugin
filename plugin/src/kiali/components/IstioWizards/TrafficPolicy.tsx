@@ -463,6 +463,7 @@ class TrafficPolicyComponent extends React.Component<Props, TrafficPolicyState> 
               </MenuToggle>
             )}
             aria-label="TLS Mode Select"
+            popperProps={{ appendTo: 'inline' }}
           >
             <SelectList>
               {mTLSMode.map(mode => (
@@ -553,6 +554,7 @@ class TrafficPolicyComponent extends React.Component<Props, TrafficPolicyState> 
                 </MenuToggle>
               )}
               aria-label="PeerAuthentication Mode Select"
+              popperProps={{ appendTo: 'inline' }}
             >
               <SelectList>
                 {Object.keys(PeerAuthenticationMutualTLSMode).map(mode => (
@@ -617,6 +619,7 @@ class TrafficPolicyComponent extends React.Component<Props, TrafficPolicyState> 
                     </MenuToggle>
                   )}
                   aria-label="LoadBalancer Type Select"
+                  popperProps={{ appendTo: 'inline' }}
                 >
                   <SelectList>
                     {loadBalancerSimple.map(simple => (

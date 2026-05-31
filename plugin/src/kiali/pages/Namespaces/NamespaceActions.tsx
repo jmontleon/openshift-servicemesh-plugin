@@ -51,29 +51,32 @@ export const NamespaceActions: React.FC<Props> = (props: Props) => {
           key={`group_${i}`}
           label={action.title}
           className={groupMenuStyle}
-          children={action.children.map((subaction, j) => {
-            const itemKey = `subaction_${i}_${j}`;
+        >
+          <DropdownList>
+            {action.children.map((subaction, j) => {
+              const itemKey = `subaction_${i}_${j}`;
 
-            const item = (
-              <DropdownItem
-                key={itemKey}
-                isDisabled={subaction.isDisabled}
-                onClick={() => (subaction.action ? subaction.action(props.namespace) : undefined)}
-              >
-                {subaction.title}
-              </DropdownItem>
-            );
+              const item = (
+                <DropdownItem
+                  key={itemKey}
+                  isDisabled={subaction.isDisabled}
+                  onClick={() => (subaction.action ? subaction.action(props.namespace) : undefined)}
+                >
+                  {subaction.title}
+                </DropdownItem>
+              );
 
-            return subaction.isDisabled
-              ? renderDisabledDropdownOption(
-                  `tooltip_${itemKey}`,
-                  TooltipPosition.left,
-                  'User does not have enough permission for this action',
-                  item
-                )
-              : item;
-          })}
-        />
+              return subaction.isDisabled
+                ? renderDisabledDropdownOption(
+                    `tooltip_${itemKey}`,
+                    TooltipPosition.left,
+                    'User does not have enough permission for this action',
+                    item
+                  )
+                : item;
+            })}
+          </DropdownList>
+        </DropdownGroup>
       );
     } else if (action.title && action.action) {
       const item = (
@@ -110,9 +113,8 @@ export const NamespaceActions: React.FC<Props> = (props: Props) => {
           variant="plain"
           onClick={() => onKebabToggle(!isKebabOpen)}
           isExpanded={isKebabOpen}
-        >
-          <KialiIcon.KebabToggle />
-        </MenuToggle>
+          icon={<KialiIcon.KebabToggle />}
+        />
       )}
       isOpen={isKebabOpen}
       onOpenChange={(isOpen: boolean) => onKebabToggle(isOpen)}
