@@ -185,7 +185,7 @@ class NamespaceDropdownComponent extends React.PureComponent<NamespaceDropdownPr
             onChange={(_event, value: string) => this.onFilterChange(value)}
           />
           {hasFilter && (
-            <Tooltip key="ot_clear_namespace_filter" position="top" content="Clear Filter by Name" appendTo="inline">
+            <Tooltip key="ot_clear_namespace_filter" position="top" content="Clear Filter by Name">
               <Button className={closeButtonStyle} onClick={this.clearFilter} isInline>
                 <KialiIcon.Close />
               </Button>

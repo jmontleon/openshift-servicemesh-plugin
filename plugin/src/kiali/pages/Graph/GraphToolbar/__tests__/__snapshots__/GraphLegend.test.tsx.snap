@@ -1,4 +1,4 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
 
 exports[`GraphLegend test should render correctly 1`] = `
 <div
@@ -32,7 +32,7 @@ exports[`GraphLegend test should render correctly 1`] = `
       Node Shapes
       <div
         className="kiali_fxx5dxr"
-        key="node.svg"
+        key="test-file-stub"
       >
         <span
           className="kiali_fzoxfwf"
@@ -40,7 +40,7 @@ exports[`GraphLegend test should render correctly 1`] = `
           <img
             alt="Workload"
             className=""
-            src="node.svg"
+            src="test-file-stub"
           />
         </span>
         <span
@@ -51,7 +51,7 @@ exports[`GraphLegend test should render correctly 1`] = `
       </div>
       <div
         className="kiali_fxx5dxr"
-        key="app.svg"
+        key="test-file-stub"
       >
         <span
           className="kiali_fzoxfwf"
@@ -59,7 +59,7 @@ exports[`GraphLegend test should render correctly 1`] = `
           <img
             alt="App"
             className=""
-            src="app.svg"
+            src="test-file-stub"
           />
         </span>
         <span
@@ -70,7 +70,7 @@ exports[`GraphLegend test should render correctly 1`] = `
       </div>
       <div
         className="kiali_fxx5dxr"
-        key="operation.svg"
+        key="test-file-stub"
       >
         <span
           className="kiali_fzoxfwf"
@@ -78,7 +78,7 @@ exports[`GraphLegend test should render correctly 1`] = `
           <img
             alt="Operation"
             className=""
-            src="operation.svg"
+            src="test-file-stub"
           />
         </span>
         <span
@@ -89,7 +89,7 @@ exports[`GraphLegend test should render correctly 1`] = `
       </div>
       <div
         className="kiali_fxx5dxr"
-        key="service.svg"
+        key="test-file-stub"
       >
         <span
           className="kiali_fzoxfwf"
@@ -97,7 +97,7 @@ exports[`GraphLegend test should render correctly 1`] = `
           <img
             alt="Service"
             className=""
-            src="service.svg"
+            src="test-file-stub"
           />
         </span>
         <span
@@ -108,7 +108,7 @@ exports[`GraphLegend test should render correctly 1`] = `
       </div>
       <div
         className="kiali_fxx5dxr"
-        key="service-entry.svg"
+        key="test-file-stub"
       >
         <span
           className="kiali_fzoxfwf"
@@ -116,7 +116,7 @@ exports[`GraphLegend test should render correctly 1`] = `
           <img
             alt="Service Entry"
             className=""
-            src="service-entry.svg"
+            src="test-file-stub"
           />
         </span>
         <span
@@ -133,7 +133,7 @@ exports[`GraphLegend test should render correctly 1`] = `
       Node Colors
       <div
         className="kiali_fxx5dxr"
-        key="node-color-healthy.svg"
+        key="test-file-stub"
       >
         <span
           className="kiali_fzoxfwf"
@@ -141,7 +141,7 @@ exports[`GraphLegend test should render correctly 1`] = `
           <img
             alt="Healthy"
             className=""
-            src="node-color-healthy.svg"
+            src="test-file-stub"
           />
         </span>
         <span
@@ -152,7 +152,7 @@ exports[`GraphLegend test should render correctly 1`] = `
       </div>
       <div
         className="kiali_fxx5dxr"
-        key="node-color-warning.svg"
+        key="test-file-stub"
       >
         <span
           className="kiali_fzoxfwf"
@@ -160,7 +160,7 @@ exports[`GraphLegend test should render correctly 1`] = `
           <img
             alt="Warn"
             className=""
-            src="node-color-warning.svg"
+            src="test-file-stub"
           />
         </span>
         <span
@@ -171,7 +171,7 @@ exports[`GraphLegend test should render correctly 1`] = `
       </div>
       <div
         className="kiali_fxx5dxr"
-        key="node-color-danger.svg"
+        key="test-file-stub"
       >
         <span
           className="kiali_fzoxfwf"
@@ -179,7 +179,7 @@ exports[`GraphLegend test should render correctly 1`] = `
           <img
             alt="Unhealthy"
             className=""
-            src="node-color-danger.svg"
+            src="test-file-stub"
           />
         </span>
         <span
@@ -190,7 +190,7 @@ exports[`GraphLegend test should render correctly 1`] = `
       </div>
       <div
         className="kiali_fxx5dxr"
-        key="node-color-idle.svg"
+        key="test-file-stub"
       >
         <span
           className="kiali_fzoxfwf"
@@ -198,7 +198,7 @@ exports[`GraphLegend test should render correctly 1`] = `
           <img
             alt="Idle"
             className=""
-            src="node-color-idle.svg"
+            src="test-file-stub"
           />
         </span>
         <span
@@ -215,7 +215,7 @@ exports[`GraphLegend test should render correctly 1`] = `
       Node Background
       <div
         className="kiali_fxx5dxr"
-        key="external-namespace.svg"
+        key="test-file-stub"
       >
         <span
           className="kiali_fzoxfwf"
@@ -223,7 +223,7 @@ exports[`GraphLegend test should render correctly 1`] = `
           <img
             alt="Unselected Namespace"
             className=""
-            src="external-namespace.svg"
+            src="test-file-stub"
           />
         </span>
         <span
@@ -234,7 +234,7 @@ exports[`GraphLegend test should render correctly 1`] = `
       </div>
       <div
         className="kiali_fxx5dxr"
-        key="restricted-namespace.svg"
+        key="test-file-stub"
       >
         <span
           className="kiali_fzoxfwf"
@@ -242,7 +242,7 @@ exports[`GraphLegend test should render correctly 1`] = `
           <img
             alt="Restricted / External"
             className=""
-            src="restricted-namespace.svg"
+            src="test-file-stub"
           />
         </span>
         <span
@@ -259,7 +259,7 @@ exports[`GraphLegend test should render correctly 1`] = `
       Edges
       <div
         className="kiali_fxx5dxr"
-        key="edge-danger.svg"
+        key="test-file-stub"
       >
         <span
           className="kiali_fzoxfwf"
@@ -267,7 +267,7 @@ exports[`GraphLegend test should render correctly 1`] = `
           <img
             alt="Failure"
             className=""
-            src="edge-danger.svg"
+            src="test-file-stub"
           />
         </span>
         <span
@@ -278,7 +278,7 @@ exports[`GraphLegend test should render correctly 1`] = `
       </div>
       <div
         className="kiali_fxx5dxr"
-        key="edge-warn.svg"
+        key="test-file-stub"
       >
         <span
           className="kiali_fzoxfwf"
@@ -286,7 +286,7 @@ exports[`GraphLegend test should render correctly 1`] = `
           <img
             alt="Degraded"
             className=""
-            src="edge-warn.svg"
+            src="test-file-stub"
           />
         </span>
         <span
@@ -297,7 +297,7 @@ exports[`GraphLegend test should render correctly 1`] = `
       </div>
       <div
         className="kiali_fxx5dxr"
-        key="edge-success.svg"
+        key="test-file-stub"
       >
         <span
           className="kiali_fzoxfwf"
@@ -305,7 +305,7 @@ exports[`GraphLegend test should render correctly 1`] = `
           <img
             alt="Healthy"
             className=""
-            src="edge-success.svg"
+            src="test-file-stub"
           />
         </span>
         <span
@@ -316,7 +316,7 @@ exports[`GraphLegend test should render correctly 1`] = `
       </div>
       <div
         className="kiali_fxx5dxr"
-        key="edge-tcp.svg"
+        key="test-file-stub"
       >
         <span
           className="kiali_fzoxfwf"
@@ -324,7 +324,7 @@ exports[`GraphLegend test should render correctly 1`] = `
           <img
             alt="TCP Connection"
             className=""
-            src="edge-tcp.svg"
+            src="test-file-stub"
           />
         </span>
         <span
@@ -335,7 +335,7 @@ exports[`GraphLegend test should render correctly 1`] = `
       </div>
       <div
         className="kiali_fxx5dxr"
-        key="edge-idle.svg"
+        key="test-file-stub"
       >
         <span
           className="kiali_fzoxfwf"
@@ -343,7 +343,7 @@ exports[`GraphLegend test should render correctly 1`] = `
           <img
             alt="Idle"
             className=""
-            src="edge-idle.svg"
+            src="test-file-stub"
           />
         </span>
         <span
@@ -354,7 +354,7 @@ exports[`GraphLegend test should render correctly 1`] = `
       </div>
       <div
         className="kiali_fxx5dxr"
-        key="mtls-badge.svg"
+        key="test-file-stub"
       >
         <span
           className="kiali_fzoxfwf"
@@ -362,7 +362,7 @@ exports[`GraphLegend test should render correctly 1`] = `
           <img
             alt="mTLS (badge)"
             className=""
-            src="mtls-badge.svg"
+            src="test-file-stub"
           />
         </span>
         <span
@@ -379,7 +379,7 @@ exports[`GraphLegend test should render correctly 1`] = `
       Traffic Animation
       <div
         className="kiali_fxx5dxr"
-        key="traffic-healthy-request.svg"
+        key="test-file-stub"
       >
         <span
           className="kiali_fzoxfwf"
@@ -387,7 +387,7 @@ exports[`GraphLegend test should render correctly 1`] = `
           <img
             alt="Healthy Request"
             className=""
-            src="traffic-healthy-request.svg"
+            src="test-file-stub"
           />
         </span>
         <span
@@ -398,7 +398,7 @@ exports[`GraphLegend test should render correctly 1`] = `
       </div>
       <div
         className="kiali_fxx5dxr"
-        key="traffic-failed-request.svg"
+        key="test-file-stub"
       >
         <span
           className="kiali_fzoxfwf"
@@ -406,7 +406,7 @@ exports[`GraphLegend test should render correctly 1`] = `
           <img
             alt="Failed Request"
             className=""
-            src="traffic-failed-request.svg"
+            src="test-file-stub"
           />
         </span>
         <span
@@ -417,7 +417,7 @@ exports[`GraphLegend test should render correctly 1`] = `
       </div>
       <div
         className="kiali_fxx5dxr"
-        key="traffic-tcp.svg"
+        key="test-file-stub"
       >
         <span
           className="kiali_fzoxfwf"
@@ -425,7 +425,7 @@ exports[`GraphLegend test should render correctly 1`] = `
           <img
             alt="TCP Traffic"
             className=""
-            src="traffic-tcp.svg"
+            src="test-file-stub"
           />
         </span>
         <span
@@ -442,7 +442,7 @@ exports[`GraphLegend test should render correctly 1`] = `
       Node Badges
       <div
         className="kiali_fxx5dxr"
-        key="node-badge-circuit-breaker.svg"
+        key="test-file-stub"
       >
         <span
           className="kiali_fzoxfwf"
@@ -450,7 +450,7 @@ exports[`GraphLegend test should render correctly 1`] = `
           <img
             alt="Circuit Breaker"
             className="kiali_f8j7sv3"
-            src="node-badge-circuit-breaker.svg"
+            src="test-file-stub"
           />
         </span>
         <span
@@ -461,7 +461,7 @@ exports[`GraphLegend test should render correctly 1`] = `
       </div>
       <div
         className="kiali_fxx5dxr"
-        key="node-badge-fault-injection.svg"
+        key="test-file-stub"
       >
         <span
           className="kiali_fzoxfwf"
@@ -469,7 +469,7 @@ exports[`GraphLegend test should render correctly 1`] = `
           <img
             alt="Fault Injection"
             className="kiali_f8j7sv3"
-            src="node-badge-fault-injection.svg"
+            src="test-file-stub"
           />
         </span>
         <span
@@ -480,7 +480,7 @@ exports[`GraphLegend test should render correctly 1`] = `
       </div>
       <div
         className="kiali_fxx5dxr"
-        key="node-badge-gateways.svg"
+        key="test-file-stub"
       >
         <span
           className="kiali_fzoxfwf"
@@ -488,7 +488,7 @@ exports[`GraphLegend test should render correctly 1`] = `
           <img
             alt="Gateway"
             className="kiali_f8j7sv3"
-            src="node-badge-gateways.svg"
+            src="test-file-stub"
           />
         </span>
         <span
@@ -499,7 +499,7 @@ exports[`GraphLegend test should render correctly 1`] = `
       </div>
       <div
         className="kiali_fxx5dxr"
-        key="node-badge-mirroring.svg"
+        key="test-file-stub"
       >
         <span
           className="kiali_fzoxfwf"
@@ -507,7 +507,7 @@ exports[`GraphLegend test should render correctly 1`] = `
           <img
             alt="Mirroring"
             className="kiali_f8j7sv3"
-            src="node-badge-mirroring.svg"
+            src="test-file-stub"
           />
         </span>
         <span
@@ -518,7 +518,7 @@ exports[`GraphLegend test should render correctly 1`] = `
       </div>
       <div
         className="kiali_fxx5dxr"
-        key="node-badge-missing-sidecar.svg"
+        key="test-file-stub"
       >
         <span
           className="kiali_fzoxfwf"
@@ -526,7 +526,7 @@ exports[`GraphLegend test should render correctly 1`] = `
           <img
             alt="Missing Sidecar"
             className="kiali_f8j7sv3"
-            src="node-badge-missing-sidecar.svg"
+            src="test-file-stub"
           />
         </span>
         <span
@@ -537,7 +537,7 @@ exports[`GraphLegend test should render correctly 1`] = `
       </div>
       <div
         className="kiali_fxx5dxr"
-        key="node-badge-request-timeout.svg"
+        key="test-file-stub"
       >
         <span
           className="kiali_fzoxfwf"
@@ -545,7 +545,7 @@ exports[`GraphLegend test should render correctly 1`] = `
           <img
             alt="Request Timeout"
             className="kiali_f8j7sv3"
-            src="node-badge-request-timeout.svg"
+            src="test-file-stub"
           />
         </span>
         <span
@@ -556,7 +556,7 @@ exports[`GraphLegend test should render correctly 1`] = `
       </div>
       <div
         className="kiali_fxx5dxr"
-        key="node-badge-traffic-shifting.svg"
+        key="test-file-stub"
       >
         <span
           className="kiali_fzoxfwf"
@@ -564,7 +564,7 @@ exports[`GraphLegend test should render correctly 1`] = `
           <img
             alt="Traffic Shifting / TCP Traffic Shifting"
             className="kiali_f8j7sv3"
-            src="node-badge-traffic-shifting.svg"
+            src="test-file-stub"
           />
         </span>
         <span
@@ -575,7 +575,7 @@ exports[`GraphLegend test should render correctly 1`] = `
       </div>
       <div
         className="kiali_fxx5dxr"
-        key="node-badge-traffic-source.svg"
+        key="test-file-stub"
       >
         <span
           className="kiali_fzoxfwf"
@@ -583,7 +583,7 @@ exports[`GraphLegend test should render correctly 1`] = `
           <img
             alt="Traffic Source"
             className="kiali_f8j7sv3"
-            src="node-badge-traffic-source.svg"
+            src="test-file-stub"
           />
         </span>
         <span
@@ -594,7 +594,7 @@ exports[`GraphLegend test should render correctly 1`] = `
       </div>
       <div
         className="kiali_fxx5dxr"
-        key="node-badge-virtual-services.svg"
+        key="test-file-stub"
       >
         <span
           className="kiali_fzoxfwf"
@@ -602,7 +602,7 @@ exports[`GraphLegend test should render correctly 1`] = `
           <img
             alt="Virtual Service / Request Routing"
             className="kiali_f8j7sv3"
-            src="node-badge-virtual-services.svg"
+            src="test-file-stub"
           />
         </span>
         <span
@@ -613,7 +613,7 @@ exports[`GraphLegend test should render correctly 1`] = `
       </div>
       <div
         className="kiali_fxx5dxr"
-        key="node-badge-workload-entry.svg"
+        key="test-file-stub"
       >
         <span
           className="kiali_fzoxfwf"
@@ -621,7 +621,7 @@ exports[`GraphLegend test should render correctly 1`] = `
           <img
             alt="Workload Entry"
             className="kiali_f8j7sv3"
-            src="node-badge-workload-entry.svg"
+            src="test-file-stub"
           />
         </span>
         <span

@@ -30,7 +30,7 @@ export const TraceLimit: React.FC<TraceLimitProps> = (props: TraceLimitProps) =>
     <Tooltip
       key="tooltip_limit_per_query"
       position={TooltipPosition.right}
-      appendTo="inline"
+     
       content={
         <div style={{ textAlign: 'left' }}>
           <div>

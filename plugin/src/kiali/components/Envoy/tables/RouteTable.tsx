@@ -156,7 +156,7 @@ export class RouteTable implements SummaryTable {
   tooltip = (): React.ReactNode => {
     return (
       <Tooltip
-        appendTo="inline"
+       
         content={
           <div className={kialiStyle({ textAlign: 'left' })}>
             Network connection between source a destination that is configured in envoy

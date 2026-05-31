@@ -111,21 +111,21 @@ export class SummaryPanelClusterBox extends React.Component<SummaryPanelPropType
               content="Traffic entering from another cluster."
               entryDelay={1250}
               triggerRef={tooltipInboundRef}
-              appendTo="inline"
+             
             />
             <Tooltip
               id="tooltip-outbound"
               content="Traffic exiting to another cluster."
               entryDelay={1250}
               triggerRef={tooltipOutboundRef}
-              appendTo="inline"
+             
             />
             <Tooltip
               id="tooltip-total"
               content="All inbound, outbound and internal cluster traffic."
               entryDelay={1250}
               triggerRef={tooltipTotalRef}
-              appendTo="inline"
+             
             />
             <Tab style={summaryFont} title="Inbound" eventKey={0} ref={tooltipInboundRef}>
               <div style={summaryFont}>

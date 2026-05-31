@@ -1,4 +1,4 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
 
 exports[`GraphLegend test should render correctly 1`] = `
 <div
@@ -32,7 +32,7 @@ exports[`GraphLegend test should render correctly 1`] = `
       Node Shapes
       <div
         className="kiali_fxx5dxr"
-        key="node-infra.svg"
+        key="test-file-stub"
       >
         <span
           className="kiali_fzoxfwf"
@@ -40,7 +40,7 @@ exports[`GraphLegend test should render correctly 1`] = `
           <img
             alt="Infra node"
             className=""
-            src="node-infra.svg"
+            src="test-file-stub"
           />
         </span>
         <span
@@ -51,7 +51,7 @@ exports[`GraphLegend test should render correctly 1`] = `
       </div>
       <div
         className="kiali_fxx5dxr"
-        key="node-dataplane.svg"
+        key="test-file-stub"
       >
         <span
           className="kiali_fzoxfwf"
@@ -59,7 +59,7 @@ exports[`GraphLegend test should render correctly 1`] = `
           <img
             alt="Data Plane"
             className=""
-            src="node-dataplane.svg"
+            src="test-file-stub"
           />
         </span>
         <span
@@ -70,7 +70,7 @@ exports[`GraphLegend test should render correctly 1`] = `
       </div>
       <div
         className="kiali_fxx5dxr"
-        key="node-gateway.svg"
+        key="test-file-stub"
       >
         <span
           className="kiali_fzoxfwf"
@@ -78,7 +78,7 @@ exports[`GraphLegend test should render correctly 1`] = `
           <img
             alt="Gateway/Waypoint"
             className=""
-            src="node-gateway.svg"
+            src="test-file-stub"
           />
         </span>
         <span
@@ -95,7 +95,7 @@ exports[`GraphLegend test should render correctly 1`] = `
       Node Colors
       <div
         className="kiali_fxx5dxr"
-        key="node-color-healthy.svg"
+        key="test-file-stub"
       >
         <span
           className="kiali_fzoxfwf"
@@ -103,7 +103,7 @@ exports[`GraphLegend test should render correctly 1`] = `
           <img
             alt="Healthy"
             className=""
-            src="node-color-healthy.svg"
+            src="test-file-stub"
           />
         </span>
         <span
@@ -114,7 +114,7 @@ exports[`GraphLegend test should render correctly 1`] = `
       </div>
       <div
         className="kiali_fxx5dxr"
-        key="node-color-danger.svg"
+        key="test-file-stub"
       >
         <span
           className="kiali_fzoxfwf"
@@ -122,7 +122,7 @@ exports[`GraphLegend test should render correctly 1`] = `
           <img
             alt="Unhealthy"
             className=""
-            src="node-color-danger.svg"
+            src="test-file-stub"
           />
         </span>
         <span
@@ -139,7 +139,7 @@ exports[`GraphLegend test should render correctly 1`] = `
       Edges
       <div
         className="kiali_fxx5dxr"
-        key="edge-unhealthy.svg"
+        key="test-file-stub"
       >
         <span
           className="kiali_fzoxfwf"
@@ -147,7 +147,7 @@ exports[`GraphLegend test should render correctly 1`] = `
           <img
             alt="Failure"
             className=""
-            src="edge-unhealthy.svg"
+            src="test-file-stub"
           />
         </span>
         <span
@@ -158,7 +158,7 @@ exports[`GraphLegend test should render correctly 1`] = `
       </div>
       <div
         className="kiali_fxx5dxr"
-        key="edge-healthy.svg"
+        key="test-file-stub"
       >
         <span
           className="kiali_fzoxfwf"
@@ -166,7 +166,7 @@ exports[`GraphLegend test should render correctly 1`] = `
           <img
             alt="Healthy"
             className=""
-            src="edge-healthy.svg"
+            src="test-file-stub"
           />
         </span>
         <span
@@ -183,7 +183,7 @@ exports[`GraphLegend test should render correctly 1`] = `
       Node Background
       <div
         className="kiali_fxx5dxr"
-        key="dataplane.svg"
+        key="test-file-stub"
       >
         <span
           className="kiali_fzoxfwf"
@@ -191,7 +191,7 @@ exports[`GraphLegend test should render correctly 1`] = `
           <img
             alt="Data Plane"
             className="kiali_fkbfmy6"
-            src="dataplane.svg"
+            src="test-file-stub"
           />
         </span>
         <span
@@ -202,7 +202,7 @@ exports[`GraphLegend test should render correctly 1`] = `
       </div>
       <div
         className="kiali_fxx5dxr"
-        key="gateway.svg"
+        key="test-file-stub"
       >
         <span
           className="kiali_fzoxfwf"
@@ -210,7 +210,7 @@ exports[`GraphLegend test should render correctly 1`] = `
           <img
             alt="Gateway"
             className="kiali_fkbfmy6"
-            src="gateway.svg"
+            src="test-file-stub"
           />
         </span>
         <span
@@ -221,7 +221,7 @@ exports[`GraphLegend test should render correctly 1`] = `
       </div>
       <div
         className="kiali_fxx5dxr"
-        key="grafana.svg"
+        key="test-file-stub"
       >
         <span
           className="kiali_fzoxfwf"
@@ -229,7 +229,7 @@ exports[`GraphLegend test should render correctly 1`] = `
           <img
             alt="Grafana"
             className="kiali_fkbfmy6"
-            src="grafana.svg"
+            src="test-file-stub"
           />
         </span>
         <span
@@ -240,7 +240,7 @@ exports[`GraphLegend test should render correctly 1`] = `
       </div>
       <div
         className="kiali_fxx5dxr"
-        key="jaeger.svg"
+        key="test-file-stub"
       >
         <span
           className="kiali_fzoxfwf"
@@ -248,7 +248,7 @@ exports[`GraphLegend test should render correctly 1`] = `
           <img
             alt="Jaeger"
             className="kiali_fkbfmy6"
-            src="jaeger.svg"
+            src="test-file-stub"
           />
         </span>
         <span
@@ -259,7 +259,7 @@ exports[`GraphLegend test should render correctly 1`] = `
       </div>
       <div
         className="kiali_fxx5dxr"
-        key="kiali.svg"
+        key="test-file-stub"
       >
         <span
           className="kiali_fzoxfwf"
@@ -267,7 +267,7 @@ exports[`GraphLegend test should render correctly 1`] = `
           <img
             alt="Kiali"
             className="kiali_fkbfmy6"
-            src="kiali.svg"
+            src="test-file-stub"
           />
         </span>
         <span
@@ -278,7 +278,7 @@ exports[`GraphLegend test should render correctly 1`] = `
       </div>
       <div
         className="kiali_fxx5dxr"
-        key="istio.svg"
+        key="test-file-stub"
       >
         <span
           className="kiali_fzoxfwf"
@@ -286,7 +286,7 @@ exports[`GraphLegend test should render correctly 1`] = `
           <img
             alt="Istio"
             className="kiali_fkbfmy6"
-            src="istio.svg"
+            src="test-file-stub"
           />
         </span>
         <span
@@ -297,7 +297,7 @@ exports[`GraphLegend test should render correctly 1`] = `
       </div>
       <div
         className="kiali_fxx5dxr"
-        key="perses.svg"
+        key="test-file-stub"
       >
         <span
           className="kiali_fzoxfwf"
@@ -305,7 +305,7 @@ exports[`GraphLegend test should render correctly 1`] = `
           <img
             alt="Perses"
             className="kiali_fkbfmy6"
-            src="perses.svg"
+            src="test-file-stub"
           />
         </span>
         <span
@@ -316,7 +316,7 @@ exports[`GraphLegend test should render correctly 1`] = `
       </div>
       <div
         className="kiali_fxx5dxr"
-        key="prometheus.svg"
+        key="test-file-stub"
       >
         <span
           className="kiali_fzoxfwf"
@@ -324,7 +324,7 @@ exports[`GraphLegend test should render correctly 1`] = `
           <img
             alt="Prometheus"
             className="kiali_fkbfmy6"
-            src="prometheus.svg"
+            src="test-file-stub"
           />
         </span>
         <span
@@ -335,7 +335,7 @@ exports[`GraphLegend test should render correctly 1`] = `
       </div>
       <div
         className="kiali_fxx5dxr"
-        key="tempo.svg"
+        key="test-file-stub"
       >
         <span
           className="kiali_fzoxfwf"
@@ -343,7 +343,7 @@ exports[`GraphLegend test should render correctly 1`] = `
           <img
             alt="Tempo"
             className="kiali_fkbfmy6"
-            src="tempo.svg"
+            src="test-file-stub"
           />
         </span>
         <span
@@ -354,7 +354,7 @@ exports[`GraphLegend test should render correctly 1`] = `
       </div>
       <div
         className="kiali_fxx5dxr"
-        key="waypoint.svg"
+        key="test-file-stub"
       >
         <span
           className="kiali_fzoxfwf"
@@ -362,7 +362,7 @@ exports[`GraphLegend test should render correctly 1`] = `
           <img
             alt="Waypoint"
             className="kiali_fkbfmy6"
-            src="waypoint.svg"
+            src="test-file-stub"
           />
         </span>
         <span

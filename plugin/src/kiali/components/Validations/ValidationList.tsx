@@ -29,7 +29,7 @@ export const ValidationList: React.FC<ValidationListProps> = (props: ValidationL
       position={props.tooltipPosition ?? TooltipPosition.left}
       enableFlip={true}
       content={isValid ? 'Valid' : content}
-      appendTo="inline"
+     
     >
       <span>
         <Validation severity={severity} />

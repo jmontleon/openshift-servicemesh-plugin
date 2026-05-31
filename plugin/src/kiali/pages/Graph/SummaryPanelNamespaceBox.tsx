@@ -202,7 +202,7 @@ export class SummaryPanelNamespaceBox extends React.Component<SummaryPanelPropTy
               content="Traffic entering from another namespace."
               entryDelay={1250}
               triggerRef={tooltipInboundRef}
-              appendTo="inline"
+             
             />
 
             <Tooltip

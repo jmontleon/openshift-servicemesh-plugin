@@ -93,7 +93,7 @@ export const ReferenceIstioObjectLink: React.FC<ReferenceIstioObjectProps> = (pr
       {!showLink && <div style={{ display: 'inline-block' }}>{reference}</div>}
 
       {showTooltip && (
-        <Tooltip appendTo="inline" position={TooltipPosition.right} content={<div style={{ textAlign: 'left' }}>{tooltipMsg}</div>}>
+        <Tooltip position={TooltipPosition.right} content={<div style={{ textAlign: 'left' }}>{tooltipMsg}</div>}>
           <KialiIcon.Info className={classes(infoStyle, objectInfoStyle)} />
         </Tooltip>
       )}

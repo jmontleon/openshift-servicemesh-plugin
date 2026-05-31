@@ -80,7 +80,7 @@ export const IstioActionDropdown: React.FC<IstioActionDropdownProps> = (props: I
         isOpen={dropdownOpen}
         onOpenChange={(isOpen: boolean) => onToggle(isOpen)}
         onSelect={onSelect}
-        popperProps={{ placement: 'end' }}
+        popperProps={{ placement: 'bottom-end' }}
       >
         <DropdownList>{[deleteActionWrapper]}</DropdownList>
       </Dropdown>

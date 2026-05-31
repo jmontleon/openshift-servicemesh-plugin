@@ -160,7 +160,7 @@ export const PFBadge: React.FC<PFBadgeProps> = (props: PFBadgeProps) => {
   return !tt ? (
     badge
   ) : (
-    <Tooltip content={<>{tt}</>} id={ttKey} key={ttKey} position={props.position || TooltipPosition.auto} appendTo="inline">
+    <Tooltip content={<>{tt}</>} id={ttKey} key={ttKey} position={props.position || TooltipPosition.auto}>
       {badge}
     </Tooltip>
   );

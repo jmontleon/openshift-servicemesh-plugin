@@ -1,4 +1,4 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
 
 exports[`lists all the components grouped 1`] = `
 <List
@@ -6,49 +6,61 @@ exports[`lists all the components grouped 1`] = `
   className="kiali_f6tdqla"
   id="istio-status"
 >
-  <IstioComponentStatus
-    componentStatus={
-      Object {
-        "cluster": "Kubernetes",
-        "isCore": true,
-        "name": "istiod",
-        "status": "NotFound",
-      }
-    }
+  <ListItem
     key="status-core-istiod"
-  />
-  <IstioComponentStatus
-    componentStatus={
-      Object {
-        "cluster": "Kubernetes",
-        "isCore": true,
-        "name": "istio-egressgateway",
-        "status": "Unhealthy",
+  >
+    <IstioComponentStatus
+      componentStatus={
+        {
+          "cluster": "Kubernetes",
+          "isCore": true,
+          "name": "istiod",
+          "status": "NotFound",
+        }
       }
-    }
+    />
+  </ListItem>
+  <ListItem
     key="status-core-istio-egressgateway"
-  />
-  <IstioComponentStatus
-    componentStatus={
-      Object {
-        "cluster": "Kubernetes",
-        "isCore": false,
-        "name": "grafana",
-        "status": "NotFound",
+  >
+    <IstioComponentStatus
+      componentStatus={
+        {
+          "cluster": "Kubernetes",
+          "isCore": true,
+          "name": "istio-egressgateway",
+          "status": "Unhealthy",
+        }
       }
-    }
+    />
+  </ListItem>
+  <ListItem
     key="status-addon-grafana"
-  />
-  <IstioComponentStatus
-    componentStatus={
-      Object {
-        "cluster": "Kubernetes",
-        "isCore": false,
-        "name": "prometheus",
-        "status": "Unhealthy",
+  >
+    <IstioComponentStatus
+      componentStatus={
+        {
+          "cluster": "Kubernetes",
+          "isCore": false,
+          "name": "grafana",
+          "status": "NotFound",
+        }
       }
-    }
+    />
+  </ListItem>
+  <ListItem
     key="status-addon-prometheus"
-  />
+  >
+    <IstioComponentStatus
+      componentStatus={
+        {
+          "cluster": "Kubernetes",
+          "isCore": false,
+          "name": "prometheus",
+          "status": "Unhealthy",
+        }
+      }
+    />
+  </ListItem>
 </List>
 `;

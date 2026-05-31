@@ -1,9 +1,9 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
 
 exports[`#LoginPage render correctly should render LoginPage 1`] = `
 <LoginPage
   brandImgAlt="Kiali logo"
-  brandImgSrc="logo-darkbkg.svg"
+  brandImgSrc="test-file-stub"
   className="kiali_f1atptrz"
   footerListItems={
     <React.Fragment>
@@ -48,7 +48,7 @@ exports[`#LoginPage render correctly should render LoginPage 1`] = `
         isDisabled={false}
         onClick={[Function]}
         style={
-          Object {
+          {
             "width": "100%",
           }
         }

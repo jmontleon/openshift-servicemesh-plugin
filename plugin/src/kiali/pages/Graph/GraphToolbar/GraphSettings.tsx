@@ -427,7 +427,7 @@ class GraphSettingsComponent extends React.PureComponent<GraphSettingsProps, Gra
           }}
         >
           <Popover
-            appendTo="inline"
+           
             position={PopoverPosition.right}
             triggerAction="click"
             headerContent={popoverTitle ?? t('Help')}

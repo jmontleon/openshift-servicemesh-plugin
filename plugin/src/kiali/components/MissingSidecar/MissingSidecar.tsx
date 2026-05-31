@@ -39,7 +39,7 @@ export const MissingSidecar: React.FC<MissingSidecarProps> = ({
           <Tooltip
             key="tooltip_missing_sidecar"
             position={TooltipPosition.top}
-            appendTo="inline"
+           
             content={<div style={{ textAlign: 'left' }}>{serverConfig.ambientEnabled ? meshtooltip : texttooltip}</div>}
           >
             <KialiIcon.Info className={infoStyle} />
@@ -53,7 +53,7 @@ export const MissingSidecar: React.FC<MissingSidecarProps> = ({
     <Tooltip
       content={<div style={{ textAlign: 'left' }}>{serverConfig.ambientEnabled ? meshtooltip : texttooltip}</div>}
       position={TooltipPosition.right}
-      appendTo="inline"
+     
     >
       {iconComponent}
     </Tooltip>

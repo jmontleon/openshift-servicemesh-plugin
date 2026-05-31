@@ -1,14 +1,14 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
 
 exports[`When addon component has a problem the Icon shows is displayed in orange 1`] = `
 <IstioStatusComponent
   namespaces={
-    Array [
-      Object {
+    [
+      {
         "cluster": "Kubernetes",
         "name": "bookinfo",
       },
-      Object {
+      {
         "cluster": "Kubernetes",
         "name": "istio-system",
       },
@@ -30,9 +30,9 @@ exports[`When addon component has a problem the Icon shows is displayed in orang
           >
             <PFBadge
               badge={
-                Object {
+                {
                   "badge": "C",
-                  "style": Object {
+                  "style": {
                     "backgroundColor": "var(--pf-t--color--blue--30)",
                   },
                   "tt": "Cluster",
@@ -43,7 +43,7 @@ exports[`When addon component has a problem the Icon shows is displayed in orang
             Kubernetes
             <span
               style={
-                Object {
+                {
                   "marginLeft": "0.25rem",
                 }
               }
@@ -68,8 +68,8 @@ exports[`When addon component has a problem the Icon shows is displayed in orang
                 <IstioStatusList
                   cluster="Kubernetes"
                   status={
-                    Array [
-                      Object {
+                    [
+                      {
                         "cluster": "Kubernetes",
                         "isCore": false,
                         "name": "grafana",
@@ -111,7 +111,7 @@ exports[`When addon component has a problem the Icon shows is displayed in orang
       entryDelay={300}
       exitDelay={300}
       flipBehavior={
-        Array [
+        [
           "top",
           "right",
           "bottom",
@@ -142,7 +142,7 @@ exports[`When addon component has a problem the Icon shows is displayed in orang
           id="pf-tooltip-4"
           role="tooltip"
           style={
-            Object {
+            {
               "maxWidth": "25rem",
             }
           }
@@ -163,9 +163,9 @@ exports[`When addon component has a problem the Icon shows is displayed in orang
                 >
                   <PFBadge
                     badge={
-                      Object {
+                      {
                         "badge": "C",
-                        "style": Object {
+                        "style": {
                           "backgroundColor": "var(--pf-t--color--blue--30)",
                         },
                         "tt": "Cluster",
@@ -176,7 +176,7 @@ exports[`When addon component has a problem the Icon shows is displayed in orang
                   Kubernetes
                   <span
                     style={
-                      Object {
+                      {
                         "marginLeft": "0.25rem",
                       }
                     }
@@ -201,8 +201,8 @@ exports[`When addon component has a problem the Icon shows is displayed in orang
                       <IstioStatusList
                         cluster="Kubernetes"
                         status={
-                          Array [
-                            Object {
+                          [
+                            {
                               "cluster": "Kubernetes",
                               "isCore": false,
                               "name": "grafana",
@@ -233,12 +233,12 @@ exports[`When addon component has a problem the Icon shows is displayed in orang
         </div>
       }
       popperRef={
-        Object {
+        {
           "current": null,
         }
       }
       positionModifiers={
-        Object {
+        {
           "bottom": "pf-m-bottom",
           "bottom-end": "pf-m-bottom-right",
           "bottom-start": "pf-m-bottom-left",
@@ -267,7 +267,7 @@ exports[`When addon component has a problem the Icon shows is displayed in orang
     >
       <div
         style={
-          Object {
+          {
             "display": "contents",
           }
         }
@@ -320,12 +320,12 @@ exports[`When addon component has a problem the Icon shows is displayed in orang
 exports[`When both core and addon component have problems any component is in not ready the Icon shows is displayed in red 1`] = `
 <IstioStatusComponent
   namespaces={
-    Array [
-      Object {
+    [
+      {
         "cluster": "Kubernetes",
         "name": "bookinfo",
       },
-      Object {
+      {
         "cluster": "Kubernetes",
         "name": "istio-system",
       },
@@ -347,9 +347,9 @@ exports[`When both core and addon component have problems any component is in no
           >
             <PFBadge
               badge={
-                Object {
+                {
                   "badge": "C",
-                  "style": Object {
+                  "style": {
                     "backgroundColor": "var(--pf-t--color--blue--30)",
                   },
                   "tt": "Cluster",
@@ -360,7 +360,7 @@ exports[`When both core and addon component have problems any component is in no
             Kubernetes
             <span
               style={
-                Object {
+                {
                   "marginLeft": "0.25rem",
                 }
               }
@@ -385,8 +385,8 @@ exports[`When both core and addon component have problems any component is in no
                 <IstioStatusList
                   cluster="Kubernetes"
                   status={
-                    Array [
-                      Object {
+                    [
+                      {
                         "cluster": "Kubernetes",
                         "isCore": true,
                         "name": "istio-egressgateway",
@@ -410,8 +410,8 @@ exports[`When both core and addon component have problems any component is in no
                 <IstioStatusList
                   cluster="Kubernetes"
                   status={
-                    Array [
-                      Object {
+                    [
+                      {
                         "cluster": "Kubernetes",
                         "isCore": false,
                         "name": "grafana",
@@ -453,7 +453,7 @@ exports[`When both core and addon component have problems any component is in no
       entryDelay={300}
       exitDelay={300}
       flipBehavior={
-        Array [
+        [
           "top",
           "right",
           "bottom",
@@ -484,7 +484,7 @@ exports[`When both core and addon component have problems any component is in no
           id="pf-tooltip-6"
           role="tooltip"
           style={
-            Object {
+            {
               "maxWidth": "25rem",
             }
           }
@@ -505,9 +505,9 @@ exports[`When both core and addon component have problems any component is in no
                 >
                   <PFBadge
                     badge={
-                      Object {
+                      {
                         "badge": "C",
-                        "style": Object {
+                        "style": {
                           "backgroundColor": "var(--pf-t--color--blue--30)",
                         },
                         "tt": "Cluster",
@@ -518,7 +518,7 @@ exports[`When both core and addon component have problems any component is in no
                   Kubernetes
                   <span
                     style={
-                      Object {
+                      {
                         "marginLeft": "0.25rem",
                       }
                     }
@@ -543,8 +543,8 @@ exports[`When both core and addon component have problems any component is in no
                       <IstioStatusList
                         cluster="Kubernetes"
                         status={
-                          Array [
-                            Object {
+                          [
+                            {
                               "cluster": "Kubernetes",
                               "isCore": true,
                               "name": "istio-egressgateway",
@@ -568,8 +568,8 @@ exports[`When both core and addon component have problems any component is in no
                       <IstioStatusList
                         cluster="Kubernetes"
                         status={
-                          Array [
-                            Object {
+                          [
+                            {
                               "cluster": "Kubernetes",
                               "isCore": false,
                               "name": "grafana",
@@ -600,12 +600,12 @@ exports[`When both core and addon component have problems any component is in no
         </div>
       }
       popperRef={
-        Object {
+        {
           "current": null,
         }
       }
       positionModifiers={
-        Object {
+        {
           "bottom": "pf-m-bottom",
           "bottom-end": "pf-m-bottom-right",
           "bottom-start": "pf-m-bottom-left",
@@ -634,7 +634,7 @@ exports[`When both core and addon component have problems any component is in no
     >
       <div
         style={
-          Object {
+          {
             "display": "contents",
           }
         }
@@ -687,12 +687,12 @@ exports[`When both core and addon component have problems any component is in no
 exports[`When core component has a problem the Icon shows is displayed in Red 1`] = `
 <IstioStatusComponent
   namespaces={
-    Array [
-      Object {
+    [
+      {
         "cluster": "Kubernetes",
         "name": "bookinfo",
       },
-      Object {
+      {
         "cluster": "Kubernetes",
         "name": "istio-system",
       },
@@ -714,9 +714,9 @@ exports[`When core component has a problem the Icon shows is displayed in Red 1`
           >
             <PFBadge
               badge={
-                Object {
+                {
                   "badge": "C",
-                  "style": Object {
+                  "style": {
                     "backgroundColor": "var(--pf-t--color--blue--30)",
                   },
                   "tt": "Cluster",
@@ -727,7 +727,7 @@ exports[`When core component has a problem the Icon shows is displayed in Red 1`
             Kubernetes
             <span
               style={
-                Object {
+                {
                   "marginLeft": "0.25rem",
                 }
               }
@@ -752,8 +752,8 @@ exports[`When core component has a problem the Icon shows is displayed in Red 1`
                 <IstioStatusList
                   cluster="Kubernetes"
                   status={
-                    Array [
-                      Object {
+                    [
+                      {
                         "cluster": "Kubernetes",
                         "isCore": true,
                         "name": "istio-egressgateway",
@@ -795,7 +795,7 @@ exports[`When core component has a problem the Icon shows is displayed in Red 1`
       entryDelay={300}
       exitDelay={300}
       flipBehavior={
-        Array [
+        [
           "top",
           "right",
           "bottom",
@@ -826,7 +826,7 @@ exports[`When core component has a problem the Icon shows is displayed in Red 1`
           id="pf-tooltip-2"
           role="tooltip"
           style={
-            Object {
+            {
               "maxWidth": "25rem",
             }
           }
@@ -847,9 +847,9 @@ exports[`When core component has a problem the Icon shows is displayed in Red 1`
                 >
                   <PFBadge
                     badge={
-                      Object {
+                      {
                         "badge": "C",
-                        "style": Object {
+                        "style": {
                           "backgroundColor": "var(--pf-t--color--blue--30)",
                         },
                         "tt": "Cluster",
@@ -860,7 +860,7 @@ exports[`When core component has a problem the Icon shows is displayed in Red 1`
                   Kubernetes
                   <span
                     style={
-                      Object {
+                      {
                         "marginLeft": "0.25rem",
                       }
                     }
@@ -885,8 +885,8 @@ exports[`When core component has a problem the Icon shows is displayed in Red 1`
                       <IstioStatusList
                         cluster="Kubernetes"
                         status={
-                          Array [
-                            Object {
+                          [
+                            {
                               "cluster": "Kubernetes",
                               "isCore": true,
                               "name": "istio-egressgateway",
@@ -917,12 +917,12 @@ exports[`When core component has a problem the Icon shows is displayed in Red 1`
         </div>
       }
       popperRef={
-        Object {
+        {
           "current": null,
         }
       }
       positionModifiers={
-        Object {
+        {
           "bottom": "pf-m-bottom",
           "bottom-end": "pf-m-bottom-right",
           "bottom-start": "pf-m-bottom-left",
@@ -951,7 +951,7 @@ exports[`When core component has a problem the Icon shows is displayed in Red 1`
     >
       <div
         style={
-          Object {
+          {
             "display": "contents",
           }
         }
@@ -1004,12 +1004,12 @@ exports[`When core component has a problem the Icon shows is displayed in Red 1`
 exports[`When there are multiple clusters cluster with failing components shows expand/collapse arrow 1`] = `
 <IstioStatusComponent
   namespaces={
-    Array [
-      Object {
+    [
+      {
         "cluster": "Kubernetes",
         "name": "bookinfo",
       },
-      Object {
+      {
         "cluster": "Kubernetes",
         "name": "istio-system",
       },
@@ -1031,9 +1031,9 @@ exports[`When there are multiple clusters cluster with failing components shows 
           >
             <PFBadge
               badge={
-                Object {
+                {
                   "badge": "C",
-                  "style": Object {
+                  "style": {
                     "backgroundColor": "var(--pf-t--color--blue--30)",
                   },
                   "tt": "Cluster",
@@ -1044,7 +1044,7 @@ exports[`When there are multiple clusters cluster with failing components shows 
             Kubernetes
             <span
               style={
-                Object {
+                {
                   "marginLeft": "0.25rem",
                 }
               }
@@ -1069,8 +1069,8 @@ exports[`When there are multiple clusters cluster with failing components shows 
                 <IstioStatusList
                   cluster="Kubernetes"
                   status={
-                    Array [
-                      Object {
+                    [
+                      {
                         "cluster": "Kubernetes",
                         "isCore": true,
                         "name": "istiod",
@@ -1112,7 +1112,7 @@ exports[`When there are multiple clusters cluster with failing components shows 
       entryDelay={300}
       exitDelay={300}
       flipBehavior={
-        Array [
+        [
           "top",
           "right",
           "bottom",
@@ -1143,7 +1143,7 @@ exports[`When there are multiple clusters cluster with failing components shows 
           id="pf-tooltip-20"
           role="tooltip"
           style={
-            Object {
+            {
               "maxWidth": "25rem",
             }
           }
@@ -1164,9 +1164,9 @@ exports[`When there are multiple clusters cluster with failing components shows 
                 >
                   <PFBadge
                     badge={
-                      Object {
+                      {
                         "badge": "C",
-                        "style": Object {
+                        "style": {
                           "backgroundColor": "var(--pf-t--color--blue--30)",
                         },
                         "tt": "Cluster",
@@ -1177,7 +1177,7 @@ exports[`When there are multiple clusters cluster with failing components shows 
                   Kubernetes
                   <span
                     style={
-                      Object {
+                      {
                         "marginLeft": "0.25rem",
                       }
                     }
@@ -1202,8 +1202,8 @@ exports[`When there are multiple clusters cluster with failing components shows 
                       <IstioStatusList
                         cluster="Kubernetes"
                         status={
-                          Array [
-                            Object {
+                          [
+                            {
                               "cluster": "Kubernetes",
                               "isCore": true,
                               "name": "istiod",
@@ -1234,12 +1234,12 @@ exports[`When there are multiple clusters cluster with failing components shows 
         </div>
       }
       popperRef={
-        Object {
+        {
           "current": null,
         }
       }
       positionModifiers={
-        Object {
+        {
           "bottom": "pf-m-bottom",
           "bottom-end": "pf-m-bottom-right",
           "bottom-start": "pf-m-bottom-left",
@@ -1268,7 +1268,7 @@ exports[`When there are multiple clusters cluster with failing components shows 
     >
       <div
         style={
-          Object {
+          {
             "display": "contents",
           }
         }
@@ -1321,12 +1321,12 @@ exports[`When there are multiple clusters cluster with failing components shows 
 exports[`When there are multiple clusters clusters without failing components do not show expand/collapse arrow 1`] = `
 <IstioStatusComponent
   namespaces={
-    Array [
-      Object {
+    [
+      {
         "cluster": "Kubernetes",
         "name": "bookinfo",
       },
-      Object {
+      {
         "cluster": "Kubernetes",
         "name": "istio-system",
       },
@@ -1346,16 +1346,16 @@ exports[`When there are multiple clusters clusters without failing components do
           <div
             className="kiali_f1mkymqb"
             style={
-              Object {
+              {
                 "cursor": "default",
               }
             }
           >
             <PFBadge
               badge={
-                Object {
+                {
                   "badge": "C",
-                  "style": Object {
+                  "style": {
                     "backgroundColor": "var(--pf-t--color--blue--30)",
                   },
                   "tt": "Cluster",
@@ -1366,7 +1366,7 @@ exports[`When there are multiple clusters clusters without failing components do
             Kubernetes
             <span
               style={
-                Object {
+                {
                   "marginLeft": "var(--pf-t--global--spacer--xs)",
                 }
               }
@@ -1383,16 +1383,16 @@ exports[`When there are multiple clusters clusters without failing components do
           <div
             className="kiali_f1mkymqb"
             style={
-              Object {
+              {
                 "cursor": "default",
               }
             }
           >
             <PFBadge
               badge={
-                Object {
+                {
                   "badge": "C",
-                  "style": Object {
+                  "style": {
                     "backgroundColor": "var(--pf-t--color--blue--30)",
                   },
                   "tt": "Cluster",
@@ -1435,7 +1435,7 @@ exports[`When there are multiple clusters clusters without failing components do
       entryDelay={300}
       exitDelay={300}
       flipBehavior={
-        Array [
+        [
           "top",
           "right",
           "bottom",
@@ -1466,7 +1466,7 @@ exports[`When there are multiple clusters clusters without failing components do
           id="pf-tooltip-22"
           role="tooltip"
           style={
-            Object {
+            {
               "maxWidth": "25rem",
             }
           }
@@ -1485,16 +1485,16 @@ exports[`When there are multiple clusters clusters without failing components do
                 <div
                   className="kiali_f1mkymqb"
                   style={
-                    Object {
+                    {
                       "cursor": "default",
                     }
                   }
                 >
                   <PFBadge
                     badge={
-                      Object {
+                      {
                         "badge": "C",
-                        "style": Object {
+                        "style": {
                           "backgroundColor": "var(--pf-t--color--blue--30)",
                         },
                         "tt": "Cluster",
@@ -1505,7 +1505,7 @@ exports[`When there are multiple clusters clusters without failing components do
                   Kubernetes
                   <span
                     style={
-                      Object {
+                      {
                         "marginLeft": "var(--pf-t--global--spacer--xs)",
                       }
                     }
@@ -1522,16 +1522,16 @@ exports[`When there are multiple clusters clusters without failing components do
                 <div
                   className="kiali_f1mkymqb"
                   style={
-                    Object {
+                    {
                       "cursor": "default",
                     }
                   }
                 >
                   <PFBadge
                     badge={
-                      Object {
+                      {
                         "badge": "C",
-                        "style": Object {
+                        "style": {
                           "backgroundColor": "var(--pf-t--color--blue--30)",
                         },
                         "tt": "Cluster",
@@ -1563,12 +1563,12 @@ exports[`When there are multiple clusters clusters without failing components do
         </div>
       }
       popperRef={
-        Object {
+        {
           "current": null,
         }
       }
       positionModifiers={
-        Object {
+        {
           "bottom": "pf-m-bottom",
           "bottom-end": "pf-m-bottom-right",
           "bottom-start": "pf-m-bottom-left",
@@ -1597,7 +1597,7 @@ exports[`When there are multiple clusters clusters without failing components do
     >
       <div
         style={
-          Object {
+          {
             "display": "contents",
           }
         }
@@ -1650,12 +1650,12 @@ exports[`When there are multiple clusters clusters without failing components do
 exports[`When there are not-ready components mixed with other not healthy components in addons the Icon is displayed in orange 1`] = `
 <IstioStatusComponent
   namespaces={
-    Array [
-      Object {
+    [
+      {
         "cluster": "Kubernetes",
         "name": "bookinfo",
       },
-      Object {
+      {
         "cluster": "Kubernetes",
         "name": "istio-system",
       },
@@ -1677,9 +1677,9 @@ exports[`When there are not-ready components mixed with other not healthy compon
           >
             <PFBadge
               badge={
-                Object {
+                {
                   "badge": "C",
-                  "style": Object {
+                  "style": {
                     "backgroundColor": "var(--pf-t--color--blue--30)",
                   },
                   "tt": "Cluster",
@@ -1690,7 +1690,7 @@ exports[`When there are not-ready components mixed with other not healthy compon
             Kubernetes
             <span
               style={
-                Object {
+                {
                   "marginLeft": "0.25rem",
                 }
               }
@@ -1715,14 +1715,14 @@ exports[`When there are not-ready components mixed with other not healthy compon
                 <IstioStatusList
                   cluster="Kubernetes"
                   status={
-                    Array [
-                      Object {
+                    [
+                      {
                         "cluster": "Kubernetes",
                         "isCore": false,
                         "name": "grafana",
                         "status": "Unhealthy",
                       },
-                      Object {
+                      {
                         "cluster": "Kubernetes",
                         "isCore": false,
                         "name": "jaeger",
@@ -1764,7 +1764,7 @@ exports[`When there are not-ready components mixed with other not healthy compon
       entryDelay={300}
       exitDelay={300}
       flipBehavior={
-        Array [
+        [
           "top",
           "right",
           "bottom",
@@ -1795,7 +1795,7 @@ exports[`When there are not-ready components mixed with other not healthy compon
           id="pf-tooltip-10"
           role="tooltip"
           style={
-            Object {
+            {
               "maxWidth": "25rem",
             }
           }
@@ -1816,9 +1816,9 @@ exports[`When there are not-ready components mixed with other not healthy compon
                 >
                   <PFBadge
                     badge={
-                      Object {
+                      {
                         "badge": "C",
-                        "style": Object {
+                        "style": {
                           "backgroundColor": "var(--pf-t--color--blue--30)",
                         },
                         "tt": "Cluster",
@@ -1829,7 +1829,7 @@ exports[`When there are not-ready components mixed with other not healthy compon
                   Kubernetes
                   <span
                     style={
-                      Object {
+                      {
                         "marginLeft": "0.25rem",
                       }
                     }
@@ -1854,14 +1854,14 @@ exports[`When there are not-ready components mixed with other not healthy compon
                       <IstioStatusList
                         cluster="Kubernetes"
                         status={
-                          Array [
-                            Object {
+                          [
+                            {
                               "cluster": "Kubernetes",
                               "isCore": false,
                               "name": "grafana",
                               "status": "Unhealthy",
                             },
-                            Object {
+                            {
                               "cluster": "Kubernetes",
                               "isCore": false,
                               "name": "jaeger",
@@ -1892,12 +1892,12 @@ exports[`When there are not-ready components mixed with other not healthy compon
         </div>
       }
       popperRef={
-        Object {
+        {
           "current": null,
         }
       }
       positionModifiers={
-        Object {
+        {
           "bottom": "pf-m-bottom",
           "bottom-end": "pf-m-bottom-right",
           "bottom-start": "pf-m-bottom-left",
@@ -1926,7 +1926,7 @@ exports[`When there are not-ready components mixed with other not healthy compon
     >
       <div
         style={
-          Object {
+          {
             "display": "contents",
           }
         }
@@ -1979,12 +1979,12 @@ exports[`When there are not-ready components mixed with other not healthy compon
 exports[`When there are not-ready components mixed with other not healthy components in both the Icon shows is displayed in red 1`] = `
 <IstioStatusComponent
   namespaces={
-    Array [
-      Object {
+    [
+      {
         "cluster": "Kubernetes",
         "name": "bookinfo",
       },
-      Object {
+      {
         "cluster": "Kubernetes",
         "name": "istio-system",
       },
@@ -2006,9 +2006,9 @@ exports[`When there are not-ready components mixed with other not healthy compon
           >
             <PFBadge
               badge={
-                Object {
+                {
                   "badge": "C",
-                  "style": Object {
+                  "style": {
                     "backgroundColor": "var(--pf-t--color--blue--30)",
                   },
                   "tt": "Cluster",
@@ -2019,7 +2019,7 @@ exports[`When there are not-ready components mixed with other not healthy compon
             Kubernetes
             <span
               style={
-                Object {
+                {
                   "marginLeft": "0.25rem",
                 }
               }
@@ -2044,14 +2044,14 @@ exports[`When there are not-ready components mixed with other not healthy compon
                 <IstioStatusList
                   cluster="Kubernetes"
                   status={
-                    Array [
-                      Object {
+                    [
+                      {
                         "cluster": "Kubernetes",
                         "isCore": true,
                         "name": "istio-egressgateway",
                         "status": "Unhealthy",
                       },
-                      Object {
+                      {
                         "cluster": "Kubernetes",
                         "isCore": true,
                         "name": "istio-ingressgateway",
@@ -2075,14 +2075,14 @@ exports[`When there are not-ready components mixed with other not healthy compon
                 <IstioStatusList
                   cluster="Kubernetes"
                   status={
-                    Array [
-                      Object {
+                    [
+                      {
                         "cluster": "Kubernetes",
                         "isCore": false,
                         "name": "grafana",
                         "status": "Unhealthy",
                       },
-                      Object {
+                      {
                         "cluster": "Kubernetes",
                         "isCore": false,
                         "name": "jaeger",
@@ -2124,7 +2124,7 @@ exports[`When there are not-ready components mixed with other not healthy compon
       entryDelay={300}
       exitDelay={300}
       flipBehavior={
-        Array [
+        [
           "top",
           "right",
           "bottom",
@@ -2155,7 +2155,7 @@ exports[`When there are not-ready components mixed with other not healthy compon
           id="pf-tooltip-12"
           role="tooltip"
           style={
-            Object {
+            {
               "maxWidth": "25rem",
             }
           }
@@ -2176,9 +2176,9 @@ exports[`When there are not-ready components mixed with other not healthy compon
                 >
                   <PFBadge
                     badge={
-                      Object {
+                      {
                         "badge": "C",
-                        "style": Object {
+                        "style": {
                           "backgroundColor": "var(--pf-t--color--blue--30)",
                         },
                         "tt": "Cluster",
@@ -2189,7 +2189,7 @@ exports[`When there are not-ready components mixed with other not healthy compon
                   Kubernetes
                   <span
                     style={
-                      Object {
+                      {
                         "marginLeft": "0.25rem",
                       }
                     }
@@ -2214,14 +2214,14 @@ exports[`When there are not-ready components mixed with other not healthy compon
                       <IstioStatusList
                         cluster="Kubernetes"
                         status={
-                          Array [
-                            Object {
+                          [
+                            {
                               "cluster": "Kubernetes",
                               "isCore": true,
                               "name": "istio-egressgateway",
                               "status": "Unhealthy",
                             },
-                            Object {
+                            {
                               "cluster": "Kubernetes",
                               "isCore": true,
                               "name": "istio-ingressgateway",
@@ -2245,14 +2245,14 @@ exports[`When there are not-ready components mixed with other not healthy compon
                       <IstioStatusList
                         cluster="Kubernetes"
                         status={
-                          Array [
-                            Object {
+                          [
+                            {
                               "cluster": "Kubernetes",
                               "isCore": false,
                               "name": "grafana",
                               "status": "Unhealthy",
                             },
-                            Object {
+                            {
                               "cluster": "Kubernetes",
                               "isCore": false,
                               "name": "jaeger",
@@ -2283,12 +2283,12 @@ exports[`When there are not-ready components mixed with other not healthy compon
         </div>
       }
       popperRef={
-        Object {
+        {
           "current": null,
         }
       }
       positionModifiers={
-        Object {
+        {
           "bottom": "pf-m-bottom",
           "bottom-end": "pf-m-bottom-right",
           "bottom-start": "pf-m-bottom-left",
@@ -2317,7 +2317,7 @@ exports[`When there are not-ready components mixed with other not healthy compon
     >
       <div
         style={
-          Object {
+          {
             "display": "contents",
           }
         }
@@ -2370,12 +2370,12 @@ exports[`When there are not-ready components mixed with other not healthy compon
 exports[`When there are not-ready components mixed with other not healthy components in core the Icon is displayed in red 1`] = `
 <IstioStatusComponent
   namespaces={
-    Array [
-      Object {
+    [
+      {
         "cluster": "Kubernetes",
         "name": "bookinfo",
       },
-      Object {
+      {
         "cluster": "Kubernetes",
         "name": "istio-system",
       },
@@ -2397,9 +2397,9 @@ exports[`When there are not-ready components mixed with other not healthy compon
           >
             <PFBadge
               badge={
-                Object {
+                {
                   "badge": "C",
-                  "style": Object {
+                  "style": {
                     "backgroundColor": "var(--pf-t--color--blue--30)",
                   },
                   "tt": "Cluster",
@@ -2410,7 +2410,7 @@ exports[`When there are not-ready components mixed with other not healthy compon
             Kubernetes
             <span
               style={
-                Object {
+                {
                   "marginLeft": "0.25rem",
                 }
               }
@@ -2435,14 +2435,14 @@ exports[`When there are not-ready components mixed with other not healthy compon
                 <IstioStatusList
                   cluster="Kubernetes"
                   status={
-                    Array [
-                      Object {
+                    [
+                      {
                         "cluster": "Kubernetes",
                         "isCore": true,
                         "name": "istio-egressgateway",
                         "status": "Unhealthy",
                       },
-                      Object {
+                      {
                         "cluster": "Kubernetes",
                         "isCore": true,
                         "name": "istio-ingressgateway",
@@ -2484,7 +2484,7 @@ exports[`When there are not-ready components mixed with other not healthy compon
       entryDelay={300}
       exitDelay={300}
       flipBehavior={
-        Array [
+        [
           "top",
           "right",
           "bottom",
@@ -2515,7 +2515,7 @@ exports[`When there are not-ready components mixed with other not healthy compon
           id="pf-tooltip-8"
           role="tooltip"
           style={
-            Object {
+            {
               "maxWidth": "25rem",
             }
           }
@@ -2536,9 +2536,9 @@ exports[`When there are not-ready components mixed with other not healthy compon
                 >
                   <PFBadge
                     badge={
-                      Object {
+                      {
                         "badge": "C",
-                        "style": Object {
+                        "style": {
                           "backgroundColor": "var(--pf-t--color--blue--30)",
                         },
                         "tt": "Cluster",
@@ -2549,7 +2549,7 @@ exports[`When there are not-ready components mixed with other not healthy compon
                   Kubernetes
                   <span
                     style={
-                      Object {
+                      {
                         "marginLeft": "0.25rem",
                       }
                     }
@@ -2574,14 +2574,14 @@ exports[`When there are not-ready components mixed with other not healthy compon
                       <IstioStatusList
                         cluster="Kubernetes"
                         status={
-                          Array [
-                            Object {
+                          [
+                            {
                               "cluster": "Kubernetes",
                               "isCore": true,
                               "name": "istio-egressgateway",
                               "status": "Unhealthy",
                             },
-                            Object {
+                            {
                               "cluster": "Kubernetes",
                               "isCore": true,
                               "name": "istio-ingressgateway",
@@ -2612,12 +2612,12 @@ exports[`When there are not-ready components mixed with other not healthy compon
         </div>
       }
       popperRef={
-        Object {
+        {
           "current": null,
         }
       }
       positionModifiers={
-        Object {
+        {
           "bottom": "pf-m-bottom",
           "bottom-end": "pf-m-bottom-right",
           "bottom-start": "pf-m-bottom-left",
@@ -2646,7 +2646,7 @@ exports[`When there are not-ready components mixed with other not healthy compon
     >
       <div
         style={
-          Object {
+          {
             "display": "contents",
           }
         }
@@ -2699,12 +2699,12 @@ exports[`When there are not-ready components mixed with other not healthy compon
 exports[`When there are not-ready components not mixed with other unhealthy components in addons renders the Icon in blue 1`] = `
 <IstioStatusComponent
   namespaces={
-    Array [
-      Object {
+    [
+      {
         "cluster": "Kubernetes",
         "name": "bookinfo",
       },
-      Object {
+      {
         "cluster": "Kubernetes",
         "name": "istio-system",
       },
@@ -2726,9 +2726,9 @@ exports[`When there are not-ready components not mixed with other unhealthy comp
           >
             <PFBadge
               badge={
-                Object {
+                {
                   "badge": "C",
-                  "style": Object {
+                  "style": {
                     "backgroundColor": "var(--pf-t--color--blue--30)",
                   },
                   "tt": "Cluster",
@@ -2739,7 +2739,7 @@ exports[`When there are not-ready components not mixed with other unhealthy comp
             Kubernetes
             <span
               style={
-                Object {
+                {
                   "marginLeft": "0.25rem",
                 }
               }
@@ -2764,8 +2764,8 @@ exports[`When there are not-ready components not mixed with other unhealthy comp
                 <IstioStatusList
                   cluster="Kubernetes"
                   status={
-                    Array [
-                      Object {
+                    [
+                      {
                         "cluster": "Kubernetes",
                         "isCore": true,
                         "name": "istiod",
@@ -2807,7 +2807,7 @@ exports[`When there are not-ready components not mixed with other unhealthy comp
       entryDelay={300}
       exitDelay={300}
       flipBehavior={
-        Array [
+        [
           "top",
           "right",
           "bottom",
@@ -2838,7 +2838,7 @@ exports[`When there are not-ready components not mixed with other unhealthy comp
           id="pf-tooltip-16"
           role="tooltip"
           style={
-            Object {
+            {
               "maxWidth": "25rem",
             }
           }
@@ -2859,9 +2859,9 @@ exports[`When there are not-ready components not mixed with other unhealthy comp
                 >
                   <PFBadge
                     badge={
-                      Object {
+                      {
                         "badge": "C",
-                        "style": Object {
+                        "style": {
                           "backgroundColor": "var(--pf-t--color--blue--30)",
                         },
                         "tt": "Cluster",
@@ -2872,7 +2872,7 @@ exports[`When there are not-ready components not mixed with other unhealthy comp
                   Kubernetes
                   <span
                     style={
-                      Object {
+                      {
                         "marginLeft": "0.25rem",
                       }
                     }
@@ -2897,8 +2897,8 @@ exports[`When there are not-ready components not mixed with other unhealthy comp
                       <IstioStatusList
                         cluster="Kubernetes"
                         status={
-                          Array [
-                            Object {
+                          [
+                            {
                               "cluster": "Kubernetes",
                               "isCore": true,
                               "name": "istiod",
@@ -2929,12 +2929,12 @@ exports[`When there are not-ready components not mixed with other unhealthy comp
         </div>
       }
       popperRef={
-        Object {
+        {
           "current": null,
         }
       }
       positionModifiers={
-        Object {
+        {
           "bottom": "pf-m-bottom",
           "bottom-end": "pf-m-bottom-right",
           "bottom-start": "pf-m-bottom-left",
@@ -2963,7 +2963,7 @@ exports[`When there are not-ready components not mixed with other unhealthy comp
     >
       <div
         style={
-          Object {
+          {
             "display": "contents",
           }
         }
@@ -3016,12 +3016,12 @@ exports[`When there are not-ready components not mixed with other unhealthy comp
 exports[`When there are not-ready components not mixed with other unhealthy components in core renders the Icon in blue 1`] = `
 <IstioStatusComponent
   namespaces={
-    Array [
-      Object {
+    [
+      {
         "cluster": "Kubernetes",
         "name": "bookinfo",
       },
-      Object {
+      {
         "cluster": "Kubernetes",
         "name": "istio-system",
       },
@@ -3043,9 +3043,9 @@ exports[`When there are not-ready components not mixed with other unhealthy comp
           >
             <PFBadge
               badge={
-                Object {
+                {
                   "badge": "C",
-                  "style": Object {
+                  "style": {
                     "backgroundColor": "var(--pf-t--color--blue--30)",
                   },
                   "tt": "Cluster",
@@ -3056,7 +3056,7 @@ exports[`When there are not-ready components not mixed with other unhealthy comp
             Kubernetes
             <span
               style={
-                Object {
+                {
                   "marginLeft": "0.25rem",
                 }
               }
@@ -3081,8 +3081,8 @@ exports[`When there are not-ready components not mixed with other unhealthy comp
                 <IstioStatusList
                   cluster="Kubernetes"
                   status={
-                    Array [
-                      Object {
+                    [
+                      {
                         "cluster": "Kubernetes",
                         "isCore": false,
                         "name": "jaeger",
@@ -3124,7 +3124,7 @@ exports[`When there are not-ready components not mixed with other unhealthy comp
       entryDelay={300}
       exitDelay={300}
       flipBehavior={
-        Array [
+        [
           "top",
           "right",
           "bottom",
@@ -3155,7 +3155,7 @@ exports[`When there are not-ready components not mixed with other unhealthy comp
           id="pf-tooltip-14"
           role="tooltip"
           style={
-            Object {
+            {
               "maxWidth": "25rem",
             }
           }
@@ -3176,9 +3176,9 @@ exports[`When there are not-ready components not mixed with other unhealthy comp
                 >
                   <PFBadge
                     badge={
-                      Object {
+                      {
                         "badge": "C",
-                        "style": Object {
+                        "style": {
                           "backgroundColor": "var(--pf-t--color--blue--30)",
                         },
                         "tt": "Cluster",
@@ -3189,7 +3189,7 @@ exports[`When there are not-ready components not mixed with other unhealthy comp
                   Kubernetes
                   <span
                     style={
-                      Object {
+                      {
                         "marginLeft": "0.25rem",
                       }
                     }
@@ -3214,8 +3214,8 @@ exports[`When there are not-ready components not mixed with other unhealthy comp
                       <IstioStatusList
                         cluster="Kubernetes"
                         status={
-                          Array [
-                            Object {
+                          [
+                            {
                               "cluster": "Kubernetes",
                               "isCore": false,
                               "name": "jaeger",
@@ -3246,12 +3246,12 @@ exports[`When there are not-ready components not mixed with other unhealthy comp
         </div>
       }
       popperRef={
-        Object {
+        {
           "current": null,
         }
       }
       positionModifiers={
-        Object {
+        {
           "bottom": "pf-m-bottom",
           "bottom-end": "pf-m-bottom-right",
           "bottom-start": "pf-m-bottom-left",
@@ -3280,7 +3280,7 @@ exports[`When there are not-ready components not mixed with other unhealthy comp
     >
       <div
         style={
-          Object {
+          {
             "display": "contents",
           }
         }

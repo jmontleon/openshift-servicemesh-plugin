@@ -255,7 +255,7 @@ class ReplayComponent extends React.PureComponent<ReplayProps, ReplayState> {
     return (
       <div className={replayStyle}>
         {this.state.isCustomStartTime && (
-          <Tooltip content="Replay start time" popperProps={{ appendTo: 'inline' }}>
+          <Tooltip content="Replay start time">
             <DateTimePicker
               maxDate={maxTime}
               minDate={minTime}
@@ -279,7 +279,6 @@ class ReplayComponent extends React.PureComponent<ReplayProps, ReplayState> {
           key="toggle-is-custom"
           position="top"
           content={`Set ${this.state.isCustomStartTime ? 'simple' : 'custom'} start time`}
-          popperProps={{ appendTo: 'inline' }}
         >
           <Button className={isCustomStyle} variant={ButtonVariant.control} onClick={this.toggleCustomStartTime}>
             <KialiIcon.UserClock className={this.state.isCustomStartTime ? isCustomActiveStyle : ''} />

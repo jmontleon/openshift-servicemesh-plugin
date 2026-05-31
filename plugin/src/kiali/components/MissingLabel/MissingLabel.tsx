@@ -51,7 +51,7 @@ export const MissingLabel: React.FC<MissingLabelProps> = (props: MissingLabelPro
       {!props.tooltip && (
         <span style={{ marginLeft: '0.5rem' }}>
           Missing {props.missingApp ? 'App' : props.missingVersion ? 'Version' : 'Label'}
-          <Tooltip key="tooltip_missing_label" appendTo="inline" position={TooltipPosition.top} content={tooltipContent}>
+          <Tooltip key="tooltip_missing_label" position={TooltipPosition.top} content={tooltipContent}>
             <KialiIcon.Info className={infoStyle} />
           </Tooltip>
         </span>
@@ -60,7 +60,7 @@ export const MissingLabel: React.FC<MissingLabelProps> = (props: MissingLabelPro
   );
 
   return props.tooltip ? (
-    <Tooltip key="tooltip_missing_label" appendTo="inline" position={TooltipPosition.right} content={tooltipContent}>
+    <Tooltip key="tooltip_missing_label" position={TooltipPosition.right} content={tooltipContent}>
       {iconComponent}
     </Tooltip>
   ) : (

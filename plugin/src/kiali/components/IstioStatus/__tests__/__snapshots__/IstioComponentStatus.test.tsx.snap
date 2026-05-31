@@ -1,4 +1,4 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
 
 exports[`IstioComponentStatus renders error icon when core component is not found 1`] = `
 <Fragment>
@@ -23,7 +23,7 @@ exports[`IstioComponentStatus renders error icon when core component is not foun
         </Icon>
       }
       style={
-        Object {
+        {
           "--pf-v6-c-label--m-outline--BorderColor": "var(--pf-t--color--gray--50)",
           "borderColor": "var(--pf-t--color--gray--50)",
           "borderStyle": "solid",
@@ -61,7 +61,7 @@ exports[`IstioComponentStatus renders error icon when core component is not runn
         </Icon>
       }
       style={
-        Object {
+        {
           "--pf-v6-c-label--m-outline--BorderColor": "var(--pf-t--global--icon--color--status--danger--default)",
           "borderColor": "var(--pf-t--global--icon--color--status--danger--default)",
           "borderStyle": "solid",
@@ -99,7 +99,7 @@ exports[`IstioComponentStatus renders minus icon when addon component is not rea
         </Icon>
       }
       style={
-        Object {
+        {
           "--pf-v6-c-label--m-outline--BorderColor": "var(--pf-t--global--icon--color--status--info--default)",
           "borderColor": "var(--pf-t--global--icon--color--status--info--default)",
           "borderStyle": "solid",
@@ -137,7 +137,7 @@ exports[`IstioComponentStatus renders minus icon when core component is not read
         </Icon>
       }
       style={
-        Object {
+        {
           "--pf-v6-c-label--m-outline--BorderColor": "var(--pf-t--global--icon--color--status--info--default)",
           "borderColor": "var(--pf-t--global--icon--color--status--info--default)",
           "borderStyle": "solid",
@@ -175,7 +175,7 @@ exports[`IstioComponentStatus renders success icon when core component is runnin
         </Icon>
       }
       style={
-        Object {
+        {
           "--pf-v6-c-label--m-outline--BorderColor": "var(--pf-t--global--icon--color--status--success--default)",
           "borderColor": "var(--pf-t--global--icon--color--status--success--default)",
           "borderStyle": "solid",
@@ -213,7 +213,7 @@ exports[`IstioComponentStatus renders success icon when core component is runnin
         </Icon>
       }
       style={
-        Object {
+        {
           "--pf-v6-c-label--m-outline--BorderColor": "var(--pf-t--global--icon--color--status--success--default)",
           "borderColor": "var(--pf-t--global--icon--color--status--success--default)",
           "borderStyle": "solid",
@@ -251,7 +251,7 @@ exports[`IstioComponentStatus renders warning icon when core component is not fo
         </Icon>
       }
       style={
-        Object {
+        {
           "--pf-v6-c-label--m-outline--BorderColor": "var(--pf-t--color--gray--50)",
           "borderColor": "var(--pf-t--color--gray--50)",
           "borderStyle": "solid",
@@ -289,7 +289,7 @@ exports[`IstioComponentStatus renders warning icon when core component is not ru
         </Icon>
       }
       style={
-        Object {
+        {
           "--pf-v6-c-label--m-outline--BorderColor": "var(--pf-t--global--icon--color--status--warning--default)",
           "borderColor": "var(--pf-t--global--icon--color--status--warning--default)",
           "borderStyle": "solid",

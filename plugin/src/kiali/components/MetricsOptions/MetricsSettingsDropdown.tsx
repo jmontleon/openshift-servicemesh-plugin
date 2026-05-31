@@ -353,7 +353,7 @@ export class MetricsSettingsDropdown extends React.Component<Props, State> {
         <Tooltip
           key="tooltip_histograms"
           position={TooltipPosition.right}
-          appendTo="inline"
+         
           content={
             <div style={{ textAlign: 'left' }}>
               <div>

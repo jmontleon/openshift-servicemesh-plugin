@@ -187,7 +187,7 @@ const NamespaceHealthStatusComponent: React.FC<Props> = (props: Props) => {
               position={PopoverPosition.right}
               triggerAction="click"
               showClose={true}
-              popperProps={{ appendTo: 'inline' }}
+              appendTo="inline"
               headerContent={
                 <span className={popoverHeaderStyle}>
                   {createIcon(worstStatus)} {worstStatus.name}

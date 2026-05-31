@@ -147,8 +147,8 @@ const vsInvalidHttpFifthSecondWeigth: ObjectValidation = {
   ]
 };
 
-const destinationRuleYaml = fs.readFileSync(`./src/types/__testData__/destinationRule.yaml`).toString();
-const virtualServiceYaml = fs.readFileSync(`./src/types/__testData__/virtualService.yaml`).toString();
+const destinationRuleYaml = fs.readFileSync(`./src/kiali/types/__testData__/destinationRule.yaml`).toString();
+const virtualServiceYaml = fs.readFileSync(`./src/kiali/types/__testData__/virtualService.yaml`).toString();
 
 describe('#parseKialiValidations in DestinationRule', () => {
   it('should mark an invalid host', () => {

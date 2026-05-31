@@ -1,4 +1,4 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
 
 exports[`DateTimePicker renders correctly with no selected date 1`] = `
 <div
@@ -22,7 +22,7 @@ exports[`DateTimePicker renders correctly with no selected date 1`] = `
             aria-label="Date picker calendar"
             onChange={[Function]}
             validators={
-              Array [
+              [
                 [Function],
               ]
             }
@@ -2673,7 +2673,7 @@ exports[`DateTimePicker renders correctly with selected date 1`] = `
             date={2025-06-15T14:30:00.000Z}
             onChange={[Function]}
             validators={
-              Array [
+              [
                 [Function],
               ]
             }
@@ -5324,7 +5324,7 @@ exports[`DateTimePicker renders with min and max date constraints 1`] = `
             date={2025-06-15T14:30:00.000Z}
             onChange={[Function]}
             validators={
-              Array [
+              [
                 [Function],
               ]
             }
