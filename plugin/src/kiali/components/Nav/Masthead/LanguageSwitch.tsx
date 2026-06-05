@@ -69,12 +69,10 @@ export const LanguageSwitchComponent: React.FC<LanguageSwitchProps> = ({ languag
             aria-label={t('Switch language')}
             variant="plain"
             isExpanded={isDropdownOpen}
-          >
-            <KialiIcon.Language className={iconStyle} />
-          </MenuToggle>
+            icon={<KialiIcon.Language className={iconStyle} />}
+          />
         )}
         isOpen={isDropdownOpen}
-        popperProps={{ position: 'center' }}
         onOpenChange={(isOpen: boolean) => setIsDropdownOpen(isOpen)}
         onSelect={onDropdownSelect}
       >

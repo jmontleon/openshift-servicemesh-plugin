@@ -4,7 +4,7 @@ import { bindActionCreators } from 'redux';
 import { KialiDispatch } from 'types/Redux';
 import { KialiAppState } from 'store/Store';
 import { replayQueryTimeSelector, durationSelector } from 'store/Selectors';
-import { Tooltip, ButtonVariant, Button, Text } from '@patternfly/react-core';
+import { Tooltip, ButtonVariant, Button, Content } from '@patternfly/react-core';
 import { DurationInSeconds, IntervalInMilliseconds, TimeInMilliseconds } from 'types/Common';
 import { ToolbarDropdown } from 'components/Dropdown/ToolbarDropdown';
 import { UserSettingsActions } from 'actions/UserSettingsActions';
@@ -70,7 +70,7 @@ const replaySliderStyle = kialiStyle({
     '& .slider': {
       $nest: {
         '& .slider-selection.tick-slider-selection': {
-          background: 'var(--pf-v5-global--active-color--300)' // should match PFColors.Replay
+          background: 'var(--pf-t--global--color--brand--default)' // should match PFColors.Replay
         },
 
         '& .tooltip': {
@@ -259,7 +259,7 @@ class ReplayComponent extends React.PureComponent<ReplayProps, ReplayState> {
     return (
       <div className={`${replayStyle} ${replayBorder}`}>
         {this.state.isCustomStartTime && (
-          <Tooltip content="Replay start time">
+          <Tooltip content="Replay start time" appendTo="inline">
             <DateTimePicker
               injectTimes={[maxTime]}
               maxDate={maxTime}
@@ -284,6 +284,7 @@ class ReplayComponent extends React.PureComponent<ReplayProps, ReplayState> {
           key="toggle-is-custom"
           position="top"
           content={`Set ${this.state.isCustomStartTime ? 'simple' : 'custom'} start time`}
+          appendTo="inline"
         >
           <Button className={isCustomStyle} variant={ButtonVariant.control} onClick={this.toggleCustomStartTime}>
             <KialiIcon.UserClock className={this.state.isCustomStartTime ? isCustomActiveStyle : ''} />
@@ -315,7 +316,7 @@ class ReplayComponent extends React.PureComponent<ReplayProps, ReplayState> {
 
           <span className={controlStyle}>
             {this.state.status === 'playing' ? (
-              <Tooltip key="replay-pause" position="top" content="Pause" entryDelay={1000}>
+              <Tooltip key="replay-pause" position="top" content="Pause" entryDelay={1000} appendTo="inline">
                 <Button
                   data-test="graph-replay-pause-button"
                   className={controlButtonStyle}
@@ -331,6 +332,7 @@ class ReplayComponent extends React.PureComponent<ReplayProps, ReplayState> {
                 position="top"
                 content={this.state.status === 'done' ? 'Play again' : 'Play'}
                 entryDelay={1000}
+                appendTo="inline"
               >
                 <Button
                   data-test="graph-replay-play-button"
@@ -343,7 +345,7 @@ class ReplayComponent extends React.PureComponent<ReplayProps, ReplayState> {
               </Tooltip>
             )}
 
-            <Text className={frameStyle}>{this.formatFrame(this.state.replayFrame)}</Text>
+            <Content className={frameStyle}>{this.formatFrame(this.state.replayFrame)}</Content>
 
             {replaySpeeds.map((s, i, a) => this.speedButton(s, i === a.length - 1))}
           </span>
@@ -490,7 +492,7 @@ class ReplayComponent extends React.PureComponent<ReplayProps, ReplayState> {
           isActive={isActive}
           onClick={() => this.setReplaySpeed(replaySpeed.speed)}
         >
-          <Text className={isActive ? speedActiveStyle : undefined}>{replaySpeed.text}</Text>
+          <Content className={isActive ? speedActiveStyle : undefined}>{replaySpeed.text}</Content>
         </Button>
 
         {!isLast && <div className={vrStyle} />}

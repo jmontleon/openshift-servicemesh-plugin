@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Button, ButtonVariant, Modal, ModalVariant } from '@patternfly/react-core';
+import { Button, ButtonVariant, Modal, ModalBody, ModalFooter, ModalHeader, ModalVariant } from '@patternfly/react-core';
 import { DestinationRuleC, K8sGRPCRoute, K8sHTTPRoute, VirtualService } from '../../types/IstioObjects';
 import { t } from 'utils/I18nUtils';
 
@@ -76,20 +76,22 @@ export const ConfirmDeleteTrafficRoutingModal: React.FunctionComponent<Props> = 
   return (
     <Modal
       variant={ModalVariant.small}
-      title={t('Confirm Delete Traffic Routing ?')}
       isOpen={props.isOpen}
       onClose={props.onCancel}
       data-test="delete-traffic-routing-modal"
-      actions={[
+    >
+      <ModalHeader title={t('Confirm Delete Traffic Routing ?')} />
+      <ModalBody>
+        {getDeleteMessage()}
+      </ModalBody>
+      <ModalFooter>
         <Button key="confirm" variant={ButtonVariant.danger} onClick={props.onConfirm} data-test={'confirm-delete'}>
             {t('Delete')}
-        </Button>,
+        </Button>
         <Button key="cancel" variant={ButtonVariant.secondary} isInline onClick={props.onCancel}>
             {t('Cancel')}
         </Button>
-      ]}
-    >
-      {getDeleteMessage()}
+      </ModalFooter>
     </Modal>
   );
 };

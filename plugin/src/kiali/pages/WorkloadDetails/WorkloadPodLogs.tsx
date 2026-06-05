@@ -189,7 +189,7 @@ const modalStyle = kialiStyle({
   width: '50%',
   height: '70%',
   $nest: {
-    '& .pf-v5-c-tab-content': {
+    '& .pf-v6-c-tab-content': {
       height: '100%',
       overflowY: 'auto'
     }
@@ -325,7 +325,7 @@ const logsHeight = (showToolbar: boolean, fullscreen: boolean, showMaxLinesWarni
 
 const tabStyle = kialiStyle({
   $nest: {
-    '&& .pf-v5-c-tabs__list': {
+    '&& .pf-v6-c-tabs__list': {
       marginLeft: 0
     }
   }
@@ -863,7 +863,7 @@ export class WorkloadPodLogsComponent extends React.Component<WorkloadPodLogsPro
     });
 
     const dropdownGroupLabel = (
-      <h1 className="pf-v5-c-menu__group-title">
+      <h1 className="pf-v6-c-menu__group-title">
         Set Proxy Log Level
         <Tooltip
           position={TooltipPosition.right}
@@ -956,7 +956,7 @@ export class WorkloadPodLogsComponent extends React.Component<WorkloadPodLogsPro
                 )}
                 isOpen={this.state.kebabOpen}
                 onOpenChange={(isOpen: boolean) => this.setKebabOpen(isOpen)}
-                popperProps={{ position: 'right' }}
+                popperProps={{ position: 'right', appendTo: 'inline' }}
               >
                 <DropdownList>{kebabActions}</DropdownList>
               </Dropdown>

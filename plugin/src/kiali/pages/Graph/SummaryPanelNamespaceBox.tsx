@@ -202,6 +202,7 @@ export class SummaryPanelNamespaceBox extends React.Component<SummaryPanelPropTy
               content="Traffic entering from another namespace."
               entryDelay={1250}
               triggerRef={tooltipInboundRef}
+              appendTo="inline"
             />
 
             <Tooltip
@@ -209,6 +210,7 @@ export class SummaryPanelNamespaceBox extends React.Component<SummaryPanelPropTy
               content="Traffic exiting to another namespace."
               entryDelay={1250}
               triggerRef={tooltipOutboundRef}
+              appendTo="inline"
             />
 
             <Tooltip
@@ -216,6 +218,7 @@ export class SummaryPanelNamespaceBox extends React.Component<SummaryPanelPropTy
               content="All inbound, outbound and internal namespace traffic."
               entryDelay={1250}
               triggerRef={tooltipTotalRef}
+              appendTo="inline"
             />
 
             <Tab style={summaryFont} title="Inbound" eventKey={0} ref={tooltipInboundRef}>

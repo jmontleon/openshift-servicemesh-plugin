@@ -1,9 +1,7 @@
 import * as React from 'react';
 import {
   AboutModal,
-  TextContent,
-  TextList,
-  TextListItem,
+  Content,
   Title,
   Button,
   TitleSizes,
@@ -59,7 +57,7 @@ const websiteStyle = kialiStyle({
 const alertStyle = kialiStyle({
   marginTop: '1rem',
   $nest: {
-    '& .pf-v5-c-alert__title': {
+    '& .pf-v6-c-alert__title': {
       marginTop: 0
     }
   }
@@ -82,8 +80,7 @@ export const AboutUIModal: React.FC<AboutUIModalProps> = (props: AboutUIModalPro
   const renderProjectLink = (): React.ReactNode => {
     if (config?.about?.project) {
       return (
-        <Button component="a" href={config.about.project.url} variant={ButtonVariant.link} target="_blank" isInline>
-          <KialiIcon.Github className={iconStyle} />
+        <Button component="a" href={config.about.project.url} variant={ButtonVariant.link} target="_blank" isInline icon={<KialiIcon.Github className={iconStyle} />}>
           {config.about.project.linkText}
         </Button>
       );
@@ -102,8 +99,8 @@ export const AboutUIModal: React.FC<AboutUIModalProps> = (props: AboutUIModalPro
           variant={ButtonVariant.link}
           target="_blank"
           isInline
+          icon={<KialiIcon.Website className={iconStyle} />}
         >
-          <KialiIcon.Website className={iconStyle} />
           {config.about.website.linkText}
         </Button>
       );
@@ -130,28 +127,28 @@ export const AboutUIModal: React.FC<AboutUIModalProps> = (props: AboutUIModalPro
       onClose={props.onClose}
       productName="Kiali"
     >
-      <TextContent className={textContentStyle}>
-        <TextList component="dl">
-          <TextListItem key="kiali-name" component="dt">
+      <Content className={textContentStyle}>
+        <Content component="dl">
+          <Content key="kiali-name" component="dt">
             Kiali
-          </TextListItem>
-          <TextListItem key="kiali-version" component="dd" data-test="kiali-version">
+          </Content>
+          <Content key="kiali-version" component="dd" data-test="kiali-version">
             {coreVersion!}
-          </TextListItem>
-          <TextListItem key="kiali-container-name" component="dt">
+          </Content>
+          <Content key="kiali-container-name" component="dt">
             Kiali Container
-          </TextListItem>
-          <TextListItem key="kiali-container-version" component="dd" data-test="kiali-container-version">
+          </Content>
+          <Content key="kiali-container-version" component="dd" data-test="kiali-container-version">
             {containerVersion!}
-          </TextListItem>
-        </TextList>
-      </TextContent>
+          </Content>
+        </Content>
+      </Content>
 
       {props.warningMessages.length > 0 && (
         <Alert variant="warning" isInline={true} title={props.warningMessages[0]} className={alertStyle} />
       )}
 
-      <TextContent className={textContentStyle}>
+      <Content className={textContentStyle}>
         {isControlPlaneAccessible() && (
           <>
             <Title headingLevel="h3" size={TitleSizes.xl} style={{ padding: '2.5rem 0 0 0', marginBottom: '0' }}>
@@ -165,7 +162,7 @@ export const AboutUIModal: React.FC<AboutUIModalProps> = (props: AboutUIModalPro
         </Title>
         {renderWebsiteLink()}
         {renderProjectLink()}
-      </TextContent>
+      </Content>
     </AboutModal>
   );
 };

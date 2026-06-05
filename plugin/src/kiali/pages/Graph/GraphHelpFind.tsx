@@ -230,6 +230,7 @@ export const GraphHelpFind: React.FC<GraphHelpFindProps> = (props: GraphHelpFind
         position={PopoverPosition.auto}
         isVisible={true}
         hideOnOutsideClick={false}
+        appendTo="inline"
         shouldClose={props.onClose}
         headerContent={
           <div>

@@ -64,8 +64,8 @@ export const MeshToolbarComponent: React.FC<MeshToolbarProps> = (props: MeshTool
                   className={helpStyle}
                   onClick={props.onToggleHelp}
                   isInline
+                  icon={<KialiIcon.Help />}
                 >
-                  <KialiIcon.Help />
                   <span style={{ marginLeft: '5px' }}>Help</span>
                 </Button>
               </TourStop>

@@ -3,6 +3,7 @@ import {
   Tooltip,
   TooltipPosition,
   Dropdown,
+  DropdownItem,
   DropdownList,
   MenuToggleElement,
   MenuToggle
@@ -144,7 +145,9 @@ const MeshSettingsComponent: React.FC<MeshSettingsProps> = (props: MeshSettingsP
       isOpen={isOpen}
       onOpenChange={(isOpen: boolean) => setIsOpen(isOpen)}
     >
-      <DropdownList>{getMenuOptions()}</DropdownList>
+      <DropdownList>
+        <DropdownItem component="div">{getMenuOptions()}</DropdownItem>
+      </DropdownList>
     </Dropdown>
   );
 };

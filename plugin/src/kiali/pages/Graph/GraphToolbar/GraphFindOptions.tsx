@@ -13,7 +13,7 @@ type GraphFindOptionsProps = {
 const menuToggleStyle = kialiStyle({
   paddingRight: 0,
   $nest: {
-    '& .pf-v5-c-menu-toggle__controls': {
+    '& .pf-v6-c-menu-toggle__controls': {
       paddingLeft: 0
     }
   }
@@ -61,7 +61,7 @@ export const GraphFindOptions: React.FC<GraphFindOptionsProps> = (props: GraphFi
       )}
       isOpen={isOpen}
       onOpenChange={(isOpen: boolean) => onToggle(isOpen)}
-      popperProps={{ position: 'right' }}
+      popperProps={{ placement: 'bottom-end' }}
     >
       <DropdownList>{options}</DropdownList>
     </Dropdown>

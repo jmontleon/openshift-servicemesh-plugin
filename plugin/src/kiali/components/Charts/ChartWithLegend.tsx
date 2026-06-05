@@ -8,9 +8,9 @@ import {
   ChartTooltipProps,
   ChartLabel,
   ChartLegend,
-  ChartLine,
-  createContainer
+  ChartLine
 } from '@patternfly/react-charts';
+import { createContainer } from 'victory-create-container';
 import { VictoryPortal } from 'victory-core';
 import { VictoryBoxPlot } from 'victory-box-plot';
 import { format as d3Format } from 'd3-format';
@@ -98,7 +98,7 @@ const overlayLegendStyle = kialiStyle({
   flexWrap: 'wrap',
   flexDirection: 'column',
   position: 'relative',
-  background: 'var(--pf-v5-global--BackgroundColor--dark-100)',
+  background: 'var(--pf-t--global--background--color--inverse--default)',
   opacity: 0.7,
   overflow: 'auto'
 });

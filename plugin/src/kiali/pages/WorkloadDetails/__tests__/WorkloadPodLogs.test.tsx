@@ -7,7 +7,7 @@ import { store } from '../../../store/ConfigStore';
 import axios from 'axios';
 import axiosMockAdapter from 'axios-mock-adapter';
 import MockAdapter from 'axios-mock-adapter';
-import { Dropdown, DropdownItem } from '@patternfly/react-core';
+import { Dropdown, DropdownItem, MenuToggle } from '@patternfly/react-core';
 import { KialiIcon } from 'config/KialiIcon';
 
 const defaultProps = (): WorkloadPodLogsProps => ({
@@ -86,7 +86,9 @@ describe('WorkloadPodLogsComponent', () => {
         <WorkloadPodLogsComponent {...defaultProps()} />
       </Provider>
     );
-    wrapper.find(KialiIcon.KebabToggle).simulate('click');
+    // PF6 Dropdown uses MenuToggle as the clickable toggle; click it to open the menu.
+    // The dropdown uses popperProps={{ appendTo: 'inline' }} so items render in-tree.
+    wrapper.find(MenuToggle).simulate('click');
     expect(
       wrapper
         .find(DropdownItem)
@@ -105,7 +107,8 @@ describe('WorkloadPodLogsComponent', () => {
         <WorkloadPodLogsComponent {...props} />
       </Provider>
     );
-    wrapper.find(KialiIcon.KebabToggle).simulate('click');
+    // PF6 Dropdown uses MenuToggle as the clickable toggle; click it to open the menu.
+    wrapper.find(MenuToggle).simulate('click');
     expect(
       wrapper
         .find(DropdownItem)
@@ -125,7 +128,8 @@ describe('WorkloadPodLogsComponent', () => {
         <WorkloadPodLogsComponent {...defaultProps()} />
       </Provider>
     );
-    wrapper.find(KialiIcon.KebabToggle).simulate('click');
+    // PF6 Dropdown uses MenuToggle as the clickable toggle; click it to open the menu.
+    wrapper.find(MenuToggle).simulate('click');
     wrapper
       .find(DropdownItem)
       .findWhere(n => n.key() === 'setLogLevelDebug')

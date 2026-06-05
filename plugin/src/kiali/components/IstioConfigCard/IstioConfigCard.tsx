@@ -34,7 +34,7 @@ export const IstioConfigCard: React.FC<IstioConfigCardProps> = (props: IstioConf
   const columns: ThProps[] = [{ title: 'Name' }, { title: 'Status', width: 10 }];
 
   const noIstioConfig: React.ReactNode = (
-    <EmptyState variant={EmptyStateVariant.sm} className={emtpytStyle}>
+    <EmptyState variant={EmptyStateVariant.sm} className={emtpytStyle} titleText="">
       <EmptyStateBody className={emtpytStyle} data-test="istio-config-empty">
         No Istio Config found for {props.name}
       </EmptyStateBody>

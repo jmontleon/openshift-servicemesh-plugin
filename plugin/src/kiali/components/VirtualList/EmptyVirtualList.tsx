@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { EmptyState, EmptyStateBody, EmptyStateVariant, EmptyStateHeader } from '@patternfly/react-core';
+import { EmptyState, EmptyStateBody, EmptyStateVariant } from '@patternfly/react-core';
 import { kialiStyle } from 'styles/StyleUtils';
 import { RefreshIntervalManual } from 'config/Config';
 import { IntervalInMilliseconds } from 'types/Common';
@@ -29,8 +29,9 @@ export class EmptyVirtualList extends React.Component<EmptyVirtualListProps, Emp
           data-test="manual-refresh"
           variant={EmptyStateVariant.lg}
           className={emptyStateStyle}
+          titleText={t('Manual refresh required')}
+          headingLevel="h5"
         >
-          <EmptyStateHeader titleText={t('Manual refresh required')} headingLevel="h5" />
           <EmptyStateBody>
             {t(
               'The refresh interval is set to "Manual". To render the list, select your desired filters and options and then click the Refresh button. Or, if preferred, change the setting to the desired interval.'

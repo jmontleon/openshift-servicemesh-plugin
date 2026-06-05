@@ -111,7 +111,6 @@ export const RuleBuilder: React.FC<Props> = (props: Props) => {
         <Switch
           id="addFromSwitch"
           label=" "
-          labelOff=" "
           isChecked={addFromSwitch}
           onChange={() => setAddFromSwitch(!addFromSwitch)}
         />
@@ -133,7 +132,6 @@ export const RuleBuilder: React.FC<Props> = (props: Props) => {
         <Switch
           id="addToSwitch"
           label=" "
-          labelOff=" "
           isChecked={addToSwitch}
           onChange={() => setAddToSwitch(!addToSwitch)}
         />
@@ -155,7 +153,6 @@ export const RuleBuilder: React.FC<Props> = (props: Props) => {
         <Switch
           id="addWhenSwitch"
           label=" "
-          labelOff=" "
           isChecked={addWhenSwitch}
           onChange={() => setAddWhenSwitch(!addWhenSwitch)}
         />

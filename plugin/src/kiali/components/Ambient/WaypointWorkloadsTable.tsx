@@ -129,7 +129,7 @@ export const WaypointWorkloadsTable: React.FC<WaypointWorkloadsProps> = (props: 
   };
 
   const noWorkloads: React.ReactNode = (
-    <EmptyState variant={EmptyStateVariant.sm} className={emptyStyle}>
+    <EmptyState variant={EmptyStateVariant.sm} className={emptyStyle} titleText="">
       <EmptyStateBody className={emptyStyle} data-test="istio-config-empty">
         {props.type === WaypointType.Service ? t('No enrolled services found') : t('No enrolled workloads found')}
       </EmptyStateBody>

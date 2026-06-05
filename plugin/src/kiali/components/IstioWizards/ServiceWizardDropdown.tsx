@@ -132,7 +132,7 @@ const ServiceWizardDropdownComponent: React.FC<Props> = (props: Props) => {
     }
   };
 
-  const onActionsSelect = (): void => {
+  const onActionsSelect = (_event?: React.MouseEvent<Element, MouseEvent>): void => {
     setIsActionsOpen(!isActionsOpen);
   };
 
@@ -216,7 +216,7 @@ const ServiceWizardDropdownComponent: React.FC<Props> = (props: Props) => {
       isOpen={isActionsOpen}
       onOpenChange={(isOpen: boolean) => onActionsToggle(isOpen)}
       onSelect={onActionsSelect}
-      popperProps={{ position: 'right' }}
+      popperProps={{ placement: 'bottom-end' }}
     >
       <DropdownList>
         <ServiceWizardActionsDropdownGroup

@@ -13,7 +13,7 @@ type MeshFindOptionsProps = {
 const menuToggleStyle = kialiStyle({
   paddingRight: 0,
   $nest: {
-    '& .pf-v5-c-menu-toggle__controls': {
+    '& .pf-v6-c-menu-toggle__controls': {
       paddingLeft: 0
     }
   }
@@ -61,7 +61,7 @@ export const MeshFindOptions: React.FC<MeshFindOptionsProps> = (props: MeshFindO
       )}
       isOpen={isOpen}
       onOpenChange={(isOpen: boolean) => onToggle(isOpen)}
-      popperProps={{ position: 'right' }}
+      popperProps={{ placement: 'bottom-end' }}
     >
       <DropdownList>{options}</DropdownList>
     </Dropdown>

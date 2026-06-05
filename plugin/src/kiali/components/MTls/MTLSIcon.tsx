@@ -28,7 +28,7 @@ export const MTLSIcon: React.FC<MTLSIconProps> = (props: MTLSIconProps) => {
   }, [darkTheme, props.icon]);
 
   return (
-    <Tooltip aria-label="mTLS status" position={props.tooltipPosition} enableFlip={true} content={props.tooltipText}>
+    <Tooltip aria-label="mTLS status" position={props.tooltipPosition} enableFlip={true} content={props.tooltipText} appendTo="inline">
       <img key={mtlsIcon} className={props.iconClassName} src={mtlsIcon} alt={props.tooltipPosition} />
     </Tooltip>
   );

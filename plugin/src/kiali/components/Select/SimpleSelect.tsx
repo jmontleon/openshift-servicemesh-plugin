@@ -1,9 +1,9 @@
 import * as React from 'react';
-import { MenuToggle, MenuToggleElement, Select, SelectProps } from '@patternfly/react-core';
+import { MenuToggle, MenuToggleElement, Select, SelectOptionProps, SelectProps } from '@patternfly/react-core';
 
 type SimpleSelectProps = Omit<Omit<Omit<Omit<SelectProps, 'isOpen'>, 'onSelect'>, 'onOpenChange'>, 'toggle'> & {
   onOpenChange?: (isOpen: boolean) => void;
-  onSelect?: (value?: string | number) => void;
+  onSelect?: (value?: SelectOptionProps['value']) => void;
 };
 
 export const SimpleSelect: React.FC<SimpleSelectProps> = (props: SimpleSelectProps) => {
@@ -26,7 +26,7 @@ export const SimpleSelect: React.FC<SimpleSelectProps> = (props: SimpleSelectPro
           props.onOpenChange(isOpen);
         }
       }}
-      onSelect={(_event?: React.MouseEvent<Element, MouseEvent>, value?: string | number) => {
+      onSelect={(_event?: React.MouseEvent<Element, MouseEvent>, value?: SelectOptionProps['value']) => {
         setIsOpen(false);
         if (props.onSelect) {
           props.onSelect(value);

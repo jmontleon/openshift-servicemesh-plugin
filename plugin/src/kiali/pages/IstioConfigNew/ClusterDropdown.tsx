@@ -141,7 +141,7 @@ export class ClusterDropdownComponent extends React.PureComponent<ClusterDropdow
             onChange={(_event, value: string) => this.onFilterChange(value)}
           />
           {hasFilter && (
-            <Tooltip key="ot_clear_cluster_filter" position="top" content="Clear Filter by Name">
+            <Tooltip key="ot_clear_cluster_filter" position="top" content="Clear Filter by Name" appendTo="inline">
               <Button className={closeButtonStyle} onClick={this.clearFilter} isInline>
                 <KialiIcon.Close />
               </Button>
@@ -209,6 +209,7 @@ export class ClusterDropdownComponent extends React.PureComponent<ClusterDropdow
           )}
           isOpen={this.state.isOpen}
           onOpenChange={(isOpen: boolean) => this.onToggle(isOpen)}
+          popperProps={{ appendTo: 'inline' }}
         >
           <DropdownList>
             {this.getHeader()}

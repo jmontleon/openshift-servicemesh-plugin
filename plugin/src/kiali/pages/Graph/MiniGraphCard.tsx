@@ -175,7 +175,7 @@ class MiniGraphCardComponent extends React.Component<MiniGraphCardProps, MiniGra
                     )}
                     isOpen={this.state.isKebabOpen}
                     onOpenChange={(isOpen: boolean) => this.onGraphActionsToggle(isOpen)}
-                    popperProps={{ position: 'right' }}
+                    popperProps={{ position: 'right', appendTo: 'inline' }}
                   >
                     <DropdownList>{graphCardActions}</DropdownList>
                   </Dropdown>

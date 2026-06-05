@@ -128,17 +128,16 @@ class AlertDrawerComponent extends React.PureComponent<AlertDrawerProps> {
                 <Accordion className={AlertDrawerComponent.groups}>
                   {this.props.groups.map(group => {
                     return hideGroup(group) ? null : (
-                      <AccordionItem key={group.id + '_item'}>
+                      <AccordionItem key={group.id + '_item'} isExpanded={group.id === this.props.expandedGroupId}>
                         <AccordionToggle
                           id={group.id + '_toggle'}
-                          isExpanded={group.id === this.props.expandedGroupId}
                           onClick={() => {
                             this.props.toggleGroup(group);
                           }}
                         >
                           {group.title} {getUnreadMessageLabel(group.messages)}
                         </AccordionToggle>
-                        <AccordionContent id={group.id + '_content'} isHidden={group.id !== this.props.expandedGroupId}>
+                        <AccordionContent id={group.id + '_content'}>
                           <AlertDrawerGroup key={group.id} group={group} />
                         </AccordionContent>
                       </AccordionItem>

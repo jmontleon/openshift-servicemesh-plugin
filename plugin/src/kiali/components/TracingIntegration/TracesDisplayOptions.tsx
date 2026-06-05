@@ -118,6 +118,7 @@ export class TracesDisplayOptions extends React.Component<Props, State> {
         )}
         isOpen={isOpen}
         onOpenChange={(isOpen: boolean) => this.onToggle(isOpen)}
+        popperProps={{ appendTo: 'inline' }}
       >
         <DropdownList>{this.getPopoverContent()}</DropdownList>
       </Dropdown>
@@ -134,6 +135,7 @@ export class TracesDisplayOptions extends React.Component<Props, State> {
           <Tooltip
             key="tooltip_filter_by_percentile"
             position={TooltipPosition.right}
+            appendTo="inline"
             content={
               <div style={{ textAlign: 'left' }}>
                 <div>

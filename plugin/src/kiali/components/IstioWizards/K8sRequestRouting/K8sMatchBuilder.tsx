@@ -113,30 +113,36 @@ export const K8sMatchBuilder: React.FC<K8sMatchBuilderProps> = (props: K8sMatchB
       </InputGroupItem>
 
       {props.category === HEADERS && (
-        <TextInput
-          id="header-name-id"
-          value={props.headerName}
-          onChange={(_, value) => props.onMatchHeaderNameChange(value)}
-          placeholder="Header name..."
-        />
+        <InputGroupItem>
+          <TextInput
+            id="header-name-id"
+            value={props.headerName}
+            onChange={(_, value) => props.onMatchHeaderNameChange(value)}
+            placeholder="Header name..."
+          />
+        </InputGroupItem>
       )}
 
       {props.category === METHOD && props.protocol === GRPC && (
-        <TextInput
-          id="method-name-id"
-          value={props.methodName}
-          onChange={(_, value) => props.onMatchMethodNameChange(value)}
-          placeholder="Method name..."
-        />
+        <InputGroupItem>
+          <TextInput
+            id="method-name-id"
+            value={props.methodName}
+            onChange={(_, value) => props.onMatchMethodNameChange(value)}
+            placeholder="Method name..."
+          />
+        </InputGroupItem>
       )}
 
       {props.category === QUERY_PARAMS && (
-        <TextInput
-          id="query-param-id"
-          value={props.queryParamName}
-          onChange={(_, value) => props.onQueryParamNameChange(value)}
-          placeholder="Query param name..."
-        />
+        <InputGroupItem>
+          <TextInput
+            id="query-param-id"
+            value={props.queryParamName}
+            onChange={(_, value) => props.onQueryParamNameChange(value)}
+            placeholder="Query param name..."
+          />
+        </InputGroupItem>
       )}
 
       <InputGroupItem>

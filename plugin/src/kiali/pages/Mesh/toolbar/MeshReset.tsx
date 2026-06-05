@@ -34,8 +34,8 @@ const MeshResetComponent: React.FC<MeshResetProps> = (props: MeshResetProps) => 
         variant={ButtonVariant.link}
         onClick={() => onReset()}
         isInline
+        icon={<KialiIcon.ResetSettings />}
       >
-        <KialiIcon.ResetSettings />
         <span style={{ marginLeft: '5px' }}>{t('Reset')}</span>
       </Button>
     </Tooltip>

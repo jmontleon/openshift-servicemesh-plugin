@@ -16,7 +16,7 @@ import { OfflineStatus } from './OfflineStatus';
 const toolbarStyle = kialiStyle({
   marginLeft: 'auto',
   $nest: {
-    '& .pf-v5-svg': {
+    '& .pf-v6-svg': {
       fontSize: '1rem'
     }
   }

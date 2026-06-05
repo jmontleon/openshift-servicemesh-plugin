@@ -105,7 +105,7 @@ export const IstioActionsNamespaceDropdown: React.FC = () => {
       isOpen={dropdownOpen}
       onOpenChange={(isOpen: boolean) => onToggle(isOpen)}
       onSelect={onSelect}
-      popperProps={{ position: 'right' }}
+      popperProps={{ placement: 'bottom-end' }}
     >
       <DropdownList>{dropdownItems}</DropdownList>
     </Dropdown>

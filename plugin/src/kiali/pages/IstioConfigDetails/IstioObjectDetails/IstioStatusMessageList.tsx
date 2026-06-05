@@ -52,7 +52,7 @@ export class IstioStatusMessageList extends React.Component<Props> {
                       <Validation severity={severity} />
                     </FlexItem>
                     <FlexItem>{check.code}</FlexItem>
-                    <Tooltip content={check.message} position={TooltipPosition.right}>
+                    <Tooltip content={check.message} position={TooltipPosition.right} appendTo="inline">
                       <div className="iconInfo">
                         <KialiIcon.Info className={statusInfoStyle} />
                       </div>

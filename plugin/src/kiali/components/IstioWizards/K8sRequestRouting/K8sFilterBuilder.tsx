@@ -120,175 +120,191 @@ export const K8sFilterBuilder: React.FC<K8sFilterBuilderProps> = (props: K8sFilt
       </InputGroupItem>
 
       {(props.filterType === REQ_MOD || props.filterType === RESP_MOD) && (
-        <Dropdown
-          toggle={(toggleRef: React.Ref<MenuToggleElement>) => (
-            <MenuToggle
-              ref={toggleRef}
-              onClick={() => setIsHeaderDropdown(!isHeaderDropdown)}
-              data-test={'header-type-toggle'}
-              isExpanded={isHeaderDropdown}
-            >
-              {props.headerOp}
-            </MenuToggle>
-          )}
-          isOpen={isHeaderDropdown}
-          onOpenChange={(isOpen: boolean) => setIsHeaderDropdown(isOpen)}
-        >
-          <DropdownList>
-            {renderFilterOptions.map((op, index) => (
-              <DropdownItem
-                key={`${op}_${index}`}
-                value={op}
-                component="button"
-                onClick={() => {
-                  props.onSelectHeaderOp(op);
-                  setIsHeaderDropdown(!isHeaderDropdown);
-                }}
-                data-test={`header-type-${op}`}
+        <InputGroupItem>
+          <Dropdown
+            toggle={(toggleRef: React.Ref<MenuToggleElement>) => (
+              <MenuToggle
+                ref={toggleRef}
+                onClick={() => setIsHeaderDropdown(!isHeaderDropdown)}
+                data-test={'header-type-toggle'}
+                isExpanded={isHeaderDropdown}
               >
-                {op}
-              </DropdownItem>
-            ))}
-          </DropdownList>
-        </Dropdown>
+                {props.headerOp}
+              </MenuToggle>
+            )}
+            isOpen={isHeaderDropdown}
+            onOpenChange={(isOpen: boolean) => setIsHeaderDropdown(isOpen)}
+          >
+            <DropdownList>
+              {renderFilterOptions.map((op, index) => (
+                <DropdownItem
+                  key={`${op}_${index}`}
+                  value={op}
+                  component="button"
+                  onClick={() => {
+                    props.onSelectHeaderOp(op);
+                    setIsHeaderDropdown(!isHeaderDropdown);
+                  }}
+                  data-test={`header-type-${op}`}
+                >
+                  {op}
+                </DropdownItem>
+              ))}
+            </DropdownList>
+          </Dropdown>
+        </InputGroupItem>
       )}
 
       {(props.filterType === REQ_MOD || props.filterType === RESP_MOD) && (
-        <TextInput
-          id="filter-header-name-id"
-          value={props.headerName}
-          onChange={(_, value) => props.onHeaderNameChange(value)}
-          placeholder="Header name..."
-        />
+        <InputGroupItem>
+          <TextInput
+            id="filter-header-name-id"
+            value={props.headerName}
+            onChange={(_, value) => props.onHeaderNameChange(value)}
+            placeholder="Header name..."
+          />
+        </InputGroupItem>
       )}
 
       {(props.filterType === REQ_MOD || props.filterType === RESP_MOD) && props.headerOp !== REMOVE && (
-        <TextInput
-          id="filter-header-value-id"
-          value={props.headerValue}
-          onChange={(_, value) => props.onHeaderValueChange(value)}
-          placeholder="Header Value..."
-        />
+        <InputGroupItem>
+          <TextInput
+            id="filter-header-value-id"
+            value={props.headerValue}
+            onChange={(_, value) => props.onHeaderValueChange(value)}
+            placeholder="Header Value..."
+          />
+        </InputGroupItem>
       )}
 
       {props.filterType === REQ_RED && (
-        <Dropdown
-          toggle={(toggleRef: React.Ref<MenuToggleElement>) => (
-            <MenuToggle
-              ref={toggleRef}
-              onClick={() => setIsSchemeDropdown(!isSchemeDropdown)}
-              data-test={'scheme-toggle'}
-              isExpanded={isSchemeDropdown}
-            >
-              {props.schemeOp}
-            </MenuToggle>
-          )}
-          isOpen={isSchemeDropdown}
-          onOpenChange={(isOpen: boolean) => setIsSchemeDropdown(isOpen)}
-        >
-          <DropdownList>
-            {schemeOptions.map((op, index) => (
-              <DropdownItem
-                key={`${op}_${index}`}
-                value={op}
-                component="button"
-                onClick={() => {
-                  props.onSelectSchemeOp(op);
-                  setIsSchemeDropdown(!isSchemeDropdown);
-                }}
-                data-test={`scheme-${op}`}
+        <InputGroupItem>
+          <Dropdown
+            toggle={(toggleRef: React.Ref<MenuToggleElement>) => (
+              <MenuToggle
+                ref={toggleRef}
+                onClick={() => setIsSchemeDropdown(!isSchemeDropdown)}
+                data-test={'scheme-toggle'}
+                isExpanded={isSchemeDropdown}
               >
-                {op}
-              </DropdownItem>
-            ))}
-          </DropdownList>
-        </Dropdown>
+                {props.schemeOp}
+              </MenuToggle>
+            )}
+            isOpen={isSchemeDropdown}
+            onOpenChange={(isOpen: boolean) => setIsSchemeDropdown(isOpen)}
+          >
+            <DropdownList>
+              {schemeOptions.map((op, index) => (
+                <DropdownItem
+                  key={`${op}_${index}`}
+                  value={op}
+                  component="button"
+                  onClick={() => {
+                    props.onSelectSchemeOp(op);
+                    setIsSchemeDropdown(!isSchemeDropdown);
+                  }}
+                  data-test={`scheme-${op}`}
+                >
+                  {op}
+                </DropdownItem>
+              ))}
+            </DropdownList>
+          </Dropdown>
+        </InputGroupItem>
       )}
 
       {props.filterType === REQ_RED && (
-        <TextInput
-          id="hostname"
-          value={props.hostName}
-          onChange={(_, value) => props.onHostNameChange(value)}
-          placeholder="Hostname..."
-        />
+        <InputGroupItem>
+          <TextInput
+            id="hostname"
+            value={props.hostName}
+            onChange={(_, value) => props.onHostNameChange(value)}
+            placeholder="Hostname..."
+          />
+        </InputGroupItem>
       )}
 
       {props.filterType === REQ_RED && (
-        <TextInput
-          id="portValue"
-          value={props.portValue}
-          onChange={(_, value) => props.onPortValueChange(value)}
-          placeholder="Port..."
-        />
+        <InputGroupItem>
+          <TextInput
+            id="portValue"
+            value={props.portValue}
+            onChange={(_, value) => props.onPortValueChange(value)}
+            placeholder="Port..."
+          />
+        </InputGroupItem>
       )}
 
       {props.filterType === REQ_RED && (
-        <Dropdown
-          toggle={(toggleRef: React.Ref<MenuToggleElement>) => (
-            <MenuToggle
-              ref={toggleRef}
-              onClick={() => setIsStatusCodeDropdown(!isStatusCodeDropdown)}
-              data-test={'status-code'}
-              isExpanded={isStatusCodeDropdown}
-            >
-              {props.statusCodeOp}
-            </MenuToggle>
-          )}
-          isOpen={isStatusCodeDropdown}
-          onOpenChange={(isOpen: boolean) => setIsStatusCodeDropdown(isOpen)}
-        >
-          <DropdownList>
-            {statusOptions.map((op, index) => (
-              <DropdownItem
-                key={`${op}_${index}`}
-                value={op}
-                component="button"
-                onClick={() => {
-                  props.onSelectStatusCodeOp(op);
-                  setIsStatusCodeDropdown(!isStatusCodeDropdown);
-                }}
-                data-test={`status-code-${op}`}
+        <InputGroupItem>
+          <Dropdown
+            toggle={(toggleRef: React.Ref<MenuToggleElement>) => (
+              <MenuToggle
+                ref={toggleRef}
+                onClick={() => setIsStatusCodeDropdown(!isStatusCodeDropdown)}
+                data-test={'status-code'}
+                isExpanded={isStatusCodeDropdown}
               >
-                {op}
-              </DropdownItem>
-            ))}
-          </DropdownList>
-        </Dropdown>
+                {props.statusCodeOp}
+              </MenuToggle>
+            )}
+            isOpen={isStatusCodeDropdown}
+            onOpenChange={(isOpen: boolean) => setIsStatusCodeDropdown(isOpen)}
+          >
+            <DropdownList>
+              {statusOptions.map((op, index) => (
+                <DropdownItem
+                  key={`${op}_${index}`}
+                  value={op}
+                  component="button"
+                  onClick={() => {
+                    props.onSelectStatusCodeOp(op);
+                    setIsStatusCodeDropdown(!isStatusCodeDropdown);
+                  }}
+                  data-test={`status-code-${op}`}
+                >
+                  {op}
+                </DropdownItem>
+              ))}
+            </DropdownList>
+          </Dropdown>
+        </InputGroupItem>
       )}
 
       {props.filterType === REQ_MIR && (
-        <Dropdown
-          toggle={(toggleRef: React.Ref<MenuToggleElement>) => (
-            <MenuToggle
-              ref={toggleRef}
-              onClick={() => setIsServiceDropdown(!isServiceDropdown)}
-              data-test={'service'}
-              isExpanded={isServiceDropdown}
-            >
-              {props.serviceOp}
-            </MenuToggle>
-          )}
-          isOpen={isServiceDropdown}
-          onOpenChange={(isOpen: boolean) => setIsServiceDropdown(isOpen)}
-        >
-          <DropdownList>
-            {props.subServices.map((so, index) => (
-              <DropdownItem
-                key={`${so.name}_${index}`}
-                value={`${so.name}:${getServicePort(so.ports)}`}
-                component="button"
-                onClick={() => {
-                  props.onSelectServiceOp(`${so.name}:${getServicePort(so.ports)}`);
-                  setIsServiceDropdown(!isServiceDropdown);
-                }}
-                data-test={`service-${so.name}`}
+        <InputGroupItem>
+          <Dropdown
+            toggle={(toggleRef: React.Ref<MenuToggleElement>) => (
+              <MenuToggle
+                ref={toggleRef}
+                onClick={() => setIsServiceDropdown(!isServiceDropdown)}
+                data-test={'service'}
+                isExpanded={isServiceDropdown}
               >
-                {`${so.name}:${getServicePort(so.ports)}`}
-              </DropdownItem>
-            ))}
-          </DropdownList>
-        </Dropdown>
+                {props.serviceOp}
+              </MenuToggle>
+            )}
+            isOpen={isServiceDropdown}
+            onOpenChange={(isOpen: boolean) => setIsServiceDropdown(isOpen)}
+          >
+            <DropdownList>
+              {props.subServices.map((so, index) => (
+                <DropdownItem
+                  key={`${so.name}_${index}`}
+                  value={`${so.name}:${getServicePort(so.ports)}`}
+                  component="button"
+                  onClick={() => {
+                    props.onSelectServiceOp(`${so.name}:${getServicePort(so.ports)}`);
+                    setIsServiceDropdown(!isServiceDropdown);
+                  }}
+                  data-test={`service-${so.name}`}
+                >
+                  {`${so.name}:${getServicePort(so.ports)}`}
+                </DropdownItem>
+              ))}
+            </DropdownList>
+          </Dropdown>
+        </InputGroupItem>
       )}
 
       <InputGroupItem className={addFilterStyle}>

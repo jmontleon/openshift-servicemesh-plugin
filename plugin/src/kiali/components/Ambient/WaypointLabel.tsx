@@ -12,7 +12,7 @@ export const renderWaypointLabel = (bgsize?: string): React.ReactNode => {
       <div key="waypoint-workloads-title">
         <PFBadge badge={PFBadges.Waypoint} position={TooltipPosition.top} size={badgeSize} />
         {t('Waypoint proxy')}
-        <Tooltip position={TooltipPosition.right} content={t('This workload is an Istio Ambient waypoint proxy')}>
+        <Tooltip position={TooltipPosition.right} content={t('This workload is an Istio Ambient waypoint proxy')} appendTo="inline">
           <KialiIcon.Info className={infoStyle} />
         </Tooltip>
       </div>

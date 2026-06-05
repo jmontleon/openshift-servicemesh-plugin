@@ -30,9 +30,8 @@ export const RefreshButton: React.FC<RefreshButtonProps> = (props: RefreshButton
         isDisabled={props.disabled ?? false}
         aria-label="Action"
         variant={ButtonVariant.primary}
-      >
-        <SyncAltIcon />
-      </Button>
+        icon={<SyncAltIcon />}
+      />
     </Tooltip>
   );
 };

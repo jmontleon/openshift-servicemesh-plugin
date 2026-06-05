@@ -44,9 +44,8 @@ const MessageCenterTriggerComponent: React.FC<MessageCenterTriggerProps> = (prop
         aria-label={t('System Error')}
         onClick={props.toggleSystemErrorsCenter}
         variant={ButtonVariant.plain}
+        icon={<KialiIcon.Warning />}
       >
-        <KialiIcon.Warning />
-
         <span className={systemErrorCountStyle}>
           {t('{{count}} Open Issue', {
             count: props.systemErrorsCount,

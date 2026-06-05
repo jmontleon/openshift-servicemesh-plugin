@@ -13,7 +13,7 @@ import { kialiStyle } from 'styles/StyleUtils';
  */
 const whiteLabelStyle = kialiStyle({
   $nest: {
-    '& > .pf-v5-c-label__content': {
+    '& > .pf-v6-c-label__content': {
       color: PFColors.Color100
     }
   }

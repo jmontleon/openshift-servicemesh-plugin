@@ -1,5 +1,6 @@
 import * as React from 'react';
 import {
+  Card,
   CardHeader,
   CardTitle,
   Dropdown,
@@ -78,46 +79,48 @@ const TracingTraceTitleComponent: React.FC<Props> = (props: Props) => {
   }
 
   return (
-    <CardHeader
-      actions={{
-        actions: (
-          <>
-            <span>
-              {`${props.formattedTrace.relativeDate()} | ${props.formattedTrace.absTime()} (${props.formattedTrace.fromNow()})`}
-            </span>
+    <Card>
+      <CardHeader
+        actions={{
+          actions: (
+            <>
+              <span>
+                {`${props.formattedTrace.relativeDate()} | ${props.formattedTrace.absTime()} (${props.formattedTrace.fromNow()})`}
+              </span>
 
-            <Dropdown
-              toggle={(toggleRef: React.Ref<MenuToggleElement>) => (
-                <MenuToggle
-                  data-test="trace-details-kebab"
-                  ref={toggleRef}
-                  className={kebabToggleStyle}
-                  aria-label={t('Actions')}
-                  variant="plain"
-                  onClick={() => setIsKebabOpen(!isKebabOpen)}
-                  isExpanded={isKebabOpen}
-                >
-                  <KialiIcon.KebabToggle />
-                </MenuToggle>
-              )}
-              isOpen={isKebabOpen}
-              data-test="trace-details-dropdown"
-              onOpenChange={(isOpen: boolean) => setIsKebabOpen(isOpen)}
-              popperProps={{ position: 'right' }}
-            >
-              <DropdownList>{links}</DropdownList>
-            </Dropdown>
-          </>
-        ),
-        hasNoOffset: false,
-        className: undefined
-      }}
-    >
-      <CardTitle>
-        <span>{`${props.formattedTrace.name()} `}</span>
-        <span className={fullIDStyle}>{props.formattedTrace.fullID()}</span>
-      </CardTitle>
-    </CardHeader>
+              <Dropdown
+                toggle={(toggleRef: React.Ref<MenuToggleElement>) => (
+                  <MenuToggle
+                    data-test="trace-details-kebab"
+                    ref={toggleRef}
+                    className={kebabToggleStyle}
+                    aria-label={t('Actions')}
+                    variant="plain"
+                    onClick={() => setIsKebabOpen(!isKebabOpen)}
+                    isExpanded={isKebabOpen}
+                  >
+                    <KialiIcon.KebabToggle />
+                  </MenuToggle>
+                )}
+                isOpen={isKebabOpen}
+                data-test="trace-details-dropdown"
+                onOpenChange={(isOpen: boolean) => setIsKebabOpen(isOpen)}
+                popperProps={{ position: 'right' }}
+              >
+                <DropdownList>{links}</DropdownList>
+              </Dropdown>
+            </>
+          ),
+          hasNoOffset: false,
+          className: undefined
+        }}
+      >
+        <CardTitle>
+          <span>{`${props.formattedTrace.name()} `}</span>
+          <span className={fullIDStyle}>{props.formattedTrace.fullID()}</span>
+        </CardTitle>
+      </CardHeader>
+    </Card>
   );
 };
 

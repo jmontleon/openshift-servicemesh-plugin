@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Button, Form, FormGroup, Modal, ModalVariant, TooltipPosition } from '@patternfly/react-core';
+import { Button, Form, FormGroup, Modal, ModalBody, ModalFooter, ModalVariant, TooltipPosition } from '@patternfly/react-core';
 import { UserSettingsActions } from '../../actions/UserSettingsActions';
 import { HistoryManager, location, URLParam } from '../../app/History';
 import { useKialiDispatch, useKialiSelector } from '../../hooks/redux';
@@ -151,19 +151,10 @@ export const TimeDurationModal: React.FC<Props> = (props: Props) => {
       variant={ModalVariant.small}
       width={700}
       isOpen={props.isOpen}
-      showClose={false}
-      actions={[
-        <Button key="confirm" variant="primary" onClick={handleConfirm}>
-          {t('Confirm')}
-        </Button>,
-
-        <Button key="cancel" variant="link" onClick={handleCancel}>
-          {t('Cancel')}
-        </Button>
-      ]}
       position="top"
     >
-      <Form isHorizontal={true}>
+      <ModalBody>
+        <Form isHorizontal={true}>
         {props.customDuration ? (
           <FormGroup label={t('Time range')} fieldId="drform-time-range">
             <div style={{ display: 'flex' }}>
@@ -194,6 +185,16 @@ export const TimeDurationModal: React.FC<Props> = (props: Props) => {
           />
         </FormGroup>
       </Form>
+      </ModalBody>
+      <ModalFooter>
+        <Button key="confirm" variant="primary" onClick={handleConfirm}>
+          {t('Confirm')}
+        </Button>
+
+        <Button key="cancel" variant="link" onClick={handleCancel}>
+          {t('Cancel')}
+        </Button>
+      </ModalFooter>
     </Modal>
   );
 };

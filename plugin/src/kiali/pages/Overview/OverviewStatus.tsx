@@ -78,6 +78,7 @@ const OverviewStatusComponent: React.FC<Props> = (props: Props) => {
       position={TooltipPosition.auto}
       content={tooltipContent}
       className={healthIndicatorStyle}
+      appendTo={() => document.body}
     >
       <div style={{ display: 'inline-block', marginRight: '0.375rem' }}>
         <Link to={`/${props.targetPage}?namespaces=${props.namespace}`} onClick={() => linkAction()}>

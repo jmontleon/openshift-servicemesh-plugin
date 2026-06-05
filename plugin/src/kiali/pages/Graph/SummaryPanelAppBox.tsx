@@ -226,7 +226,7 @@ export class SummaryPanelAppBox extends React.Component<SummaryPanelPropType, Su
                 )}
                 isOpen={this.state.isOpen}
                 onOpenChange={(isOpen: boolean) => this.onToggleActions(isOpen)}
-                popperProps={{ position: 'right' }}
+                popperProps={{ position: 'right', appendTo: 'inline' }}
               >
                 <DropdownList>{items}</DropdownList>
               </Dropdown>

@@ -67,7 +67,7 @@ export const WorkloadPods: React.FC<WorkloadPodsProps> = (props: WorkloadPodsPro
   };
 
   const noPods: React.ReactNode = (
-    <EmptyState variant={EmptyStateVariant.sm} className={emptyStyle}>
+    <EmptyState variant={EmptyStateVariant.sm} className={emptyStyle} titleText={`No Pods in workload ${props.workload}`}>
       <EmptyStateBody className={emptyStyle}>No Pods in workload {props.workload}</EmptyStateBody>
     </EmptyState>
   );

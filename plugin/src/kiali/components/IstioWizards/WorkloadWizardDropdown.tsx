@@ -117,7 +117,7 @@ export const WorkloadWizardDropdown: React.FC<Props> = (props: Props) => {
       isOpen={isActionsOpen}
       onOpenChange={(isOpen: boolean) => onActionsToggle(isOpen)}
       onSelect={onActionsSelect}
-      popperProps={{ position: 'right' }}
+      popperProps={{ placement: 'bottom-end' }}
     >
       <DropdownList>
         <WorkloadWizardActionsDropdownGroup

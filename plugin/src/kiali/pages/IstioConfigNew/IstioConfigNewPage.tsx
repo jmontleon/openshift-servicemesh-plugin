@@ -600,9 +600,9 @@ const IstioConfigNewPageComponent: React.FC<Props> = (props: Props) => {
                   isInline
                   onClick={() => onLabelsWizardToggle(true)}
                   data-test={'edit-labels'}
+                  icon={<KialiIcon.PencilAlt className={editIcon} />}
                 >
                   {t('Edit')}
-                  <KialiIcon.PencilAlt className={editIcon} />
                 </Button>
               </div>
 
@@ -627,9 +627,9 @@ const IstioConfigNewPageComponent: React.FC<Props> = (props: Props) => {
                   isInline
                   onClick={() => onAnnotationsWizardToggle(true)}
                   data-test={'edit-annotations'}
+                  icon={<KialiIcon.PencilAlt className={editIcon} />}
                 >
                   {t('Edit')}
-                  <KialiIcon.PencilAlt className={editIcon} />
                 </Button>
               </div>
 

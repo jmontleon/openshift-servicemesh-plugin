@@ -31,8 +31,8 @@ const GraphResetComponent: React.FC<GraphResetProps> = (props: GraphResetProps) 
         variant={ButtonVariant.link}
         onClick={() => onReset()}
         isInline
+        icon={<KialiIcon.ResetSettings />}
       >
-        <KialiIcon.ResetSettings />
         <span style={{ marginLeft: '5px' }}>Reset</span>
       </Button>
     </Tooltip>

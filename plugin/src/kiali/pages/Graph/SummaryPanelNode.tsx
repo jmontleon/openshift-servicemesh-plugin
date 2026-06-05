@@ -227,7 +227,7 @@ export class SummaryPanelNodeComponent extends React.Component<SummaryPanelNodeC
                   )}
                   isOpen={this.state.isActionOpen}
                   onOpenChange={(isOpen: boolean) => this.onToggleActions(isOpen)}
-                  popperProps={{ position: 'right', enableFlip: true }}
+                  popperProps={{ position: 'right', enableFlip: true, appendTo: 'inline' }}
                 >
                   <DropdownList>{items}</DropdownList>
                 </Dropdown>

@@ -2,15 +2,18 @@ import * as React from 'react';
 import {
   Button,
   ButtonVariant,
+  Content,
+  ContentVariants,
   Dropdown,
   DropdownItem,
   DropdownList,
   MenuToggle,
   MenuToggleElement,
   Modal,
+  ModalBody,
+  ModalFooter,
+  ModalHeader,
   ModalVariant,
-  Text,
-  TextVariants,
   TooltipPosition
 } from '@patternfly/react-core';
 import { serverConfig } from '../../config';
@@ -83,23 +86,25 @@ export const IstioActionDropdown: React.FC<IstioActionDropdownProps> = (props: I
       </Dropdown>
 
       <Modal
-        title="Confirm Delete"
         variant={ModalVariant.small}
         isOpen={showConfirmModal}
         onClose={hideConfirmModal}
-        actions={[
+      >
+        <ModalHeader title="Confirm Delete" />
+        <ModalBody>
+          <Content component={ContentVariants.p}>
+            Are you sure you want to delete the {objectName} '{props.objectName}'? It cannot be undone. Make sure this is
+            something you really want to do!
+          </Content>
+        </ModalBody>
+        <ModalFooter>
           <Button key="confirm" variant={ButtonVariant.danger} onClick={onDelete}>
             Delete
-          </Button>,
+          </Button>
           <Button key="cancel" variant={ButtonVariant.secondary} onClick={hideConfirmModal}>
             Cancel
           </Button>
-        ]}
-      >
-        <Text component={TextVariants.p}>
-          Are you sure you want to delete the {objectName} '{props.objectName}'? It cannot be undone. Make sure this is
-          something you really want to do!
-        </Text>
+        </ModalFooter>
       </Modal>
     </>
   );
