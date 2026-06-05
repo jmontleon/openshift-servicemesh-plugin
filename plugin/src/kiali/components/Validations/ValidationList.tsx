@@ -28,7 +28,7 @@ export const ValidationList: React.FC<ValidationListProps> = (props: ValidationL
       aria-label="Validations list"
       position={props.tooltipPosition ?? TooltipPosition.left}
       enableFlip={true}
-      appendTo="inline"
+     
       content={isValid ? 'Valid' : content}
     >
       <span>

@@ -20,6 +20,9 @@ import {
   MenuToggle,
   MenuToggleElement,
   Modal,
+  ModalBody,
+  ModalFooter,
+  ModalHeader,
   Tab,
   TextInput,
   Toolbar,
@@ -1054,27 +1057,11 @@ export class WorkloadPodLogsComponent extends React.Component<WorkloadPodLogsPro
         data-test="json-modal"
         className={modalStyle}
         disableFocusTrap={true}
-        title={t('JSON Log Entry')}
         isOpen={this.state.isJSONModalOpen}
         onClose={this.closeJSONModal}
-        actions={[
-          <Button key="close" onClick={this.closeJSONModal}>
-            {t('Close')}
-          </Button>,
-          this.state.jsonModalContent && (
-            <CopyToClipboard
-              key="copy"
-              onCopy={() => this.setState({ showCopyMessage: !this.state.showCopyMessage })}
-              text={this.state.jsonModalContent}
-            >
-              <Button variant={ButtonVariant.secondary}>{t('Copy')}</Button>
-            </CopyToClipboard>
-          ),
-          <Button key="download" variant={ButtonVariant.secondary} onClick={this.downloadFile}>
-            {t('Download')}
-          </Button>
-        ]}
       >
+        <ModalHeader title={t('JSON Log Entry')} />
+        <ModalBody>
         {this.state.showCopyMessage && (
           <Alert
             style={{ marginBottom: '20px' }}
@@ -1103,6 +1090,24 @@ export class WorkloadPodLogsComponent extends React.Component<WorkloadPodLogsPro
             {this.renderTabs()}
           </ParameterizedTabs>
         </div>
+        </ModalBody>
+        <ModalFooter>
+          <Button key="close" onClick={this.closeJSONModal}>
+            {t('Close')}
+          </Button>
+          {this.state.jsonModalContent && (
+            <CopyToClipboard
+              key="copy"
+              onCopy={() => this.setState({ showCopyMessage: !this.state.showCopyMessage })}
+              text={this.state.jsonModalContent}
+            >
+              <Button variant={ButtonVariant.secondary}>{t('Copy')}</Button>
+            </CopyToClipboard>
+          )}
+          <Button key="download" variant={ButtonVariant.secondary} onClick={this.downloadFile}>
+            {t('Download')}
+          </Button>
+        </ModalFooter>
       </Modal>
     );
   };

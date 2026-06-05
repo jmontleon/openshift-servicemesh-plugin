@@ -10,7 +10,7 @@ const importantTooltip = kialiStyle({
 
 export const wizardTooltip = (tooltipContent: React.ReactFragment) => {
   return (
-    <Tooltip position={TooltipPosition.right} content={<div style={{ textAlign: 'left' }}>{tooltipContent}</div>} appendTo="inline">
+    <Tooltip position={TooltipPosition.right} content={<div style={{ textAlign: 'left' }}>{tooltipContent}</div>}>
       <KialiIcon.Info className={infoStyle} />
     </Tooltip>
   );

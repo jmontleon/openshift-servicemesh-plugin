@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { connect } from 'react-redux';
 import { KialiDispatch } from 'types/Redux';
-import { ChartScatter } from '@patternfly/react-charts';
+import { ChartScatter } from '@patternfly/react-charts/victory';
 import { EmptyState, EmptyStateVariant, EmptyStateBody } from '@patternfly/react-core';
 import { TracingError, JaegerTrace } from '../../types/TracingInfo';
 import { PFColors } from '../Pf/PfColors';

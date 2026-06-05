@@ -185,7 +185,7 @@ class TourStopComponent extends React.PureComponent<TourStopProps> {
               onResize={this.onResize}
             />
             <Popover
-              appendTo="inline"
+             
               bodyContent={info.description ? t(info.description) : info.htmlDescription}
               distance={offset}
               footerContent={

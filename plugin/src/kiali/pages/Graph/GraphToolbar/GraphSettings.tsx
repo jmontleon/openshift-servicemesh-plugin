@@ -734,7 +734,7 @@ class GraphSettingsComponent extends React.PureComponent<GraphSettingsProps, Gra
             <Tooltip
               key="tooltip_show_edge_labels"
               position={TooltipPosition.right}
-              appendTo="inline"
+             
               content={
                 <div style={{ textAlign: 'left' }}>
                   <div>
@@ -770,7 +770,7 @@ class GraphSettingsComponent extends React.PureComponent<GraphSettingsProps, Gra
                 <Tooltip
                   key={`tooltip_${edgeLabelOption.id}`}
                   position={TooltipPosition.right}
-                  appendTo="inline"
+                 
                   content={edgeLabelOption.tooltip}
                 >
                   <KialiIcon.Info
@@ -807,7 +807,7 @@ class GraphSettingsComponent extends React.PureComponent<GraphSettingsProps, Gra
                         <Tooltip
                           key={`tooltip_${rtOption.id}`}
                           position={TooltipPosition.right}
-                          appendTo="inline"
+                         
                           content={rtOption.tooltip}
                         >
                           <KialiIcon.Info
@@ -848,7 +848,7 @@ class GraphSettingsComponent extends React.PureComponent<GraphSettingsProps, Gra
                         <Tooltip
                           key={`tooltip_${throughputOption.id}`}
                           position={TooltipPosition.right}
-                          appendTo="inline"
+                         
                           content={throughputOption.tooltip}
                         >
                           <KialiIcon.Info
@@ -879,7 +879,7 @@ class GraphSettingsComponent extends React.PureComponent<GraphSettingsProps, Gra
               </label>
 
               {item.tooltip && (
-                <Tooltip key={`tooltip_${item.id}`} position={TooltipPosition.right} appendTo="inline" content={item.tooltip}>
+                <Tooltip key={`tooltip_${item.id}`} position={TooltipPosition.right} content={item.tooltip}>
                   <KialiIcon.Info className={item.iconClassName ?? infoStyle} color={item.iconColor} />
                 </Tooltip>
               )}
@@ -909,7 +909,7 @@ class GraphSettingsComponent extends React.PureComponent<GraphSettingsProps, Gra
                         <Tooltip
                           key={`tooltip_${scoringOption.id}`}
                           position={TooltipPosition.right}
-                          appendTo="inline"
+                         
                           content={scoringOption.tooltip}
                         >
                           <KialiIcon.Info
@@ -940,7 +940,7 @@ class GraphSettingsComponent extends React.PureComponent<GraphSettingsProps, Gra
               </label>
 
               {item.tooltip && (
-                <Tooltip key={`tooltip_${item.id}`} position={TooltipPosition.right} appendTo="inline" content={item.tooltip}>
+                <Tooltip key={`tooltip_${item.id}`} position={TooltipPosition.right} content={item.tooltip}>
                   <KialiIcon.Info className={item.iconClassName ?? infoStyle} color={item.iconColor} />
                 </Tooltip>
               )}

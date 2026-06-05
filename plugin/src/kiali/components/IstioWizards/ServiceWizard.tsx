@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Button, ButtonVariant, ExpandableSection, Modal, ModalVariant, Tab, Tabs } from '@patternfly/react-core';
+import { Button, ButtonVariant, ExpandableSection, Modal, ModalBody, ModalFooter, ModalHeader, ModalVariant, Tab, Tabs } from '@patternfly/react-core';
 import { WorkloadOverview } from '../../types/ServiceInfo';
 import * as API from '../../services/Api';
 import * as AlertUtils from '../../utils/AlertUtils';
@@ -865,10 +865,15 @@ export class ServiceWizard extends React.Component<ServiceWizardProps, ServiceWi
       <>
         <Modal
           variant={ModalVariant.small}
-          title={titleAction}
           isOpen={this.state.confirmationModal}
           onClose={() => this.onClose(false)}
-          actions={[
+        >
+          <ModalHeader title={titleAction} />
+          <ModalBody>
+            You're going to {this.props.update ? 'update' : 'create'} istio objects in Namespace {this.props.namespace}.
+            Are you sure?
+          </ModalBody>
+          <ModalFooter>
             <Button
               key="confirm"
               variant={ButtonVariant.primary}
@@ -876,21 +881,15 @@ export class ServiceWizard extends React.Component<ServiceWizardProps, ServiceWi
               data-test={`confirm-${this.props.update ? 'update' : 'create'}`}
             >
               {this.props.update ? t('Update') : t('Create')}
-            </Button>,
+            </Button>
             <Button key="cancel" variant={ButtonVariant.secondary} onClick={() => this.onClose(false)}>
               {t('Cancel')}
             </Button>
-          ]}
-        >
-          <>
-            You're going to {this.props.update ? 'update' : 'create'} istio objects in Namespace {this.props.namespace}.
-            Are you sure?
-          </>
+          </ModalFooter>
         </Modal>
 
         <Modal
           width={'75%'}
-          title={titleModal}
           aria-label={titleModal}
           data-test={`${this.props.type}_modal`}
           isOpen={this.state.showWizard}
@@ -900,21 +899,9 @@ export class ServiceWizard extends React.Component<ServiceWizardProps, ServiceWi
               this.onPreview();
             }
           }}
-          actions={[
-            <Button
-              isDisabled={!(this.isValid(this.state) || this.isK8sAPIValid(this.state))}
-              key="confirm"
-              variant={ButtonVariant.primary}
-              onClick={this.onPreview}
-              data-test="preview"
-            >
-              {t('Preview')}
-            </Button>,
-            <Button key="cancel" variant={ButtonVariant.secondary} onClick={() => this.onClose(false)}>
-              {t('Cancel')}
-            </Button>
-          ]}
         >
+          <ModalHeader title={titleModal} />
+          <ModalBody>
           <IstioConfigPreview
             isOpen={this.state.showPreview}
             title={titleAction}
@@ -1129,6 +1116,21 @@ export class ServiceWizard extends React.Component<ServiceWizardProps, ServiceWi
               </Tabs>
             </ExpandableSection>
           )}
+          </ModalBody>
+          <ModalFooter>
+            <Button
+              isDisabled={!(this.isValid(this.state) || this.isK8sAPIValid(this.state))}
+              key="confirm"
+              variant={ButtonVariant.primary}
+              onClick={this.onPreview}
+              data-test="preview"
+            >
+              {t('Preview')}
+            </Button>
+            <Button key="cancel" variant={ButtonVariant.secondary} onClick={() => this.onClose(false)}>
+              {t('Cancel')}
+            </Button>
+          </ModalFooter>
         </Modal>
       </>
     );

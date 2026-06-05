@@ -182,11 +182,11 @@ export class SummaryPanelEdge extends React.Component<SummaryPanelPropType, Summ
                 <strong>Principals:</strong>
               </div>
 
-              <Tooltip key="tt_src_ppl" position="top" appendTo="inline" content={`Source principal: ${edgeData.sourcePrincipal}`}>
+              <Tooltip key="tt_src_ppl" position="top" content={`Source principal: ${edgeData.sourcePrincipal}`}>
                 <span className={principalStyle}>{edgeData.sourcePrincipal ?? 'unknown'}</span>
               </Tooltip>
 
-              <Tooltip key="tt_src_ppl" position="top" appendTo="inline" content={`Destination principal: ${edgeData.destPrincipal}`}>
+              <Tooltip key="tt_src_ppl" position="top" content={`Destination principal: ${edgeData.destPrincipal}`}>
                 <span className={principalStyle}>{edgeData.destPrincipal ?? 'unknown'}</span>
               </Tooltip>
             </>
@@ -215,7 +215,7 @@ export class SummaryPanelEdge extends React.Component<SummaryPanelPropType, Summ
             )}{' '}
             {isBidirectional && (
               <div className={switchWaypointIcon}>
-                <Tooltip key="waypoint" position="top" appendTo="inline" content="Switch From/To">
+                <Tooltip key="waypoint" position="top" content="Switch From/To">
                   <a
                     href="#"
                     onClick={this.updateTab}

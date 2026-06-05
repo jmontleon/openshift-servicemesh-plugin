@@ -6,6 +6,9 @@ import {
   List,
   ListItem,
   Modal,
+  ModalBody,
+  ModalFooter,
+  ModalHeader,
   ModalVariant,
   TextInput,
   Title,
@@ -221,11 +224,11 @@ export class WizardLabels extends React.Component<Props, State> {
           variant={ModalVariant.large}
           isOpen={this.props.showAnotationsWizard}
           onClose={this.onClose}
-          header={header}
           aria-labelledby="modal-custom-header-label"
           aria-describedby="modal-custom-header-description"
-          footer={footer}
         >
+          <ModalHeader>{header}</ModalHeader>
+          <ModalBody>
           <Table variant={TableVariant.compact}>
             <Thead>
               <Tr>
@@ -259,6 +262,8 @@ export class WizardLabels extends React.Component<Props, State> {
               </List>
             </Alert>
           )}
+          </ModalBody>
+          <ModalFooter>{footer}</ModalFooter>
         </Modal>
       </>
     );

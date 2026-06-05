@@ -76,15 +76,14 @@ export const NavigationComponent: React.FC<NavigationProps> = (props: Navigation
     setIsNavOpenMobile(!isNavOpenMobile);
   };
 
-  const onPageResize = ({ mobileView, windowSize }: { mobileView: boolean; windowSize: number }): void => {
-    let ismobile = mobileView;
-
-    if (windowSize < 1000) {
-      ismobile = true;
-    }
-
-    setIsMobileView(ismobile);
-  };
+  React.useEffect(() => {
+    const handleResize = (): void => {
+      setIsMobileView(window.innerWidth < 1000);
+    };
+    handleResize();
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
   const isNavOpen = isMobileView ? isNavOpenMobile : isNavOpenDesktop || !props.navCollapsed;
 
@@ -123,9 +122,8 @@ export const NavigationComponent: React.FC<NavigationProps> = (props: Navigation
 
   return (
     <Page
-      header={masthead}
+      masthead={masthead}
       sidebar={Sidebar}
-      onPageResize={(_, { mobileView, windowSize }) => onPageResize({ mobileView, windowSize })}
     >
       <MessageCenter drawerTitle="Message Center" />
       <PageSection className={flexBoxColumnStyle} variant="default">

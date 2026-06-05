@@ -259,7 +259,7 @@ class ReplayComponent extends React.PureComponent<ReplayProps, ReplayState> {
     return (
       <div className={`${replayStyle} ${replayBorder}`}>
         {this.state.isCustomStartTime && (
-          <Tooltip content="Replay start time" appendTo="inline">
+          <Tooltip content="Replay start time">
             <DateTimePicker
               injectTimes={[maxTime]}
               maxDate={maxTime}
@@ -284,7 +284,7 @@ class ReplayComponent extends React.PureComponent<ReplayProps, ReplayState> {
           key="toggle-is-custom"
           position="top"
           content={`Set ${this.state.isCustomStartTime ? 'simple' : 'custom'} start time`}
-          appendTo="inline"
+         
         >
           <Button className={isCustomStyle} variant={ButtonVariant.control} onClick={this.toggleCustomStartTime}>
             <KialiIcon.UserClock className={this.state.isCustomStartTime ? isCustomActiveStyle : ''} />
@@ -316,7 +316,7 @@ class ReplayComponent extends React.PureComponent<ReplayProps, ReplayState> {
 
           <span className={controlStyle}>
             {this.state.status === 'playing' ? (
-              <Tooltip key="replay-pause" position="top" content="Pause" entryDelay={1000} appendTo="inline">
+              <Tooltip key="replay-pause" position="top" content="Pause" entryDelay={1000}>
                 <Button
                   data-test="graph-replay-pause-button"
                   className={controlButtonStyle}
@@ -332,7 +332,7 @@ class ReplayComponent extends React.PureComponent<ReplayProps, ReplayState> {
                 position="top"
                 content={this.state.status === 'done' ? 'Play again' : 'Play'}
                 entryDelay={1000}
-                appendTo="inline"
+               
               >
                 <Button
                   data-test="graph-replay-play-button"
@@ -489,7 +489,7 @@ class ReplayComponent extends React.PureComponent<ReplayProps, ReplayState> {
           key={`speed-${replaySpeed.text}`}
           className={speedStyle}
           variant={ButtonVariant.plain}
-          isActive={isActive}
+          aria-pressed={isActive}
           onClick={() => this.setReplaySpeed(replaySpeed.speed)}
         >
           <Content className={isActive ? speedActiveStyle : undefined}>{replaySpeed.text}</Content>

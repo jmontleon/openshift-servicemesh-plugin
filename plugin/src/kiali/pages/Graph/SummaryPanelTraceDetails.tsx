@@ -141,7 +141,7 @@ class SummaryPanelTraceDetailsComponent extends React.Component<Props, State> {
           <span>Trace</span>
 
           <span className={closeBoxStyle}>
-            <Tooltip content="Close and clear trace selection" appendTo="inline">
+            <Tooltip content="Close and clear trace selection">
               <Button id="close-trace" variant={ButtonVariant.plain} onClick={this.props.close}>
                 <KialiIcon.Close />
               </Button>
@@ -151,7 +151,7 @@ class SummaryPanelTraceDetailsComponent extends React.Component<Props, State> {
 
         <div>
           {tracesDetailsURL ? (
-            <Tooltip content={`View trace details for: ${info.name()}`} appendTo="inline">
+            <Tooltip content={`View trace details for: ${info.name()}`}>
               <Link
                 to={tracesDetailsURL}
                 onClick={() => {
@@ -164,7 +164,7 @@ class SummaryPanelTraceDetailsComponent extends React.Component<Props, State> {
               </Link>
             </Tooltip>
           ) : (
-            <Tooltip content={`${info.name()}`} appendTo="inline">{title}</Tooltip>
+            <Tooltip content={`${info.name()}`}>{title}</Tooltip>
           )}
           <div>
             {info.numErrors !== 0 && (

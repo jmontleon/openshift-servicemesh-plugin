@@ -18,7 +18,6 @@ export class OutlierDetection extends React.Component<Props> {
           <Switch
             id="odSwitch"
             label={' '}
-            labelOff={' '}
             isChecked={this.props.isOutlierDetection}
             onChange={() => this.props.onOutlierDetection(!this.props.isOutlierDetection, this.props.outlierDetection)}
           />
